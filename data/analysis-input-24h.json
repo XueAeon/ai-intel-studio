@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-02-27T10:38:06.513Z",
-  "generated_at_local": "2026-02-27T18:38:06.513+08:00",
-  "source_generated_at": "2026-02-27T10:37:43.505Z",
-  "source_generated_at_local": "2026-02-27T18:37:43.505+08:00",
+  "generated_at": "2026-02-27T12:59:26.942Z",
+  "generated_at_local": "2026-02-27T20:59:26.942+08:00",
+  "source_generated_at": "2026-02-27T12:58:59.791Z",
+  "source_generated_at_local": "2026-02-27T20:58:59.791+08:00",
   "window_hours": 24,
   "compression": {
     "algorithm_version": "v1.0",
-    "input_items": 742,
-    "clustered_events": 730,
+    "input_items": 845,
+    "clustered_events": 831,
     "output_events": 80,
     "max_events": 80,
     "per_site_cap": 28
@@ -15,7 +15,7 @@
   "site_distribution": [
     {
       "site_id": "techurls",
-      "count": 28
+      "count": 25
     },
     {
       "site_id": "aibase",
@@ -23,14 +23,14 @@
     },
     {
       "site_id": "newsnow",
-      "count": 12
-    },
-    {
-      "site_id": "tophub",
-      "count": 8
+      "count": 13
     },
     {
       "site_id": "buzzing",
+      "count": 10
+    },
+    {
+      "site_id": "tophub",
       "count": 6
     },
     {
@@ -53,7 +53,7 @@
       "title_zh": "给Claude装上“眼睛”！Anthropic斥资收购Vercept：高精度 UI 识别碾压 OpenAI，智能体进入“视觉时代”",
       "title_bilingual": "给Claude装上“眼睛”！Anthropic斥资收购Vercept：高精度 UI 识别碾压 OpenAI，智能体进入“视觉时代”",
       "published_at": "2026-02-27T08:32:44.703Z",
-      "age_hours": 2.09,
+      "age_hours": 4.45,
       "site_id": "aibase",
       "site_name": "AIbase",
       "source": "AIbase",
@@ -66,8 +66,8 @@
         "source_weight": 1.1,
         "keyword_hits": 5,
         "cross_source_count": 1,
-        "recency_score": 0.913,
-        "total_score": 4.726
+        "recency_score": 0.815,
+        "total_score": 4.608
       }
     },
     {
@@ -76,7 +76,7 @@
       "title_zh": "DeepSeek新论文剧透V4新框架！用闲置网卡加速智能体推理性能",
       "title_bilingual": "DeepSeek新论文剧透V4新框架！用闲置网卡加速智能体推理性能",
       "published_at": "2026-02-27T10:37:43.505Z",
-      "age_hours": 0.01,
+      "age_hours": 2.36,
       "site_id": "tophub",
       "site_name": "TopHub",
       "source": "量子位 · 每日最新",
@@ -90,8 +90,8 @@
         "source_weight": 0.75,
         "keyword_hits": 4,
         "cross_source_count": 2,
-        "recency_score": 1,
-        "total_score": 4.35
+        "recency_score": 0.902,
+        "total_score": 4.232
       }
     },
     {
@@ -100,7 +100,7 @@
       "title_zh": "全员 AI 化！谷歌强化绩效考核：非技术岗位不使用 AI 将影响评分",
       "title_bilingual": "全员 AI 化！谷歌强化绩效考核：非技术岗位不使用 AI 将影响评分",
       "published_at": "2026-02-27T10:37:43.505Z",
-      "age_hours": 0.01,
+      "age_hours": 2.36,
       "site_id": "aibase",
       "site_name": "AIbase",
       "source": "AIbase",
@@ -114,8 +114,8 @@
         "source_weight": 1.1,
         "keyword_hits": 1,
         "cross_source_count": 2,
-        "recency_score": 1,
-        "total_score": 4.23
+        "recency_score": 0.902,
+        "total_score": 4.112
       }
     },
     {
@@ -124,7 +124,7 @@
       "title_zh": "​Anthropic 开启赞助计划：为核心贡献者免费提供 6 个月 Claude Max",
       "title_bilingual": "​Anthropic 开启赞助计划：为核心贡献者免费提供 6 个月 Claude Max",
       "published_at": "2026-02-27T08:32:44.703Z",
-      "age_hours": 2.09,
+      "age_hours": 4.45,
       "site_id": "aibase",
       "site_name": "AIbase",
       "source": "AIbase",
@@ -137,8 +137,8 @@
         "source_weight": 1.1,
         "keyword_hits": 3,
         "cross_source_count": 1,
-        "recency_score": 0.913,
-        "total_score": 4.226
+        "recency_score": 0.815,
+        "total_score": 4.108
       }
     },
     {
@@ -147,7 +147,7 @@
       "title_zh": "人工智能可能会在年底前改变经济",
       "title_bilingual": "人工智能可能会在年底前改变经济 / AI could transform the economy by year’s end",
       "published_at": "2026-02-27T08:32:44.703Z",
-      "age_hours": 2.09,
+      "age_hours": 4.45,
       "site_id": "techurls",
       "site_name": "TechURLs",
       "source": "Recode",
@@ -160,8 +160,8 @@
         "source_weight": 0.95,
         "keyword_hits": 4,
         "cross_source_count": 1,
-        "recency_score": 0.913,
-        "total_score": 4.206
+        "recency_score": 0.815,
+        "total_score": 4.088
       }
     },
     {
@@ -170,7 +170,7 @@
       "title_zh": "“恐怖谷”：五角大楼与“觉醒”人类、代理与模仿、特朗普与国情咨文",
       "title_bilingual": "“恐怖谷”：五角大楼与“觉醒”人类、代理与模仿、特朗普与国情咨文 / ‘Uncanny Valley’: Pentagon vs. ‘Woke’ Anthropic, Agentic vs. Mimetic, and Trump vs. State of the Union",
       "published_at": "2026-02-27T08:32:44.703Z",
-      "age_hours": 2.09,
+      "age_hours": 4.45,
       "site_id": "techurls",
       "site_name": "TechURLs",
       "source": "Wired",
@@ -183,8 +183,8 @@
         "source_weight": 0.95,
         "keyword_hits": 4,
         "cross_source_count": 1,
-        "recency_score": 0.913,
-        "total_score": 4.206
+        "recency_score": 0.815,
+        "total_score": 4.088
       }
     },
     {
@@ -193,7 +193,7 @@
       "title_zh": "人工智能代理可以改变你的生活——如果他们不先毁掉你的生活",
       "title_bilingual": "人工智能代理可以改变你的生活——如果他们不先毁掉你的生活 / AI agents could change your life — if they don’t ruin it first",
       "published_at": "2026-02-27T08:32:44.703Z",
-      "age_hours": 2.09,
+      "age_hours": 4.45,
       "site_id": "techurls",
       "site_name": "TechURLs",
       "source": "Recode",
@@ -206,8 +206,8 @@
         "source_weight": 0.95,
         "keyword_hits": 4,
         "cross_source_count": 1,
-        "recency_score": 0.913,
-        "total_score": 4.206
+        "recency_score": 0.815,
+        "total_score": 4.088
       }
     },
     {
@@ -216,7 +216,7 @@
       "title_zh": "Apple 发布 Xcode 26.3，支持 Anthropic 和 OpenAI 的 AI 代理",
       "title_bilingual": "Apple 发布 Xcode 26.3，支持 Anthropic 和 OpenAI 的 AI 代理 / Apple Releases Xcode 26.3 With Support for AI Agents From Anthropic and OpenAI",
       "published_at": "2026-02-27T08:32:44.703Z",
-      "age_hours": 2.09,
+      "age_hours": 4.45,
       "site_id": "techurls",
       "site_name": "TechURLs",
       "source": "Mac Rumors",
@@ -229,8 +229,31 @@
         "source_weight": 0.95,
         "keyword_hits": 4,
         "cross_source_count": 1,
-        "recency_score": 0.913,
-        "total_score": 4.206
+        "recency_score": 0.815,
+        "total_score": 4.088
+      }
+    },
+    {
+      "event_id": "i'd rather use gemini with glitches than pay $8 for chatgpt with ads",
+      "title": "I'd rather use Gemini with glitches than pay $8 for ChatGPT with ads",
+      "title_zh": "我宁愿使用有故障的 Gemini，也不愿花 8 美元购买带有广告的 ChatGPT",
+      "title_bilingual": "我宁愿使用有故障的 Gemini，也不愿花 8 美元购买带有广告的 ChatGPT / I'd rather use Gemini with glitches than pay $8 for ChatGPT with ads",
+      "published_at": "2026-02-27T12:58:59.791Z",
+      "age_hours": 0.01,
+      "site_id": "techurls",
+      "site_name": "TechURLs",
+      "source": "Android Police",
+      "url": "https://www.androidpolice.com/why-i-pick-gemini-over-gpt",
+      "related_count": 1,
+      "related_urls": [
+        "https://www.androidpolice.com/why-i-pick-gemini-over-gpt"
+      ],
+      "signals": {
+        "source_weight": 0.95,
+        "keyword_hits": 3,
+        "cross_source_count": 1,
+        "recency_score": 1,
+        "total_score": 4.06
       }
     },
     {
@@ -239,7 +262,7 @@
       "title_zh": "推出 HN: Cardboard (YC W26) – Agentic 视频编辑器",
       "title_bilingual": "推出 HN: Cardboard (YC W26) – Agentic 视频编辑器 / Launch HN: Cardboard (YC W26) – Agentic video editor",
       "published_at": "2026-02-27T08:32:48.134Z",
-      "age_hours": 2.09,
+      "age_hours": 4.44,
       "site_id": "newsnow",
       "site_name": "NewsNow",
       "source": "hackernews",
@@ -253,8 +276,8 @@
         "source_weight": 0.85,
         "keyword_hits": 3,
         "cross_source_count": 2,
-        "recency_score": 0.913,
-        "total_score": 4.176
+        "recency_score": 0.815,
+        "total_score": 4.058
       }
     },
     {
@@ -263,7 +286,7 @@
       "title_zh": "AI日报：谷歌Nano Banana 2正式上线；可灵3.0全球视频模型第一；周鸿祎直言AI眼镜难做",
       "title_bilingual": "AI日报：谷歌Nano Banana 2正式上线；可灵3.0全球视频模型第一；周鸿祎直言AI眼镜难做",
       "published_at": "2026-02-27T10:37:43.505Z",
-      "age_hours": 0.01,
+      "age_hours": 2.36,
       "site_id": "aibasedaily",
       "site_name": "AIbase Daily",
       "source": "AI日报",
@@ -276,8 +299,32 @@
         "source_weight": 1.15,
         "keyword_hits": 2,
         "cross_source_count": 1,
-        "recency_score": 1,
-        "total_score": 4.17
+        "recency_score": 0.902,
+        "total_score": 4.052
+      }
+    },
+    {
+      "event_id": "openai在加拿大深陷舆论漩涡,承诺强化安全举措引关注",
+      "title": "OpenAI在加拿大深陷舆论漩涡，承诺强化安全举措引关注",
+      "title_zh": "OpenAI在加拿大深陷舆论漩涡，承诺强化安全举措引关注",
+      "title_bilingual": "OpenAI在加拿大深陷舆论漩涡，承诺强化安全举措引关注",
+      "published_at": "2026-02-27T11:58:51.796Z",
+      "age_hours": 1.01,
+      "site_id": "newsnow",
+      "site_name": "NewsNow",
+      "source": "36kr-quick",
+      "url": "https://www.36kr.com/newsflashes/3701498307997833",
+      "related_count": 2,
+      "related_urls": [
+        "https://www.36kr.com/newsflashes/3701498307997833",
+        "https://36kr.com/newsflashes/3701498307997833?f=rss"
+      ],
+      "signals": {
+        "source_weight": 0.85,
+        "keyword_hits": 2,
+        "cross_source_count": 2,
+        "recency_score": 0.958,
+        "total_score": 3.98
       }
     },
     {
@@ -286,7 +333,7 @@
       "title_zh": "xLLM社区重磅首秀，揭秘大模型推理全景图与开源AI Infra生态",
       "title_bilingual": "xLLM社区重磅首秀，揭秘大模型推理全景图与开源AI Infra生态",
       "published_at": "2026-02-27T08:32:44.703Z",
-      "age_hours": 2.09,
+      "age_hours": 4.45,
       "site_id": "tophub",
       "site_name": "TopHub",
       "source": "机器之心 · 文章库",
@@ -299,8 +346,8 @@
         "source_weight": 0.75,
         "keyword_hits": 5,
         "cross_source_count": 1,
-        "recency_score": 0.913,
-        "total_score": 4.096
+        "recency_score": 0.815,
+        "total_score": 3.978
       }
     },
     {
@@ -309,7 +356,7 @@
       "title_zh": "Anthropic 称中国 AI 实验室大规模蒸馏 Claude 模型",
       "title_bilingual": "Anthropic 称中国 AI 实验室大规模蒸馏 Claude 模型",
       "published_at": "2026-02-27T08:32:44.703Z",
-      "age_hours": 2.09,
+      "age_hours": 4.45,
       "site_id": "tophub",
       "site_name": "TopHub",
       "source": "开源中国 · 热门资讯",
@@ -322,8 +369,8 @@
         "source_weight": 0.75,
         "keyword_hits": 5,
         "cross_source_count": 1,
-        "recency_score": 0.913,
-        "total_score": 4.096
+        "recency_score": 0.815,
+        "total_score": 3.978
       }
     },
     {
@@ -332,7 +379,7 @@
       "title_zh": "​狗狗也能写代码？前 Meta 工程师联手 Claude，将“乱码”化为爆款游戏",
       "title_bilingual": "​狗狗也能写代码？前 Meta 工程师联手 Claude，将“乱码”化为爆款游戏",
       "published_at": "2026-02-27T10:37:43.505Z",
-      "age_hours": 0.01,
+      "age_hours": 2.36,
       "site_id": "aibase",
       "site_name": "AIbase",
       "source": "AIbase",
@@ -345,8 +392,8 @@
         "source_weight": 1.1,
         "keyword_hits": 2,
         "cross_source_count": 1,
-        "recency_score": 1,
-        "total_score": 4.08
+        "recency_score": 0.902,
+        "total_score": 3.962
       }
     },
     {
@@ -355,7 +402,7 @@
       "title_zh": "开发者迎来“带薪摸鱼”时代？苹果发布 Xcode 26.3：Claude 与 Codex 化身“虚拟同事”，自然语言即可生成 App",
       "title_bilingual": "开发者迎来“带薪摸鱼”时代？苹果发布 Xcode 26.3：Claude 与 Codex 化身“虚拟同事”，自然语言即可生成 App",
       "published_at": "2026-02-27T10:37:43.505Z",
-      "age_hours": 0.01,
+      "age_hours": 2.36,
       "site_id": "aibase",
       "site_name": "AIbase",
       "source": "AIbase",
@@ -368,8 +415,8 @@
         "source_weight": 1.1,
         "keyword_hits": 2,
         "cross_source_count": 1,
-        "recency_score": 1,
-        "total_score": 4.08
+        "recency_score": 0.902,
+        "total_score": 3.962
       }
     },
     {
@@ -378,7 +425,7 @@
       "title_zh": "AI日报：谷歌Nano Banana 2正式上线；可灵3.0登顶全球视频模型第一；周鸿祎直言AI眼镜难做",
       "title_bilingual": "AI日报：谷歌Nano Banana 2正式上线；可灵3.0登顶全球视频模型第一；周鸿祎直言AI眼镜难做",
       "published_at": "2026-02-27T08:32:44.703Z",
-      "age_hours": 2.09,
+      "age_hours": 4.45,
       "site_id": "aibasedaily",
       "site_name": "AIbase Daily",
       "source": "AI日报",
@@ -391,8 +438,8 @@
         "source_weight": 1.15,
         "keyword_hits": 2,
         "cross_source_count": 1,
-        "recency_score": 0.913,
-        "total_score": 4.066
+        "recency_score": 0.815,
+        "total_score": 3.948
       }
     },
     {
@@ -401,7 +448,7 @@
       "title_zh": "代码乱码变游戏？前 Meta 工程师让爱犬乱敲键盘，Claude 成功完成开发",
       "title_bilingual": "代码乱码变游戏？前 Meta 工程师让爱犬乱敲键盘，Claude 成功完成开发",
       "published_at": "2026-02-27T08:59:34.120Z",
-      "age_hours": 1.64,
+      "age_hours": 4,
       "site_id": "aibase",
       "site_name": "AIbase",
       "source": "AIbase",
@@ -414,8 +461,54 @@
         "source_weight": 1.1,
         "keyword_hits": 2,
         "cross_source_count": 1,
-        "recency_score": 0.932,
-        "total_score": 3.998
+        "recency_score": 0.833,
+        "total_score": 3.88
+      }
+    },
+    {
+      "event_id": "[程序员] vibearound:人在外面,突然想 vibe coding?写了个工具远程控制家里的 claude code/gemini/codex",
+      "title": "[程序员] VibeAround：人在外面，突然想 Vibe Coding？写了个工具远程控制家里的 Claude Code/Gemini/Codex",
+      "title_zh": "[程序员] VibeAround：人在外面，突然想 Vibe Coding？写了个工具远程控制家里的 Claude Code/Gemini/Codex",
+      "title_bilingual": "[程序员] VibeAround：人在外面，突然想 Vibe Coding？写了个工具远程控制家里的 Claude Code/Gemini/Codex",
+      "published_at": "2026-02-27T12:58:20Z",
+      "age_hours": 0.02,
+      "site_id": "iris",
+      "site_name": "Info Flow",
+      "source": "V2EX (创意工作者社区)",
+      "url": "https://www.v2ex.com/t/1194651",
+      "related_count": 1,
+      "related_urls": [
+        "https://www.v2ex.com/t/1194651"
+      ],
+      "signals": {
+        "source_weight": 0.85,
+        "keyword_hits": 3,
+        "cross_source_count": 1,
+        "recency_score": 0.999,
+        "total_score": 3.879
+      }
+    },
+    {
+      "event_id": "五角大楼与anthropic公司围绕人工智能军事应用的争端正临近关键时刻",
+      "title": "五角大楼与Anthropic公司围绕人工智能军事应用的争端正临近关键时刻",
+      "title_zh": "五角大楼与Anthropic公司围绕人工智能军事应用的争端正临近关键时刻",
+      "title_bilingual": "五角大楼与Anthropic公司围绕人工智能军事应用的争端正临近关键时刻",
+      "published_at": "2026-02-27T12:47:32.953Z",
+      "age_hours": 0.2,
+      "site_id": "buzzing",
+      "site_name": "Buzzing",
+      "source": "www.reuters.com",
+      "url": "https://www.reuters.com/es/mundo/UMTXWVBVZFMVRBDJXSZSRXC6KI-2026-02-27",
+      "related_count": 1,
+      "related_urls": [
+        "https://www.reuters.com/es/mundo/UMTXWVBVZFMVRBDJXSZSRXC6KI-2026-02-27"
+      ],
+      "signals": {
+        "source_weight": 0.85,
+        "keyword_hits": 3,
+        "cross_source_count": 1,
+        "recency_score": 0.992,
+        "total_score": 3.87
       }
     },
     {
@@ -424,7 +517,7 @@
       "title_zh": "周鸿祎直言“AI 眼镜挺难做”：硬件只是躯壳，360 决定死磕“智能体”核心",
       "title_bilingual": "周鸿祎直言“AI 眼镜挺难做”：硬件只是躯壳，360 决定死磕“智能体”核心",
       "published_at": "2026-02-27T08:32:44.703Z",
-      "age_hours": 2.09,
+      "age_hours": 4.45,
       "site_id": "aibase",
       "site_name": "AIbase",
       "source": "AIbase",
@@ -437,8 +530,8 @@
         "source_weight": 1.1,
         "keyword_hits": 2,
         "cross_source_count": 1,
-        "recency_score": 0.913,
-        "total_score": 3.976
+        "recency_score": 0.815,
+        "total_score": 3.858
       }
     },
     {
@@ -447,7 +540,7 @@
       "title_zh": "OpenAI、微软等巨头下周拟赴白宫签署承诺:自主解决AI数据中心电力供应",
       "title_bilingual": "OpenAI、微软等巨头下周拟赴白宫签署承诺:自主解决AI数据中心电力供应",
       "published_at": "2026-02-27T08:32:44.703Z",
-      "age_hours": 2.09,
+      "age_hours": 4.45,
       "site_id": "aibase",
       "site_name": "AIbase",
       "source": "AIbase",
@@ -460,8 +553,8 @@
         "source_weight": 1.1,
         "keyword_hits": 2,
         "cross_source_count": 1,
-        "recency_score": 0.913,
-        "total_score": 3.976
+        "recency_score": 0.815,
+        "total_score": 3.858
       }
     },
     {
@@ -470,7 +563,7 @@
       "title_zh": "英伟达年收入增至2160亿美元，黄仁勋称智能体AI已达转折点",
       "title_bilingual": "英伟达年收入增至2160亿美元，黄仁勋称智能体AI已达转折点",
       "published_at": "2026-02-27T08:32:44.703Z",
-      "age_hours": 2.09,
+      "age_hours": 4.45,
       "site_id": "aibase",
       "site_name": "AIbase",
       "source": "AIbase",
@@ -483,8 +576,8 @@
         "source_weight": 1.1,
         "keyword_hits": 2,
         "cross_source_count": 1,
-        "recency_score": 0.913,
-        "total_score": 3.976
+        "recency_score": 0.815,
+        "total_score": 3.858
       }
     },
     {
@@ -493,7 +586,7 @@
       "title_zh": "​IT 维护不再求人！ServiceNow 推出自研 AI 智能体：自主解决 90% 运维工单",
       "title_bilingual": "​IT 维护不再求人！ServiceNow 推出自研 AI 智能体：自主解决 90% 运维工单",
       "published_at": "2026-02-27T08:32:44.703Z",
-      "age_hours": 2.09,
+      "age_hours": 4.45,
       "site_id": "aibase",
       "site_name": "AIbase",
       "source": "AIbase",
@@ -506,8 +599,8 @@
         "source_weight": 1.1,
         "keyword_hits": 2,
         "cross_source_count": 1,
-        "recency_score": 0.913,
-        "total_score": 3.976
+        "recency_score": 0.815,
+        "total_score": 3.858
       }
     },
     {
@@ -516,7 +609,7 @@
       "title_zh": "如何使用人工智能来报税——以及如何不使用它",
       "title_bilingual": "如何使用人工智能来报税——以及如何不使用它 / How to use AI for your taxes — and how not to use it",
       "published_at": "2026-02-27T08:32:44.703Z",
-      "age_hours": 2.09,
+      "age_hours": 4.45,
       "site_id": "techurls",
       "site_name": "TechURLs",
       "source": "Recode",
@@ -529,8 +622,8 @@
         "source_weight": 0.95,
         "keyword_hits": 3,
         "cross_source_count": 1,
-        "recency_score": 0.913,
-        "total_score": 3.956
+        "recency_score": 0.815,
+        "total_score": 3.838
       }
     },
     {
@@ -539,7 +632,7 @@
       "title_zh": "Anthropic 推出 Claude Opus 4.5 进行反击",
       "title_bilingual": "Anthropic 推出 Claude Opus 4.5 进行反击 / Anthropic strikes back with Claude Opus 4.5",
       "published_at": "2026-02-27T08:32:44.703Z",
-      "age_hours": 2.09,
+      "age_hours": 4.45,
       "site_id": "techurls",
       "site_name": "TechURLs",
       "source": "Medium",
@@ -552,8 +645,8 @@
         "source_weight": 0.95,
         "keyword_hits": 3,
         "cross_source_count": 1,
-        "recency_score": 0.913,
-        "total_score": 3.956
+        "recency_score": 0.815,
+        "total_score": 3.838
       }
     },
     {
@@ -562,7 +655,7 @@
       "title_zh": "OpenAI 愤怒的 DeepSeek 可能窃取了 OpenAI 从我们这里窃取的所有数据",
       "title_bilingual": "OpenAI 愤怒的 DeepSeek 可能窃取了 OpenAI 从我们这里窃取的所有数据 / OpenAI Furious DeepSeek Might Have Stolen All The Data OpenAI Stole From Us",
       "published_at": "2026-02-27T08:32:44.703Z",
-      "age_hours": 2.09,
+      "age_hours": 4.45,
       "site_id": "techurls",
       "site_name": "TechURLs",
       "source": "Digg",
@@ -575,8 +668,8 @@
         "source_weight": 0.95,
         "keyword_hits": 3,
         "cross_source_count": 1,
-        "recency_score": 0.913,
-        "total_score": 3.956
+        "recency_score": 0.815,
+        "total_score": 3.838
       }
     },
     {
@@ -585,7 +678,7 @@
       "title_zh": "DeepSeek的金牌，中国对OpenAI的回答",
       "title_bilingual": "DeepSeek的金牌，中国对OpenAI的回答 / DeepSeek’s Gold Medal, China’s Answer to OpenAI",
       "published_at": "2026-02-27T08:32:44.703Z",
-      "age_hours": 2.09,
+      "age_hours": 4.45,
       "site_id": "techurls",
       "site_name": "TechURLs",
       "source": "Medium",
@@ -598,8 +691,8 @@
         "source_weight": 0.95,
         "keyword_hits": 3,
         "cross_source_count": 1,
-        "recency_score": 0.913,
-        "total_score": 3.956
+        "recency_score": 0.815,
+        "total_score": 3.838
       }
     },
     {
@@ -608,7 +701,7 @@
       "title_zh": "OpenAI和谷歌员工签署请愿书，反对军方使用人工智能技术",
       "title_bilingual": "OpenAI和谷歌员工签署请愿书，反对军方使用人工智能技术 / OpenAI and Google employees have signed a petition opposing the military's AI use",
       "published_at": "2026-02-27T08:32:44.703Z",
-      "age_hours": 2.09,
+      "age_hours": 4.45,
       "site_id": "techurls",
       "site_name": "TechURLs",
       "source": "Business Insider",
@@ -621,8 +714,8 @@
         "source_weight": 0.95,
         "keyword_hits": 3,
         "cross_source_count": 1,
-        "recency_score": 0.913,
-        "total_score": 3.956
+        "recency_score": 0.815,
+        "total_score": 3.838
       }
     },
     {
@@ -631,7 +724,7 @@
       "title_zh": "人工智能时代你足够“代理”吗？",
       "title_bilingual": "人工智能时代你足够“代理”吗？ / Are You ‘Agentic’ Enough for the AI Era?",
       "published_at": "2026-02-27T08:32:44.703Z",
-      "age_hours": 2.09,
+      "age_hours": 4.45,
       "site_id": "techurls",
       "site_name": "TechURLs",
       "source": "Wired",
@@ -644,8 +737,8 @@
         "source_weight": 0.95,
         "keyword_hits": 3,
         "cross_source_count": 1,
-        "recency_score": 0.913,
-        "total_score": 3.956
+        "recency_score": 0.815,
+        "total_score": 3.838
       }
     },
     {
@@ -654,7 +747,7 @@
       "title_zh": "独家：Anthropic 让 Claude 经营其办公室商店。然后事情变得奇怪",
       "title_bilingual": "独家：Anthropic 让 Claude 经营其办公室商店。然后事情变得奇怪 / Exclusive: Anthropic Let Claude Run Its Office Shop. Then Things Got Weird",
       "published_at": "2026-02-27T08:32:44.703Z",
-      "age_hours": 2.09,
+      "age_hours": 4.45,
       "site_id": "techurls",
       "site_name": "TechURLs",
       "source": "TIME Magazine",
@@ -667,8 +760,54 @@
         "source_weight": 0.95,
         "keyword_hits": 3,
         "cross_source_count": 1,
-        "recency_score": 0.913,
-        "total_score": 3.956
+        "recency_score": 0.815,
+        "total_score": 3.838
+      }
+    },
+    {
+      "event_id": "openai's president opens up about the 5 chaotic days after sam altman's firing",
+      "title": "OpenAI's president opens up about the 5 chaotic days after Sam Altman's firing",
+      "title_zh": "OpenAI 总裁讲述 Sam Altman 被解雇后 5 天的混乱局面",
+      "title_bilingual": "OpenAI 总裁讲述 Sam Altman 被解雇后 5 天的混乱局面 / OpenAI's president opens up about the 5 chaotic days after Sam Altman's firing",
+      "published_at": "2026-02-27T12:58:59.791Z",
+      "age_hours": 0.01,
+      "site_id": "techurls",
+      "site_name": "TechURLs",
+      "source": "Business Insider",
+      "url": "https://www.businessinsider.com/openai-president-talks-altman-firing-2026-2",
+      "related_count": 1,
+      "related_urls": [
+        "https://www.businessinsider.com/openai-president-talks-altman-firing-2026-2"
+      ],
+      "signals": {
+        "source_weight": 0.95,
+        "keyword_hits": 2,
+        "cross_source_count": 1,
+        "recency_score": 1,
+        "total_score": 3.81
+      }
+    },
+    {
+      "event_id": "openai will notify authorities of credible threats after canada mass shooter's second account was discovered",
+      "title": "OpenAI will notify authorities of credible threats after Canada mass shooter's second account was discovered",
+      "title_zh": "加拿大大规模枪击案凶手的第二个账户被发现后，OpenAI 将向当局通报可信威胁",
+      "title_bilingual": "加拿大大规模枪击案凶手的第二个账户被发现后，OpenAI 将向当局通报可信威胁 / OpenAI will notify authorities of credible threats after Canada mass shooter's second account was discovered",
+      "published_at": "2026-02-27T12:58:59.791Z",
+      "age_hours": 0.01,
+      "site_id": "techurls",
+      "site_name": "TechURLs",
+      "source": "Engadget",
+      "url": "https://www.engadget.com/ai/openai-will-notify-authorities-of-credible-threats-after-canada-mass-shooters-second-account-was-discovered-112706548.html?src=rss",
+      "related_count": 1,
+      "related_urls": [
+        "https://www.engadget.com/ai/openai-will-notify-authorities-of-credible-threats-after-canada-mass-shooters-second-account-was-discovered-112706548.html?src=rss"
+      ],
+      "signals": {
+        "source_weight": 0.95,
+        "keyword_hits": 2,
+        "cross_source_count": 1,
+        "recency_score": 1,
+        "total_score": 3.81
       }
     },
     {
@@ -677,7 +816,7 @@
       "title_zh": "克劳德·科德选择什么",
       "title_bilingual": "克劳德·科德选择什么 / What Claude Code chooses",
       "published_at": "2026-02-27T08:32:48.134Z",
-      "age_hours": 2.09,
+      "age_hours": 4.44,
       "site_id": "newsnow",
       "site_name": "NewsNow",
       "source": "hackernews",
@@ -691,8 +830,8 @@
         "source_weight": 0.85,
         "keyword_hits": 2,
         "cross_source_count": 2,
-        "recency_score": 0.913,
-        "total_score": 3.926
+        "recency_score": 0.815,
+        "total_score": 3.808
       }
     },
     {
@@ -701,7 +840,7 @@
       "title_zh": "Parakeet.cpp – 采用 Metal GPU 加速的纯 C++ 中的 Parakeet ASR 推理",
       "title_bilingual": "Parakeet.cpp – 采用 Metal GPU 加速的纯 C++ 中的 Parakeet ASR 推理 / Parakeet.cpp – Parakeet ASR inference in pure C++ with Metal GPU acceleration",
       "published_at": "2026-02-27T08:32:48.134Z",
-      "age_hours": 2.09,
+      "age_hours": 4.44,
       "site_id": "newsnow",
       "site_name": "NewsNow",
       "source": "hackernews",
@@ -715,8 +854,8 @@
         "source_weight": 0.85,
         "keyword_hits": 2,
         "cross_source_count": 2,
-        "recency_score": 0.913,
-        "total_score": 3.926
+        "recency_score": 0.815,
+        "total_score": 3.808
       }
     },
     {
@@ -725,7 +864,7 @@
       "title_zh": "OpenAI和谷歌员工签署请愿书，反对军方使用人工智能技术",
       "title_bilingual": "OpenAI和谷歌员工签署请愿书，反对军方使用人工智能技术",
       "published_at": "2026-02-27T06:25:13.106Z",
-      "age_hours": 4.21,
+      "age_hours": 6.57,
       "site_id": "buzzing",
       "site_name": "Buzzing",
       "source": "www.businessinsider.com",
@@ -738,8 +877,32 @@
         "source_weight": 0.85,
         "keyword_hits": 4,
         "cross_source_count": 1,
-        "recency_score": 0.824,
-        "total_score": 3.919
+        "recency_score": 0.726,
+        "total_score": 3.801
+      }
+    },
+    {
+      "event_id": "中富通:拟定增募资不超过6.43亿元,用于基于人工智能的公共安全平台产业化项目等",
+      "title": "中富通：拟定增募资不超过6.43亿元，用于基于人工智能的公共安全平台产业化项目等",
+      "title_zh": "中富通：拟定增募资不超过6.43亿元，用于基于人工智能的公共安全平台产业化项目等",
+      "title_bilingual": "中富通：拟定增募资不超过6.43亿元，用于基于人工智能的公共安全平台产业化项目等",
+      "published_at": "2026-02-27T12:12:51.796Z",
+      "age_hours": 0.78,
+      "site_id": "newsnow",
+      "site_name": "NewsNow",
+      "source": "36kr-quick",
+      "url": "https://www.36kr.com/newsflashes/3701511281586563",
+      "related_count": 2,
+      "related_urls": [
+        "https://www.36kr.com/newsflashes/3701511281586563",
+        "https://36kr.com/newsflashes/3701511281586563?f=rss"
+      ],
+      "signals": {
+        "source_weight": 0.85,
+        "keyword_hits": 1,
+        "cross_source_count": 2,
+        "recency_score": 0.968,
+        "total_score": 3.741
       }
     },
     {
@@ -748,7 +911,7 @@
       "title_zh": "汉堡王将使用人工智能来检查员工是否说“请”和“谢谢”",
       "title_bilingual": "汉堡王将使用人工智能来检查员工是否说“请”和“谢谢” / Burger King Will Use AI To Check If Employees Say 'Please' and 'Thank You'",
       "published_at": "2026-02-27T08:32:44.703Z",
-      "age_hours": 2.09,
+      "age_hours": 4.45,
       "site_id": "techurls",
       "site_name": "TechURLs",
       "source": "Slashdot",
@@ -762,8 +925,8 @@
         "source_weight": 0.95,
         "keyword_hits": 1,
         "cross_source_count": 2,
-        "recency_score": 0.913,
-        "total_score": 3.856
+        "recency_score": 0.815,
+        "total_score": 3.738
       }
     },
     {
@@ -772,7 +935,7 @@
       "title_zh": "从零搭建你的第一个 AI Agent：用 LangChain + OpenAI 实现智能助手",
       "title_bilingual": "从零搭建你的第一个 AI Agent：用 LangChain + OpenAI 实现智能助手",
       "published_at": "2026-02-27T08:32:44.703Z",
-      "age_hours": 2.09,
+      "age_hours": 4.45,
       "site_id": "tophub",
       "site_name": "TopHub",
       "source": "掘金 · 人工智能本周最热",
@@ -785,8 +948,8 @@
         "source_weight": 0.75,
         "keyword_hits": 4,
         "cross_source_count": 1,
-        "recency_score": 0.913,
-        "total_score": 3.846
+        "recency_score": 0.815,
+        "total_score": 3.728
       }
     },
     {
@@ -795,7 +958,7 @@
       "title_zh": "谷歌重磅发布 Gemini 3.1 Pro：更强推理，更强生产力",
       "title_bilingual": "谷歌重磅发布 Gemini 3.1 Pro：更强推理，更强生产力",
       "published_at": "2026-02-27T08:32:44.703Z",
-      "age_hours": 2.09,
+      "age_hours": 4.45,
       "site_id": "tophub",
       "site_name": "TopHub",
       "source": "掘金 · 人工智能本周最热",
@@ -808,8 +971,31 @@
         "source_weight": 0.75,
         "keyword_hits": 4,
         "cross_source_count": 1,
-        "recency_score": 0.913,
-        "total_score": 3.846
+        "recency_score": 0.815,
+        "total_score": 3.728
+      }
+    },
+    {
+      "event_id": "anthropics / claude-code",
+      "title": "anthropics / claude-code",
+      "title_zh": "人类学 / 克劳德代码",
+      "title_bilingual": "人类学 / 克劳德代码 / anthropics / claude-code",
+      "published_at": "2026-02-27T12:58:59.791Z",
+      "age_hours": 0.01,
+      "site_id": "tophub",
+      "site_name": "TopHub",
+      "source": "GitHub · Trending Today",
+      "url": "https://github.com/anthropics/claude-code",
+      "related_count": 1,
+      "related_urls": [
+        "https://github.com/anthropics/claude-code"
+      ],
+      "signals": {
+        "source_weight": 0.75,
+        "keyword_hits": 3,
+        "cross_source_count": 1,
+        "recency_score": 1,
+        "total_score": 3.7
       }
     },
     {
@@ -818,7 +1004,7 @@
       "title_zh": "以下是关于Anthropic与五角大楼公开争执的专家观点：",
       "title_bilingual": "以下是关于Anthropic与五角大楼公开争执的专家观点：",
       "published_at": "2026-02-27T09:20:31.366Z",
-      "age_hours": 1.29,
+      "age_hours": 3.65,
       "site_id": "buzzing",
       "site_name": "Buzzing",
       "source": "www.businessinsider.com",
@@ -831,8 +1017,8 @@
         "source_weight": 0.85,
         "keyword_hits": 3,
         "cross_source_count": 1,
-        "recency_score": 0.946,
-        "total_score": 3.815
+        "recency_score": 0.848,
+        "total_score": 3.698
       }
     },
     {
@@ -841,7 +1027,7 @@
       "title_zh": "尽管赫格赛斯发出威胁，但人类仍拒绝向五角大楼屈服",
       "title_bilingual": "尽管赫格赛斯发出威胁，但人类仍拒绝向五角大楼屈服 / Anthropic refuses to bow to Pentagon despite Hegseth's threats",
       "published_at": "2026-02-27T10:37:43.505Z",
-      "age_hours": 0.01,
+      "age_hours": 2.36,
       "site_id": "techurls",
       "site_name": "TechURLs",
       "source": "Engadget",
@@ -854,8 +1040,8 @@
         "source_weight": 0.95,
         "keyword_hits": 2,
         "cross_source_count": 1,
-        "recency_score": 1,
-        "total_score": 3.81
+        "recency_score": 0.902,
+        "total_score": 3.692
       }
     },
     {
@@ -864,7 +1050,7 @@
       "title_zh": "2月井喷！中国AI调用量首超美国，四款大模型霸榜全球前五",
       "title_bilingual": "2月井喷！中国AI调用量首超美国，四款大模型霸榜全球前五",
       "published_at": "2026-02-27T08:32:48.134Z",
-      "age_hours": 2.09,
+      "age_hours": 4.44,
       "site_id": "newsnow",
       "site_name": "NewsNow",
       "source": "tencent-hot",
@@ -877,8 +1063,8 @@
         "source_weight": 0.85,
         "keyword_hits": 3,
         "cross_source_count": 1,
-        "recency_score": 0.913,
-        "total_score": 3.776
+        "recency_score": 0.815,
+        "total_score": 3.658
       }
     },
     {
@@ -887,7 +1073,7 @@
       "title_zh": "人工智能熊市敢与英伟达对赌吗？",
       "title_bilingual": "人工智能熊市敢与英伟达对赌吗？",
       "published_at": "2026-02-27T08:32:34.589Z",
-      "age_hours": 2.09,
+      "age_hours": 4.45,
       "site_id": "buzzing",
       "site_name": "Buzzing",
       "source": "www.wsj.com",
@@ -900,8 +1086,8 @@
         "source_weight": 0.85,
         "keyword_hits": 3,
         "cross_source_count": 1,
-        "recency_score": 0.913,
-        "total_score": 3.775
+        "recency_score": 0.815,
+        "total_score": 3.658
       }
     },
     {
@@ -910,7 +1096,7 @@
       "title_zh": "Kali Linux 通过模型上下文协议集成 Claude AI 实现渗透测试自动化",
       "title_bilingual": "Kali Linux 通过模型上下文协议集成 Claude AI 实现渗透测试自动化",
       "published_at": "2026-02-27T08:09:38.553Z",
-      "age_hours": 2.47,
+      "age_hours": 4.83,
       "site_id": "newsnow",
       "site_name": "NewsNow",
       "source": "freebuf",
@@ -923,8 +1109,8 @@
         "source_weight": 0.85,
         "keyword_hits": 3,
         "cross_source_count": 1,
-        "recency_score": 0.897,
-        "total_score": 3.756
+        "recency_score": 0.799,
+        "total_score": 3.638
       }
     },
     {
@@ -933,7 +1119,7 @@
       "title_zh": "没算力，能搞大模型吗？",
       "title_bilingual": "没算力，能搞大模型吗？",
       "published_at": "2026-02-27T08:09:12.686Z",
-      "age_hours": 2.48,
+      "age_hours": 4.84,
       "site_id": "newsnow",
       "site_name": "NewsNow",
       "source": "nowcoder",
@@ -946,769 +1132,31 @@
         "source_weight": 0.85,
         "keyword_hits": 3,
         "cross_source_count": 1,
-        "recency_score": 0.897,
-        "total_score": 3.756
+        "recency_score": 0.798,
+        "total_score": 3.638
       }
     },
     {
-      "event_id": "openai报告指中国账号求助chatgpt打压异见人士,要求协助抹黑高市早苗",
-      "title": "OpenAI报告指中国账号求助ChatGPT打压异见人士，要求协助抹黑高市早苗",
-      "title_zh": "OpenAI报告指中国账号求助ChatGPT打压异见人士，要求协助抹黑高市早苗",
-      "title_bilingual": "OpenAI报告指中国账号求助ChatGPT打压异见人士，要求协助抹黑高市早苗",
-      "published_at": "2026-02-27T07:52:15Z",
-      "age_hours": 2.76,
+      "event_id": "谷歌优化 gemini 安卓版界面,悬浮窗与功能布局将迎新调整",
+      "title": "谷歌优化 Gemini 安卓版界面，悬浮窗与功能布局将迎新调整",
+      "title_zh": "谷歌优化 Gemini 安卓版界面，悬浮窗与功能布局将迎新调整",
+      "title_bilingual": "谷歌优化 Gemini 安卓版界面，悬浮窗与功能布局将迎新调整",
+      "published_at": "2026-02-27T20:06:25Z",
+      "age_hours": 0,
       "site_id": "newsnow",
       "site_name": "NewsNow",
-      "source": "kaopu",
-      "url": "https://www.bbc.com/zhongwen/articles/cy8gve49mngo/simp",
+      "source": "ithome",
+      "url": "https://www.ithome.com/0/924/347.htm",
       "related_count": 1,
       "related_urls": [
-        "https://www.bbc.com/zhongwen/articles/cy8gve49mngo/simp"
+        "https://www.ithome.com/0/924/347.htm"
       ],
       "signals": {
         "source_weight": 0.85,
-        "keyword_hits": 3,
-        "cross_source_count": 1,
-        "recency_score": 0.885,
-        "total_score": 3.742
-      }
-    },
-    {
-      "event_id": "[apple] 别再折腾 ollama 了!我把 mac 内置的 apple intelligence 变成了标准 openai 接口,支持任何客户端",
-      "title": "[Apple] 别再折腾 Ollama 了！我把 Mac 内置的 Apple Intelligence 变成了标准 OpenAI 接口，支持任何客户端",
-      "title_zh": "[Apple] 别再折腾 Ollama 了！我把 Mac 内置的 Apple Intelligence 变成了标准 OpenAI 接口，支持任何客户端",
-      "title_bilingual": "[Apple] 别再折腾 Ollama 了！我把 Mac 内置的 Apple Intelligence 变成了标准 OpenAI 接口，支持任何客户端",
-      "published_at": "2026-02-27T07:41:11Z",
-      "age_hours": 2.95,
-      "site_id": "iris",
-      "site_name": "Info Flow",
-      "source": "V2EX (创意工作者社区)",
-      "url": "https://www.v2ex.com/t/1194563",
-      "related_count": 1,
-      "related_urls": [
-        "https://www.v2ex.com/t/1194563"
-      ],
-      "signals": {
-        "source_weight": 0.85,
-        "keyword_hits": 3,
-        "cross_source_count": 1,
-        "recency_score": 0.877,
-        "total_score": 3.733
-      }
-    },
-    {
-      "event_id": "内存涨价成“最后稻草”!魅族宣布暂停国内手机新品自研:全面转型 ai,联手吉利深耕智能座舱",
-      "title": "内存涨价成“最后稻草”！魅族宣布暂停国内手机新品自研：全面转型 AI，联手吉利深耕智能座舱",
-      "title_zh": "内存涨价成“最后稻草”！魅族宣布暂停国内手机新品自研：全面转型 AI，联手吉利深耕智能座舱",
-      "title_bilingual": "内存涨价成“最后稻草”！魅族宣布暂停国内手机新品自研：全面转型 AI，联手吉利深耕智能座舱",
-      "published_at": "2026-02-27T08:32:44.703Z",
-      "age_hours": 2.09,
-      "site_id": "aibase",
-      "site_name": "AIbase",
-      "source": "AIbase",
-      "url": "https://www.aibase.com/news/25747",
-      "related_count": 1,
-      "related_urls": [
-        "https://www.aibase.com/news/25747"
-      ],
-      "signals": {
-        "source_weight": 1.1,
-        "keyword_hits": 1,
-        "cross_source_count": 1,
-        "recency_score": 0.913,
-        "total_score": 3.726
-      }
-    },
-    {
-      "event_id": "阿里巴巴进军 ai 硬件!千问 ai 眼镜即将亮相 mwc",
-      "title": "阿里巴巴进军 AI 硬件！千问 AI 眼镜即将亮相 MWC",
-      "title_zh": "阿里巴巴进军 AI 硬件！千问 AI 眼镜即将亮相 MWC",
-      "title_bilingual": "阿里巴巴进军 AI 硬件！千问 AI 眼镜即将亮相 MWC",
-      "published_at": "2026-02-27T08:32:44.703Z",
-      "age_hours": 2.09,
-      "site_id": "aibase",
-      "site_name": "AIbase",
-      "source": "AIbase",
-      "url": "https://www.aibase.com/news/25744",
-      "related_count": 1,
-      "related_urls": [
-        "https://www.aibase.com/news/25744"
-      ],
-      "signals": {
-        "source_weight": 1.1,
-        "keyword_hits": 1,
-        "cross_source_count": 1,
-        "recency_score": 0.913,
-        "total_score": 3.726
-      }
-    },
-    {
-      "event_id": "阿里千问宣布进军ai硬件领域,首款ai眼镜将亮相2026mwc",
-      "title": "阿里千问宣布进军AI硬件领域，首款AI眼镜将亮相2026MWC",
-      "title_zh": "阿里千问宣布进军AI硬件领域，首款AI眼镜将亮相2026MWC",
-      "title_bilingual": "阿里千问宣布进军AI硬件领域，首款AI眼镜将亮相2026MWC",
-      "published_at": "2026-02-27T08:32:44.703Z",
-      "age_hours": 2.09,
-      "site_id": "aibase",
-      "site_name": "AIbase",
-      "source": "AIbase",
-      "url": "https://www.aibase.com/news/25737",
-      "related_count": 1,
-      "related_urls": [
-        "https://www.aibase.com/news/25737"
-      ],
-      "signals": {
-        "source_weight": 1.1,
-        "keyword_hits": 1,
-        "cross_source_count": 1,
-        "recency_score": 0.913,
-        "total_score": 3.726
-      }
-    },
-    {
-      "event_id": "ai监督!外卖“随手拍”上线!淘宝闪购硬核响应新规",
-      "title": "AI监督！外卖“随手拍”上线！淘宝闪购硬核响应新规",
-      "title_zh": "AI监督！外卖“随手拍”上线！淘宝闪购硬核响应新规",
-      "title_bilingual": "AI监督！外卖“随手拍”上线！淘宝闪购硬核响应新规",
-      "published_at": "2026-02-27T08:32:44.703Z",
-      "age_hours": 2.09,
-      "site_id": "aibase",
-      "site_name": "AIbase",
-      "source": "AIbase",
-      "url": "https://www.aibase.com/news/25751",
-      "related_count": 1,
-      "related_urls": [
-        "https://www.aibase.com/news/25751"
-      ],
-      "signals": {
-        "source_weight": 1.1,
-        "keyword_hits": 1,
-        "cross_source_count": 1,
-        "recency_score": 0.913,
-        "total_score": 3.726
-      }
-    },
-    {
-      "event_id": "​阿里“千问”首款 ai 眼镜亮相 mwc 2026,3 月开启预约",
-      "title": "​阿里“千问”首款 AI 眼镜亮相 MWC 2026，3 月开启预约",
-      "title_zh": "​阿里“千问”首款 AI 眼镜亮相 MWC 2026，3 月开启预约",
-      "title_bilingual": "​阿里“千问”首款 AI 眼镜亮相 MWC 2026，3 月开启预约",
-      "published_at": "2026-02-27T08:32:44.703Z",
-      "age_hours": 2.09,
-      "site_id": "aibase",
-      "site_name": "AIbase",
-      "source": "AIbase",
-      "url": "https://www.aibase.com/news/25736",
-      "related_count": 1,
-      "related_urls": [
-        "https://www.aibase.com/news/25736"
-      ],
-      "signals": {
-        "source_weight": 1.1,
-        "keyword_hits": 1,
-        "cross_source_count": 1,
-        "recency_score": 0.913,
-        "total_score": 3.726
-      }
-    },
-    {
-      "event_id": "阿里确认夸克与千问ai眼镜为“同根生”:同一个团队推出的不同系列",
-      "title": "阿里确认夸克与千问AI眼镜为“同根生”：同一个团队推出的不同系列",
-      "title_zh": "阿里确认夸克与千问AI眼镜为“同根生”：同一个团队推出的不同系列",
-      "title_bilingual": "阿里确认夸克与千问AI眼镜为“同根生”：同一个团队推出的不同系列",
-      "published_at": "2026-02-27T08:32:44.703Z",
-      "age_hours": 2.09,
-      "site_id": "aibase",
-      "site_name": "AIbase",
-      "source": "AIbase",
-      "url": "https://www.aibase.com/news/25748",
-      "related_count": 1,
-      "related_urls": [
-        "https://www.aibase.com/news/25748"
-      ],
-      "signals": {
-        "source_weight": 1.1,
-        "keyword_hits": 1,
-        "cross_source_count": 1,
-        "recency_score": 0.913,
-        "total_score": 3.726
-      }
-    },
-    {
-      "event_id": "社交终局是 ai?soul 创始人亲自下场:开放核心技术,4700 名大学生在“元创营”重塑 z 世代社交",
-      "title": "社交终局是 AI？Soul 创始人亲自下场：开放核心技术，4700 名大学生在“元创营”重塑 Z 世代社交",
-      "title_zh": "社交终局是 AI？Soul 创始人亲自下场：开放核心技术，4700 名大学生在“元创营”重塑 Z 世代社交",
-      "title_bilingual": "社交终局是 AI？Soul 创始人亲自下场：开放核心技术，4700 名大学生在“元创营”重塑 Z 世代社交",
-      "published_at": "2026-02-27T08:32:44.703Z",
-      "age_hours": 2.09,
-      "site_id": "aibase",
-      "site_name": "AIbase",
-      "source": "AIbase",
-      "url": "https://www.aibase.com/news/25750",
-      "related_count": 1,
-      "related_urls": [
-        "https://www.aibase.com/news/25750"
-      ],
-      "signals": {
-        "source_weight": 1.1,
-        "keyword_hits": 1,
-        "cross_source_count": 1,
-        "recency_score": 0.913,
-        "total_score": 3.726
-      }
-    },
-    {
-      "event_id": "​为了 ai 豪赌一场!jack dorsey 旗下 block 公司裁员近半",
-      "title": "​为了 AI 豪赌一场！Jack Dorsey 旗下 Block 公司裁员近半",
-      "title_zh": "​为了 AI 豪赌一场！Jack Dorsey 旗下 Block 公司裁员近半",
-      "title_bilingual": "​为了 AI 豪赌一场！Jack Dorsey 旗下 Block 公司裁员近半",
-      "published_at": "2026-02-27T08:32:44.703Z",
-      "age_hours": 2.09,
-      "site_id": "aibase",
-      "site_name": "AIbase",
-      "source": "AIbase",
-      "url": "https://www.aibase.com/news/25740",
-      "related_count": 1,
-      "related_urls": [
-        "https://www.aibase.com/news/25740"
-      ],
-      "signals": {
-        "source_weight": 1.1,
-        "keyword_hits": 1,
-        "cross_source_count": 1,
-        "recency_score": 0.913,
-        "total_score": 3.726
-      }
-    },
-    {
-      "event_id": "show hn: agent-rules – 面向claude代码的强意见规则与工作流",
-      "title": "Show HN: Agent-Rules – 面向Claude代码的强意见规则与工作流",
-      "title_zh": "Show HN: Agent-Rules – 面向Claude代码的强意见规则与工作流",
-      "title_bilingual": "Show HN: Agent-Rules – 面向Claude代码的强意见规则与工作流",
-      "published_at": "2026-02-27T07:28:54.130Z",
-      "age_hours": 3.15,
-      "site_id": "buzzing",
-      "site_name": "Buzzing",
-      "source": "github.com",
-      "url": "https://github.com/letientai299/agent-rules",
-      "related_count": 1,
-      "related_urls": [
-        "https://github.com/letientai299/agent-rules"
-      ],
-      "signals": {
-        "source_weight": 0.85,
-        "keyword_hits": 3,
-        "cross_source_count": 1,
-        "recency_score": 0.869,
-        "total_score": 3.722
-      }
-    },
-    {
-      "event_id": "ubicloud (yc w24): software engineer – $95-$250k in turkey, netherlands, ca",
-      "title": "Ubicloud (YC W24): Software Engineer – $95-$250K in Turkey, Netherlands, CA",
-      "title_zh": "Ubicloud (YC W24)：软件工程师 – 95-25 万美元，土耳其、荷兰、加利福尼亚",
-      "title_bilingual": "Ubicloud (YC W24)：软件工程师 – 95-25 万美元，土耳其、荷兰、加利福尼亚 / Ubicloud (YC W24): Software Engineer – $95-$250K in Turkey, Netherlands, CA",
-      "published_at": "2026-02-27T10:37:43.505Z",
-      "age_hours": 0.01,
-      "site_id": "techurls",
-      "site_name": "TechURLs",
-      "source": "Hacker News",
-      "url": "https://www.ycombinator.com/companies/ubicloud/jobs/j4bntEJ-software-engineer",
-      "related_count": 2,
-      "related_urls": [
-        "https://www.ycombinator.com/companies/ubicloud/jobs/j4bntEJ-software-engineer",
-        "https://news.ycombinator.com/item?id=47178176"
-      ],
-      "signals": {
-        "source_weight": 0.95,
-        "keyword_hits": 0,
-        "cross_source_count": 2,
-        "recency_score": 1,
-        "total_score": 3.71
-      }
-    },
-    {
-      "event_id": "谷歌发布gemini 3.1 flash图像模型",
-      "title": "谷歌发布Gemini 3.1 Flash图像模型。",
-      "title_zh": "谷歌发布Gemini 3.1 Flash图像模型。",
-      "title_bilingual": "谷歌发布Gemini 3.1 Flash图像模型。",
-      "published_at": "2026-02-27T00:00:00Z",
-      "age_hours": 10.64,
-      "site_id": "aihubtoday",
-      "site_name": "AI HubToday",
-      "source": "Daily Digest",
-      "url": "https://x.com/googleaidevs/status/2027052330110042352",
-      "related_count": 1,
-      "related_urls": [
-        "https://x.com/googleaidevs/status/2027052330110042352"
-      ],
-      "signals": {
-        "source_weight": 1.05,
-        "keyword_hits": 3,
-        "cross_source_count": 1,
-        "recency_score": 0.557,
-        "total_score": 3.708
-      }
-    },
-    {
-      "event_id": "anthropic收购vercept让claude学会操作电脑",
-      "title": "Anthropic收购Vercept让Claude学会操作电脑。",
-      "title_zh": "Anthropic收购Vercept让Claude学会操作电脑。",
-      "title_bilingual": "Anthropic收购Vercept让Claude学会操作电脑。",
-      "published_at": "2026-02-27T00:00:00Z",
-      "age_hours": 10.64,
-      "site_id": "aihubtoday",
-      "site_name": "AI HubToday",
-      "source": "Daily Digest",
-      "url": "https://www.xiaohu.ai/c/xiaohu-ai/anthropic-ai-vercept-claude",
-      "related_count": 1,
-      "related_urls": [
-        "https://www.xiaohu.ai/c/xiaohu-ai/anthropic-ai-vercept-claude"
-      ],
-      "signals": {
-        "source_weight": 1.05,
-        "keyword_hits": 3,
-        "cross_source_count": 1,
-        "recency_score": 0.557,
-        "total_score": 3.708
-      }
-    },
-    {
-      "event_id": "agent swarm 开源多智能体自学习团队",
-      "title": "Agent Swarm 开源多智能体自学习团队。",
-      "title_zh": "Agent Swarm 开源多智能体自学习团队。",
-      "title_bilingual": "Agent Swarm 开源多智能体自学习团队。",
-      "published_at": "2026-02-27T00:00:00Z",
-      "age_hours": 10.64,
-      "site_id": "aihubtoday",
-      "site_name": "AI HubToday",
-      "source": "Daily Digest",
-      "url": "https://newshacker.me/story?id=47165046",
-      "related_count": 1,
-      "related_urls": [
-        "https://newshacker.me/story?id=47165046"
-      ],
-      "signals": {
-        "source_weight": 1.05,
-        "keyword_hits": 3,
-        "cross_source_count": 1,
-        "recency_score": 0.557,
-        "total_score": 3.708
-      }
-    },
-    {
-      "event_id": "claude-flow 智能体编排平台",
-      "title": "Claude-Flow 智能体编排平台。",
-      "title_zh": "Claude-Flow 智能体编排平台。",
-      "title_bilingual": "Claude-Flow 智能体编排平台。",
-      "published_at": "2026-02-27T00:00:00Z",
-      "age_hours": 10.64,
-      "site_id": "aihubtoday",
-      "site_name": "AI HubToday",
-      "source": "Daily Digest",
-      "url": "https://github.com/ruvnet/claude-flow",
-      "related_count": 1,
-      "related_urls": [
-        "https://github.com/ruvnet/claude-flow"
-      ],
-      "signals": {
-        "source_weight": 1.05,
-        "keyword_hits": 3,
-        "cross_source_count": 1,
-        "recency_score": 0.557,
-        "total_score": 3.708
-      }
-    },
-    {
-      "event_id": "moltbook, the ai social network freaking out silicon valley, explained",
-      "title": "Moltbook, the AI social network freaking out Silicon Valley, explained",
-      "title_zh": "Moltbook，一个让硅谷震惊的人工智能社交网络，解释道",
-      "title_bilingual": "Moltbook，一个让硅谷震惊的人工智能社交网络，解释道 / Moltbook, the AI social network freaking out Silicon Valley, explained",
-      "published_at": "2026-02-27T08:32:44.703Z",
-      "age_hours": 2.09,
-      "site_id": "techurls",
-      "site_name": "TechURLs",
-      "source": "Recode",
-      "url": "https://www.vox.com/future-perfect/477661/moltbook-artificial-intelligence-chatbot-ai-agent-reddit",
-      "related_count": 1,
-      "related_urls": [
-        "https://www.vox.com/future-perfect/477661/moltbook-artificial-intelligence-chatbot-ai-agent-reddit"
-      ],
-      "signals": {
-        "source_weight": 0.95,
         "keyword_hits": 2,
-        "cross_source_count": 1,
-        "recency_score": 0.913,
-        "total_score": 3.706
-      }
-    },
-    {
-      "event_id": "the robots we deserve",
-      "title": "The robots we deserve",
-      "title_zh": "我们值得拥有的机器人",
-      "title_bilingual": "我们值得拥有的机器人 / The robots we deserve",
-      "published_at": "2026-02-27T08:32:44.703Z",
-      "age_hours": 2.09,
-      "site_id": "techurls",
-      "site_name": "TechURLs",
-      "source": "Recode",
-      "url": "https://www.vox.com/technology/476657/chatgpt-mit-csail-tesla-humanoid-robot",
-      "related_count": 1,
-      "related_urls": [
-        "https://www.vox.com/technology/476657/chatgpt-mit-csail-tesla-humanoid-robot"
-      ],
-      "signals": {
-        "source_weight": 0.95,
-        "keyword_hits": 2,
-        "cross_source_count": 1,
-        "recency_score": 0.913,
-        "total_score": 3.706
-      }
-    },
-    {
-      "event_id": "googles nano banana 2 is here, and it looks wild: how to try it now",
-      "title": "Googles Nano Banana 2 is here, and it looks wild: How to try it now",
-      "title_zh": "谷歌的 Nano Banana 2 来了，它看起来很狂野：如何立即尝试",
-      "title_bilingual": "谷歌的 Nano Banana 2 来了，它看起来很狂野：如何立即尝试 / Googles Nano Banana 2 is here, and it looks wild: How to try it now",
-      "published_at": "2026-02-27T08:32:44.703Z",
-      "age_hours": 2.09,
-      "site_id": "techurls",
-      "site_name": "TechURLs",
-      "source": "Mashable",
-      "url": "https://mashable.com/article/google-nano-banana-2-how-to-try-gemini",
-      "related_count": 1,
-      "related_urls": [
-        "https://mashable.com/article/google-nano-banana-2-how-to-try-gemini"
-      ],
-      "signals": {
-        "source_weight": 0.95,
-        "keyword_hits": 2,
-        "cross_source_count": 1,
-        "recency_score": 0.913,
-        "total_score": 3.706
-      }
-    },
-    {
-      "event_id": "openai forms “frontier alliances” with top consultancies to push enterprise ai into production",
-      "title": "OpenAI forms “Frontier Alliances” with top consultancies to push enterprise AI into production",
-      "title_zh": "OpenAI与顶级咨询公司结成“前沿联盟”，推动企业AI落地生产",
-      "title_bilingual": "OpenAI与顶级咨询公司结成“前沿联盟”，推动企业AI落地生产 / OpenAI forms “Frontier Alliances” with top consultancies to push enterprise AI into production",
-      "published_at": "2026-02-27T08:32:44.703Z",
-      "age_hours": 2.09,
-      "site_id": "techurls",
-      "site_name": "TechURLs",
-      "source": "The Next Web",
-      "url": "https://thenextweb.com/news/openai-forms-frontier-alliances-with-top-consultancies-to-push-enterprise-ai-into-production",
-      "related_count": 1,
-      "related_urls": [
-        "https://thenextweb.com/news/openai-forms-frontier-alliances-with-top-consultancies-to-push-enterprise-ai-into-production"
-      ],
-      "signals": {
-        "source_weight": 0.95,
-        "keyword_hits": 2,
-        "cross_source_count": 1,
-        "recency_score": 0.913,
-        "total_score": 3.706
-      }
-    },
-    {
-      "event_id": "openclaw's creator has joined openai — here's why that's a big deal",
-      "title": "OpenClaw's creator has joined OpenAI — here's why that's a big deal",
-      "title_zh": "OpenClaw 的创建者已加入 OpenAI——这就是为什么这很重要",
-      "title_bilingual": "OpenClaw 的创建者已加入 OpenAI——这就是为什么这很重要 / OpenClaw's creator has joined OpenAI — here's why that's a big deal",
-      "published_at": "2026-02-27T08:32:44.703Z",
-      "age_hours": 2.09,
-      "site_id": "techurls",
-      "site_name": "TechURLs",
-      "source": "MakeUseOf",
-      "url": "https://www.makeuseof.com/openai-and-openclaw",
-      "related_count": 1,
-      "related_urls": [
-        "https://www.makeuseof.com/openai-and-openclaw"
-      ],
-      "signals": {
-        "source_weight": 0.95,
-        "keyword_hits": 2,
-        "cross_source_count": 1,
-        "recency_score": 0.913,
-        "total_score": 3.706
-      }
-    },
-    {
-      "event_id": "musk has no proof openai stole xai trade secrets, judge rules, tossing lawsuit",
-      "title": "Musk has no proof OpenAI stole xAI trade secrets, judge rules, tossing lawsuit",
-      "title_zh": "法官：仅凭雇佣前员工，xAI无权指控OpenAI窃取商业机密",
-      "title_bilingual": "法官：仅凭雇佣前员工，xAI无权指控OpenAI窃取商业机密 / Musk has no proof OpenAI stole xAI trade secrets, judge rules, tossing lawsuit",
-      "published_at": "2026-02-27T08:32:44.703Z",
-      "age_hours": 2.09,
-      "site_id": "techurls",
-      "site_name": "TechURLs",
-      "source": "Ars Technica",
-      "url": "https://arstechnica.com/tech-policy/2026/02/judge-xai-cant-claim-openai-stole-trade-secrets-just-by-hiring-ex-staffers",
-      "related_count": 1,
-      "related_urls": [
-        "https://arstechnica.com/tech-policy/2026/02/judge-xai-cant-claim-openai-stole-trade-secrets-just-by-hiring-ex-staffers"
-      ],
-      "signals": {
-        "source_weight": 0.95,
-        "keyword_hits": 2,
-        "cross_source_count": 1,
-        "recency_score": 0.913,
-        "total_score": 3.706
-      }
-    },
-    {
-      "event_id": "letter: 100+ google deepmind and other ai employees urge jeff dean to block us military deals that use gemini for mass surveillance or autonomous weapons (tripp mickle/new york times)",
-      "title": "Letter: 100+ Google DeepMind and other AI employees urge Jeff Dean to block US military deals that use Gemini for mass surveillance or autonomous weapons (Tripp Mickle/New York Times)",
-      "title_zh": "信函：100 多名 Google DeepMind 和其他人工智能员工敦促 Jeff Dean 阻止美国使用 Gemini 进行大规模监视或自主武器的军事交易（Tripp Mickle/纽约时报）",
-      "title_bilingual": "信函：100 多名 Google DeepMind 和其他人工智能员工敦促 Jeff Dean 阻止美国使用 Gemini 进行大规模监视或自主武器的军事交易（Tripp Mickle/纽约时报） / Letter: 100+ Google DeepMind and other AI employees urge Jeff Dean to block US military deals that use Gemini for mass surveillance or autonomous weapons (Tripp Mickle/New York Times)",
-      "published_at": "2026-02-27T08:32:44.703Z",
-      "age_hours": 2.09,
-      "site_id": "techurls",
-      "site_name": "TechURLs",
-      "source": "Techmeme",
-      "url": "http://www.techmeme.com/260226/p66",
-      "related_count": 1,
-      "related_urls": [
-        "http://www.techmeme.com/260226/p66"
-      ],
-      "signals": {
-        "source_weight": 0.95,
-        "keyword_hits": 2,
-        "cross_source_count": 1,
-        "recency_score": 0.913,
-        "total_score": 3.706
-      }
-    },
-    {
-      "event_id": "statement from dario amodei on our discussions with the department of war",
-      "title": "Statement from Dario Amodei on Our Discussions with the Department of War",
-      "title_zh": "达里奥·阿莫代就我方与战争部磋商事宜的声明",
-      "title_bilingual": "达里奥·阿莫代就我方与战争部磋商事宜的声明 / Statement from Dario Amodei on Our Discussions with the Department of War",
-      "published_at": "2026-02-27T08:32:44.703Z",
-      "age_hours": 2.09,
-      "site_id": "techurls",
-      "site_name": "TechURLs",
-      "source": "Hacker News",
-      "url": "https://www.anthropic.com/news/statement-department-of-war",
-      "related_count": 1,
-      "related_urls": [
-        "https://www.anthropic.com/news/statement-department-of-war"
-      ],
-      "signals": {
-        "source_weight": 0.95,
-        "keyword_hits": 2,
-        "cross_source_count": 1,
-        "recency_score": 0.913,
-        "total_score": 3.706
-      }
-    },
-    {
-      "event_id": "openai says it will overhaul safety protocols and establish direct contact with canadian police, after not alerting authorities about the tumbler ridge suspect (mickey djuric/politico)",
-      "title": "OpenAI says it will overhaul safety protocols and establish direct contact with Canadian police, after not alerting authorities about the Tumbler Ridge suspect (Mickey Djuric/Politico)",
-      "title_zh": "OpenAI 表示，在没有向当局通报 Tumbler Ridge 嫌疑人的情况后，它将彻底修改安全协议并与加拿大警方建立直接联系 (Mickey Djuric/Politico)",
-      "title_bilingual": "OpenAI 表示，在没有向当局通报 Tumbler Ridge 嫌疑人的情况后，它将彻底修改安全协议并与加拿大警方建立直接联系 (Mickey Djuric/Politico) / OpenAI says it will overhaul safety protocols and establish direct contact with Canadian police, after not alerting authorities about the Tumbler Ridge suspect (Mickey Djuric/Politico)",
-      "published_at": "2026-02-27T08:32:44.703Z",
-      "age_hours": 2.09,
-      "site_id": "techurls",
-      "site_name": "TechURLs",
-      "source": "Techmeme",
-      "url": "http://www.techmeme.com/260226/p63",
-      "related_count": 1,
-      "related_urls": [
-        "http://www.techmeme.com/260226/p63"
-      ],
-      "signals": {
-        "source_weight": 0.95,
-        "keyword_hits": 2,
-        "cross_source_count": 1,
-        "recency_score": 0.913,
-        "total_score": 3.706
-      }
-    },
-    {
-      "event_id": "perplexity announces \"computer,\" an ai agent that assigns work to other ai agents",
-      "title": "Perplexity announces \"Computer,\" an AI agent that assigns work to other AI agents",
-      "title_zh": "Perplexity宣布推出\"计算机\"——一款能为其他AI代理分配任务的AI代理",
-      "title_bilingual": "Perplexity宣布推出\"计算机\"——一款能为其他AI代理分配任务的AI代理 / Perplexity announces \"Computer,\" an AI agent that assigns work to other AI agents",
-      "published_at": "2026-02-27T08:32:44.703Z",
-      "age_hours": 2.09,
-      "site_id": "techurls",
-      "site_name": "TechURLs",
-      "source": "Ars Technica",
-      "url": "https://arstechnica.com/ai/2026/02/perplexity-announces-computer-an-ai-agent-that-assigns-work-to-other-ai-agents",
-      "related_count": 1,
-      "related_urls": [
-        "https://arstechnica.com/ai/2026/02/perplexity-announces-computer-an-ai-agent-that-assigns-work-to-other-ai-agents"
-      ],
-      "signals": {
-        "source_weight": 0.95,
-        "keyword_hits": 2,
-        "cross_source_count": 1,
-        "recency_score": 0.913,
-        "total_score": 3.706
-      }
-    },
-    {
-      "event_id": "sergey brin says management is the 'easiest thing to do with ai'",
-      "title": "Sergey Brin says management is the 'easiest thing to do with AI'",
-      "title_zh": "谢尔盖·布林表示管理是“利用人工智能做的最简单的事情”",
-      "title_bilingual": "谢尔盖·布林表示管理是“利用人工智能做的最简单的事情” / Sergey Brin says management is the 'easiest thing to do with AI'",
-      "published_at": "2026-02-27T08:32:44.703Z",
-      "age_hours": 2.09,
-      "site_id": "techurls",
-      "site_name": "TechURLs",
-      "source": "Reddit",
-      "url": "https://www.businessinsider.com/sergey-brin-uses-ai-management-leadership-summaries-google-gemini-2025-5",
-      "related_count": 1,
-      "related_urls": [
-        "https://www.businessinsider.com/sergey-brin-uses-ai-management-leadership-summaries-google-gemini-2025-5"
-      ],
-      "signals": {
-        "source_weight": 0.95,
-        "keyword_hits": 2,
-        "cross_source_count": 1,
-        "recency_score": 0.913,
-        "total_score": 3.706
-      }
-    },
-    {
-      "event_id": "anthropic ceo says ai company 'cannot in good conscience accede' to pentagon",
-      "title": "Anthropic CEO Says AI Company 'Cannot In Good Conscience Accede' To Pentagon",
-      "title_zh": "Anthropic首席执行官表示人工智能公司“凭良心不能加入”五角大楼",
-      "title_bilingual": "Anthropic首席执行官表示人工智能公司“凭良心不能加入”五角大楼 / Anthropic CEO Says AI Company 'Cannot In Good Conscience Accede' To Pentagon",
-      "published_at": "2026-02-27T08:32:44.703Z",
-      "age_hours": 2.09,
-      "site_id": "techurls",
-      "site_name": "TechURLs",
-      "source": "Slashdot",
-      "url": "https://tech.slashdot.org/story/26/02/26/2352217/anthropic-ceo-says-ai-company-cannot-in-good-conscience-accede-to-pentagon",
-      "related_count": 1,
-      "related_urls": [
-        "https://tech.slashdot.org/story/26/02/26/2352217/anthropic-ceo-says-ai-company-cannot-in-good-conscience-accede-to-pentagon"
-      ],
-      "signals": {
-        "source_weight": 0.95,
-        "keyword_hits": 2,
-        "cross_source_count": 1,
-        "recency_score": 0.913,
-        "total_score": 3.706
-      }
-    },
-    {
-      "event_id": "us threatens anthropic with deadline in dispute on ai safeguards",
-      "title": "US threatens Anthropic with deadline in dispute on AI safeguards",
-      "title_zh": "美国威胁 Anthropic 就人工智能保障措施争端设定最后期限",
-      "title_bilingual": "美国威胁 Anthropic 就人工智能保障措施争端设定最后期限 / US threatens Anthropic with deadline in dispute on AI safeguards",
-      "published_at": "2026-02-27T08:32:44.703Z",
-      "age_hours": 2.09,
-      "site_id": "techurls",
-      "site_name": "TechURLs",
-      "source": "BBC News",
-      "url": "https://www.bbc.com/news/articles/cjrq1vwe73po?at_medium=RSS&at_campaign=rss",
-      "related_count": 1,
-      "related_urls": [
-        "https://www.bbc.com/news/articles/cjrq1vwe73po?at_medium=RSS&at_campaign=rss"
-      ],
-      "signals": {
-        "source_weight": 0.95,
-        "keyword_hits": 2,
-        "cross_source_count": 1,
-        "recency_score": 0.913,
-        "total_score": 3.706
-      }
-    },
-    {
-      "event_id": "shockingly powerful chinese ai company is giving wall street a panic",
-      "title": "Shockingly Powerful Chinese AI Company Is Giving Wall Street A Panic",
-      "title_zh": "实力惊人的中国人工智能公司让华尔街陷入恐慌",
-      "title_bilingual": "实力惊人的中国人工智能公司让华尔街陷入恐慌 / Shockingly Powerful Chinese AI Company Is Giving Wall Street A Panic",
-      "published_at": "2026-02-27T08:32:44.703Z",
-      "age_hours": 2.09,
-      "site_id": "techurls",
-      "site_name": "TechURLs",
-      "source": "Digg",
-      "url": "https://digg.com/tech/link/chinas-deepseek-ai",
-      "related_count": 1,
-      "related_urls": [
-        "https://digg.com/tech/link/chinas-deepseek-ai"
-      ],
-      "signals": {
-        "source_weight": 0.95,
-        "keyword_hits": 2,
-        "cross_source_count": 1,
-        "recency_score": 0.913,
-        "total_score": 3.706
-      }
-    },
-    {
-      "event_id": "【2026实测】claude code 省钱指南:5 个技巧让 token 消耗降低 80%",
-      "title": "【2026实测】Claude Code 省钱指南：5 个技巧让 Token 消耗降低 80%",
-      "title_zh": "【2026实测】Claude Code 省钱指南：5 个技巧让 Token 消耗降低 80%",
-      "title_bilingual": "【2026实测】Claude Code 省钱指南：5 个技巧让 Token 消耗降低 80%",
-      "published_at": "2026-02-27T10:37:43.505Z",
-      "age_hours": 0.01,
-      "site_id": "tophub",
-      "site_name": "TopHub",
-      "source": "掘金 · 人工智能本周最热",
-      "url": "https://juejin.cn/post/7608178484016414760",
-      "related_count": 1,
-      "related_urls": [
-        "https://juejin.cn/post/7608178484016414760"
-      ],
-      "signals": {
-        "source_weight": 0.75,
-        "keyword_hits": 3,
         "cross_source_count": 1,
         "recency_score": 1,
-        "total_score": 3.7
-      }
-    },
-    {
-      "event_id": "电厂 | ai收入占比近半,百度大模型迎来兑现期",
-      "title": "电厂 | AI收入占比近半，百度大模型迎来兑现期",
-      "title_zh": "电厂 | AI收入占比近半，百度大模型迎来兑现期",
-      "title_bilingual": "电厂 | AI收入占比近半，百度大模型迎来兑现期",
-      "published_at": "2026-02-27T10:37:43.505Z",
-      "age_hours": 0.01,
-      "site_id": "tophub",
-      "site_name": "TopHub",
-      "source": "Readhub · AI",
-      "url": "https://www.jiemian.com/article/14047290.html",
-      "related_count": 1,
-      "related_urls": [
-        "https://www.jiemian.com/article/14047290.html"
-      ],
-      "signals": {
-        "source_weight": 0.75,
-        "keyword_hits": 3,
-        "cross_source_count": 1,
-        "recency_score": 1,
-        "total_score": 3.7
-      }
-    },
-    {
-      "event_id": "litellm (yc w23): founding reliability engineer – $200k-$270k and 0.5-1.0% equity",
-      "title": "LiteLLM (YC W23): Founding Reliability Engineer – $200K-$270K and 0.5-1.0% equity",
-      "title_zh": "LiteLLM (YC W23)：创始可靠性工程师 – 20 万至 27 万美元和 0.5-1.0% 股权",
-      "title_bilingual": "LiteLLM (YC W23)：创始可靠性工程师 – 20 万至 27 万美元和 0.5-1.0% 股权 / LiteLLM (YC W23): Founding Reliability Engineer – $200K-$270K and 0.5-1.0% equity",
-      "published_at": "2026-02-27T08:32:48.134Z",
-      "age_hours": 2.09,
-      "site_id": "newsnow",
-      "site_name": "NewsNow",
-      "source": "hackernews",
-      "url": "https://news.ycombinator.com/item?id=47175013",
-      "related_count": 2,
-      "related_urls": [
-        "https://news.ycombinator.com/item?id=47175013",
-        "https://www.ycombinator.com/companies/litellm/jobs/unlCynJ-founding-reliability-performance-engineer"
-      ],
-      "signals": {
-        "source_weight": 0.85,
-        "keyword_hits": 1,
-        "cross_source_count": 2,
-        "recency_score": 0.913,
-        "total_score": 3.676
+        "total_score": 3.63
       }
     },
     {
@@ -1758,141 +1206,694 @@
       }
     },
     {
-      "event_id": "谷歌api密钥通过gemini静默暴露敏感数据",
-      "title": "谷歌API密钥通过Gemini静默暴露敏感数据",
-      "title_zh": "谷歌API密钥通过Gemini静默暴露敏感数据",
-      "title_bilingual": "谷歌API密钥通过Gemini静默暴露敏感数据",
-      "published_at": "2026-02-27T10:37:46.909Z",
-      "age_hours": 0.01,
+      "event_id": "openai报告指中国账号求助chatgpt打压异见人士,要求协助抹黑高市早苗",
+      "title": "OpenAI报告指中国账号求助ChatGPT打压异见人士，要求协助抹黑高市早苗",
+      "title_zh": "OpenAI报告指中国账号求助ChatGPT打压异见人士，要求协助抹黑高市早苗",
+      "title_bilingual": "OpenAI报告指中国账号求助ChatGPT打压异见人士，要求协助抹黑高市早苗",
+      "published_at": "2026-02-27T07:52:15Z",
+      "age_hours": 5.12,
       "site_id": "newsnow",
       "site_name": "NewsNow",
-      "source": "freebuf",
-      "url": "https://www.freebuf.com/articles/ai-security/471777.html",
+      "source": "kaopu",
+      "url": "https://www.bbc.com/zhongwen/articles/cy8gve49mngo/simp",
       "related_count": 1,
       "related_urls": [
-        "https://www.freebuf.com/articles/ai-security/471777.html"
+        "https://www.bbc.com/zhongwen/articles/cy8gve49mngo/simp"
       ],
       "signals": {
         "source_weight": 0.85,
-        "keyword_hits": 2,
-        "cross_source_count": 1,
-        "recency_score": 1,
-        "total_score": 3.63
-      }
-    },
-    {
-      "event_id": "claude code 遭入侵实现完全远程代码执行并窃取组织 api 密钥",
-      "title": "Claude Code 遭入侵实现完全远程代码执行并窃取组织 API 密钥",
-      "title_zh": "Claude Code 遭入侵实现完全远程代码执行并窃取组织 API 密钥",
-      "title_bilingual": "Claude Code 遭入侵实现完全远程代码执行并窃取组织 API 密钥",
-      "published_at": "2026-02-27T10:37:46.909Z",
-      "age_hours": 0.01,
-      "site_id": "newsnow",
-      "site_name": "NewsNow",
-      "source": "freebuf",
-      "url": "https://www.freebuf.com/articles/ai-security/471775.html",
-      "related_count": 1,
-      "related_urls": [
-        "https://www.freebuf.com/articles/ai-security/471775.html"
-      ],
-      "signals": {
-        "source_weight": 0.85,
-        "keyword_hits": 2,
-        "cross_source_count": 1,
-        "recency_score": 1,
-        "total_score": 3.63
-      }
-    },
-    {
-      "event_id": "英伟达:尚未向中国销售h200",
-      "title": "英伟达：尚未向中国销售H200",
-      "title_zh": "英伟达：尚未向中国销售H200",
-      "title_bilingual": "英伟达：尚未向中国销售H200",
-      "published_at": "2026-02-27T10:23:43.979Z",
-      "age_hours": 0.24,
-      "site_id": "buzzing",
-      "site_name": "Buzzing",
-      "source": "www.barrons.com",
-      "url": "https://www.barrons.com/livecoverage/nvidia-earnings-stock-price-ai-chips/card/nvidia-no-h200-sales-to-china-yet-sYnYpU8WCZGTyURijuFy?siteid=yhoof2&yptr=yahoo",
-      "related_count": 1,
-      "related_urls": [
-        "https://www.barrons.com/livecoverage/nvidia-earnings-stock-price-ai-chips/card/nvidia-no-h200-sales-to-china-yet-sYnYpU8WCZGTyURijuFy?siteid=yhoof2&yptr=yahoo"
-      ],
-      "signals": {
-        "source_weight": 0.85,
-        "keyword_hits": 2,
-        "cross_source_count": 1,
-        "recency_score": 0.99,
-        "total_score": 3.618
-      }
-    },
-    {
-      "event_id": "show hn: agentweb – 面向ai代理的免费商业目录api(覆盖1100万企业)",
-      "title": "Show HN: AgentWeb – 面向AI代理的免费商业目录API（覆盖1100万企业）",
-      "title_zh": "Show HN: AgentWeb – 面向AI代理的免费商业目录API（覆盖1100万企业）",
-      "title_bilingual": "Show HN: AgentWeb – 面向AI代理的免费商业目录API（覆盖1100万企业）",
-      "published_at": "2026-02-27T10:23:42.305Z",
-      "age_hours": 0.24,
-      "site_id": "buzzing",
-      "site_name": "Buzzing",
-      "source": "agentweb.live",
-      "url": "https://agentweb.live/",
-      "related_count": 1,
-      "related_urls": [
-        "https://agentweb.live/"
-      ],
-      "signals": {
-        "source_weight": 0.85,
-        "keyword_hits": 2,
-        "cross_source_count": 1,
-        "recency_score": 0.99,
-        "total_score": 3.618
-      }
-    },
-    {
-      "event_id": "爱奇艺(iq.us)龚宇:视频大模型非常利好爱奇艺这样的长视频媒体平台",
-      "title": "爱奇艺(IQ.US)龚宇：视频大模型非常利好爱奇艺这样的长视频媒体平台",
-      "title_zh": "爱奇艺(IQ.US)龚宇：视频大模型非常利好爱奇艺这样的长视频媒体平台",
-      "title_bilingual": "爱奇艺(IQ.US)龚宇：视频大模型非常利好爱奇艺这样的长视频媒体平台",
-      "published_at": "2026-02-27T08:59:34.120Z",
-      "age_hours": 1.64,
-      "site_id": "tophub",
-      "site_name": "TopHub",
-      "source": "Readhub · AI",
-      "url": "https://www.163.com/dy/article/KMPNSOQ405198UNI.html",
-      "related_count": 1,
-      "related_urls": [
-        "https://www.163.com/dy/article/KMPNSOQ405198UNI.html"
-      ],
-      "signals": {
-        "source_weight": 0.75,
         "keyword_hits": 3,
         "cross_source_count": 1,
-        "recency_score": 0.932,
-        "total_score": 3.618
+        "recency_score": 0.787,
+        "total_score": 3.624
       }
     },
     {
-      "event_id": "[问与答] 有 agent 能替我打游戏么",
-      "title": "[问与答] 有 agent 能替我打游戏么",
-      "title_zh": "[问与答] 有 agent 能替我打游戏么",
-      "title_bilingual": "[问与答] 有 agent 能替我打游戏么",
-      "published_at": "2026-02-27T10:19:17Z",
-      "age_hours": 0.31,
-      "site_id": "iris",
-      "site_name": "Info Flow",
-      "source": "V2EX (创意工作者社区)",
-      "url": "https://www.v2ex.com/t/1194631",
+      "event_id": "研究:旅游需求上升——人工智能应用日益普及",
+      "title": "研究：旅游需求上升——人工智能应用日益普及",
+      "title_zh": "研究：旅游需求上升——人工智能应用日益普及",
+      "title_bilingual": "研究：旅游需求上升——人工智能应用日益普及",
+      "published_at": "2026-02-27T12:47:33.003Z",
+      "age_hours": 0.2,
+      "site_id": "buzzing",
+      "site_name": "Buzzing",
+      "source": "www.reuters.com",
+      "url": "https://www.reuters.com/de/hauslich/studie-reisenachfrage-legt-zu-ki-nutzung-auf-dem-vormarsch-2026-02-27",
       "related_count": 1,
       "related_urls": [
-        "https://www.v2ex.com/t/1194631"
+        "https://www.reuters.com/de/hauslich/studie-reisenachfrage-legt-zu-ki-nutzung-auf-dem-vormarsch-2026-02-27"
+      ],
+      "signals": {
+        "source_weight": 0.85,
+        "keyword_hits": 2,
+        "cross_source_count": 1,
+        "recency_score": 0.992,
+        "total_score": 3.62
+      }
+    },
+    {
+      "event_id": "implementing a clear room z80 / zx spectrum emulator with claude code",
+      "title": "Implementing a clear room Z80 / ZX Spectrum emulator with Claude Code",
+      "title_zh": "使用 Claude Code 实现洁净室 Z80 / ZX Spectrum 模拟器",
+      "title_bilingual": "使用 Claude Code 实现洁净室 Z80 / ZX Spectrum 模拟器 / Implementing a clear room Z80 / ZX Spectrum emulator with Claude Code",
+      "published_at": "2026-02-27T12:41:23.802Z",
+      "age_hours": 0.3,
+      "site_id": "newsnow",
+      "site_name": "NewsNow",
+      "source": "hackernews",
+      "url": "https://news.ycombinator.com/item?id=47149829",
+      "related_count": 1,
+      "related_urls": [
+        "https://news.ycombinator.com/item?id=47149829"
       ],
       "signals": {
         "source_weight": 0.85,
         "keyword_hits": 2,
         "cross_source_count": 1,
         "recency_score": 0.987,
-        "total_score": 3.614
+        "total_score": 3.615
+      }
+    },
+    {
+      "event_id": "[apple] 别再折腾 ollama 了!我把 mac 内置的 apple intelligence 变成了标准 openai 接口,支持任何客户端",
+      "title": "[Apple] 别再折腾 Ollama 了！我把 Mac 内置的 Apple Intelligence 变成了标准 OpenAI 接口，支持任何客户端",
+      "title_zh": "[Apple] 别再折腾 Ollama 了！我把 Mac 内置的 Apple Intelligence 变成了标准 OpenAI 接口，支持任何客户端",
+      "title_bilingual": "[Apple] 别再折腾 Ollama 了！我把 Mac 内置的 Apple Intelligence 变成了标准 OpenAI 接口，支持任何客户端",
+      "published_at": "2026-02-27T07:41:11Z",
+      "age_hours": 5.3,
+      "site_id": "iris",
+      "site_name": "Info Flow",
+      "source": "V2EX (创意工作者社区)",
+      "url": "https://www.v2ex.com/t/1194563",
+      "related_count": 1,
+      "related_urls": [
+        "https://www.v2ex.com/t/1194563"
+      ],
+      "signals": {
+        "source_weight": 0.85,
+        "keyword_hits": 3,
+        "cross_source_count": 1,
+        "recency_score": 0.779,
+        "total_score": 3.615
+      }
+    },
+    {
+      "event_id": "内存涨价成“最后稻草”!魅族宣布暂停国内手机新品自研:全面转型 ai,联手吉利深耕智能座舱",
+      "title": "内存涨价成“最后稻草”！魅族宣布暂停国内手机新品自研：全面转型 AI，联手吉利深耕智能座舱",
+      "title_zh": "内存涨价成“最后稻草”！魅族宣布暂停国内手机新品自研：全面转型 AI，联手吉利深耕智能座舱",
+      "title_bilingual": "内存涨价成“最后稻草”！魅族宣布暂停国内手机新品自研：全面转型 AI，联手吉利深耕智能座舱",
+      "published_at": "2026-02-27T08:32:44.703Z",
+      "age_hours": 4.45,
+      "site_id": "aibase",
+      "site_name": "AIbase",
+      "source": "AIbase",
+      "url": "https://www.aibase.com/news/25747",
+      "related_count": 1,
+      "related_urls": [
+        "https://www.aibase.com/news/25747"
+      ],
+      "signals": {
+        "source_weight": 1.1,
+        "keyword_hits": 1,
+        "cross_source_count": 1,
+        "recency_score": 0.815,
+        "total_score": 3.608
+      }
+    },
+    {
+      "event_id": "阿里巴巴进军 ai 硬件!千问 ai 眼镜即将亮相 mwc",
+      "title": "阿里巴巴进军 AI 硬件！千问 AI 眼镜即将亮相 MWC",
+      "title_zh": "阿里巴巴进军 AI 硬件！千问 AI 眼镜即将亮相 MWC",
+      "title_bilingual": "阿里巴巴进军 AI 硬件！千问 AI 眼镜即将亮相 MWC",
+      "published_at": "2026-02-27T08:32:44.703Z",
+      "age_hours": 4.45,
+      "site_id": "aibase",
+      "site_name": "AIbase",
+      "source": "AIbase",
+      "url": "https://www.aibase.com/news/25744",
+      "related_count": 1,
+      "related_urls": [
+        "https://www.aibase.com/news/25744"
+      ],
+      "signals": {
+        "source_weight": 1.1,
+        "keyword_hits": 1,
+        "cross_source_count": 1,
+        "recency_score": 0.815,
+        "total_score": 3.608
+      }
+    },
+    {
+      "event_id": "阿里千问宣布进军ai硬件领域,首款ai眼镜将亮相2026mwc",
+      "title": "阿里千问宣布进军AI硬件领域，首款AI眼镜将亮相2026MWC",
+      "title_zh": "阿里千问宣布进军AI硬件领域，首款AI眼镜将亮相2026MWC",
+      "title_bilingual": "阿里千问宣布进军AI硬件领域，首款AI眼镜将亮相2026MWC",
+      "published_at": "2026-02-27T08:32:44.703Z",
+      "age_hours": 4.45,
+      "site_id": "aibase",
+      "site_name": "AIbase",
+      "source": "AIbase",
+      "url": "https://www.aibase.com/news/25737",
+      "related_count": 1,
+      "related_urls": [
+        "https://www.aibase.com/news/25737"
+      ],
+      "signals": {
+        "source_weight": 1.1,
+        "keyword_hits": 1,
+        "cross_source_count": 1,
+        "recency_score": 0.815,
+        "total_score": 3.608
+      }
+    },
+    {
+      "event_id": "ai监督!外卖“随手拍”上线!淘宝闪购硬核响应新规",
+      "title": "AI监督！外卖“随手拍”上线！淘宝闪购硬核响应新规",
+      "title_zh": "AI监督！外卖“随手拍”上线！淘宝闪购硬核响应新规",
+      "title_bilingual": "AI监督！外卖“随手拍”上线！淘宝闪购硬核响应新规",
+      "published_at": "2026-02-27T08:32:44.703Z",
+      "age_hours": 4.45,
+      "site_id": "aibase",
+      "site_name": "AIbase",
+      "source": "AIbase",
+      "url": "https://www.aibase.com/news/25751",
+      "related_count": 1,
+      "related_urls": [
+        "https://www.aibase.com/news/25751"
+      ],
+      "signals": {
+        "source_weight": 1.1,
+        "keyword_hits": 1,
+        "cross_source_count": 1,
+        "recency_score": 0.815,
+        "total_score": 3.608
+      }
+    },
+    {
+      "event_id": "​阿里“千问”首款 ai 眼镜亮相 mwc 2026,3 月开启预约",
+      "title": "​阿里“千问”首款 AI 眼镜亮相 MWC 2026，3 月开启预约",
+      "title_zh": "​阿里“千问”首款 AI 眼镜亮相 MWC 2026，3 月开启预约",
+      "title_bilingual": "​阿里“千问”首款 AI 眼镜亮相 MWC 2026，3 月开启预约",
+      "published_at": "2026-02-27T08:32:44.703Z",
+      "age_hours": 4.45,
+      "site_id": "aibase",
+      "site_name": "AIbase",
+      "source": "AIbase",
+      "url": "https://www.aibase.com/news/25736",
+      "related_count": 1,
+      "related_urls": [
+        "https://www.aibase.com/news/25736"
+      ],
+      "signals": {
+        "source_weight": 1.1,
+        "keyword_hits": 1,
+        "cross_source_count": 1,
+        "recency_score": 0.815,
+        "total_score": 3.608
+      }
+    },
+    {
+      "event_id": "阿里确认夸克与千问ai眼镜为“同根生”:同一个团队推出的不同系列",
+      "title": "阿里确认夸克与千问AI眼镜为“同根生”：同一个团队推出的不同系列",
+      "title_zh": "阿里确认夸克与千问AI眼镜为“同根生”：同一个团队推出的不同系列",
+      "title_bilingual": "阿里确认夸克与千问AI眼镜为“同根生”：同一个团队推出的不同系列",
+      "published_at": "2026-02-27T08:32:44.703Z",
+      "age_hours": 4.45,
+      "site_id": "aibase",
+      "site_name": "AIbase",
+      "source": "AIbase",
+      "url": "https://www.aibase.com/news/25748",
+      "related_count": 1,
+      "related_urls": [
+        "https://www.aibase.com/news/25748"
+      ],
+      "signals": {
+        "source_weight": 1.1,
+        "keyword_hits": 1,
+        "cross_source_count": 1,
+        "recency_score": 0.815,
+        "total_score": 3.608
+      }
+    },
+    {
+      "event_id": "社交终局是 ai?soul 创始人亲自下场:开放核心技术,4700 名大学生在“元创营”重塑 z 世代社交",
+      "title": "社交终局是 AI？Soul 创始人亲自下场：开放核心技术，4700 名大学生在“元创营”重塑 Z 世代社交",
+      "title_zh": "社交终局是 AI？Soul 创始人亲自下场：开放核心技术，4700 名大学生在“元创营”重塑 Z 世代社交",
+      "title_bilingual": "社交终局是 AI？Soul 创始人亲自下场：开放核心技术，4700 名大学生在“元创营”重塑 Z 世代社交",
+      "published_at": "2026-02-27T08:32:44.703Z",
+      "age_hours": 4.45,
+      "site_id": "aibase",
+      "site_name": "AIbase",
+      "source": "AIbase",
+      "url": "https://www.aibase.com/news/25750",
+      "related_count": 1,
+      "related_urls": [
+        "https://www.aibase.com/news/25750"
+      ],
+      "signals": {
+        "source_weight": 1.1,
+        "keyword_hits": 1,
+        "cross_source_count": 1,
+        "recency_score": 0.815,
+        "total_score": 3.608
+      }
+    },
+    {
+      "event_id": "​为了 ai 豪赌一场!jack dorsey 旗下 block 公司裁员近半",
+      "title": "​为了 AI 豪赌一场！Jack Dorsey 旗下 Block 公司裁员近半",
+      "title_zh": "​为了 AI 豪赌一场！Jack Dorsey 旗下 Block 公司裁员近半",
+      "title_bilingual": "​为了 AI 豪赌一场！Jack Dorsey 旗下 Block 公司裁员近半",
+      "published_at": "2026-02-27T08:32:44.703Z",
+      "age_hours": 4.45,
+      "site_id": "aibase",
+      "site_name": "AIbase",
+      "source": "AIbase",
+      "url": "https://www.aibase.com/news/25740",
+      "related_count": 1,
+      "related_urls": [
+        "https://www.aibase.com/news/25740"
+      ],
+      "signals": {
+        "source_weight": 1.1,
+        "keyword_hits": 1,
+        "cross_source_count": 1,
+        "recency_score": 0.815,
+        "total_score": 3.608
+      }
+    },
+    {
+      "event_id": "更优的人工智能(ai)股票:美光科技与闪迪之争",
+      "title": "更优的人工智能（AI）股票：美光科技与闪迪之争",
+      "title_zh": "更优的人工智能（AI）股票：美光科技与闪迪之争",
+      "title_bilingual": "更优的人工智能（AI）股票：美光科技与闪迪之争",
+      "published_at": "2026-02-27T12:31:34.584Z",
+      "age_hours": 0.46,
+      "site_id": "buzzing",
+      "site_name": "Buzzing",
+      "source": "finance.yahoo.com",
+      "url": "https://finance.yahoo.com/news/better-artificial-intelligence-ai-stock-005300918.html",
+      "related_count": 1,
+      "related_urls": [
+        "https://finance.yahoo.com/news/better-artificial-intelligence-ai-stock-005300918.html"
+      ],
+      "signals": {
+        "source_weight": 0.85,
+        "keyword_hits": 2,
+        "cross_source_count": 1,
+        "recency_score": 0.981,
+        "total_score": 3.607
+      }
+    },
+    {
+      "event_id": "show hn: agent-rules – 面向claude代码的强意见规则与工作流",
+      "title": "Show HN: Agent-Rules – 面向Claude代码的强意见规则与工作流",
+      "title_zh": "Show HN: Agent-Rules – 面向Claude代码的强意见规则与工作流",
+      "title_bilingual": "Show HN: Agent-Rules – 面向Claude代码的强意见规则与工作流",
+      "published_at": "2026-02-27T07:28:54.130Z",
+      "age_hours": 5.51,
+      "site_id": "buzzing",
+      "site_name": "Buzzing",
+      "source": "github.com",
+      "url": "https://github.com/letientai299/agent-rules",
+      "related_count": 1,
+      "related_urls": [
+        "https://github.com/letientai299/agent-rules"
+      ],
+      "signals": {
+        "source_weight": 0.85,
+        "keyword_hits": 3,
+        "cross_source_count": 1,
+        "recency_score": 0.77,
+        "total_score": 3.605
+      }
+    },
+    {
+      "event_id": "法国呼叫中心拨打麦肯锡热线咨询人工智能热点",
+      "title": "法国呼叫中心拨打麦肯锡热线咨询人工智能热点",
+      "title_zh": "法国呼叫中心拨打麦肯锡热线咨询人工智能热点",
+      "title_bilingual": "法国呼叫中心拨打麦肯锡热线咨询人工智能热点",
+      "published_at": "2026-02-27T12:15:38.010Z",
+      "age_hours": 0.73,
+      "site_id": "buzzing",
+      "site_name": "Buzzing",
+      "source": "www.bloomberg.com",
+      "url": "https://www.bloomberg.com/news/newsletters/2026-02-27/management-shakeup-at-france-s-teleperformance-shows-the-disruptive-force-of-ai",
+      "related_count": 1,
+      "related_urls": [
+        "https://www.bloomberg.com/news/newsletters/2026-02-27/management-shakeup-at-france-s-teleperformance-shows-the-disruptive-force-of-ai"
+      ],
+      "signals": {
+        "source_weight": 0.85,
+        "keyword_hits": 2,
+        "cross_source_count": 1,
+        "recency_score": 0.97,
+        "total_score": 3.593
+      }
+    },
+    {
+      "event_id": "rightmove股价反弹为人工智能抛售潮中的富时100指数成分股带来生存希望",
+      "title": "Rightmove股价反弹为人工智能抛售潮中的富时100指数成分股带来生存希望",
+      "title_zh": "Rightmove股价反弹为人工智能抛售潮中的富时100指数成分股带来生存希望",
+      "title_bilingual": "Rightmove股价反弹为人工智能抛售潮中的富时100指数成分股带来生存希望",
+      "published_at": "2026-02-27T12:15:37.986Z",
+      "age_hours": 0.73,
+      "site_id": "buzzing",
+      "site_name": "Buzzing",
+      "source": "www.bloomberg.com",
+      "url": "https://www.bloomberg.com/news/articles/2026-02-27/rightmove-rally-gives-ai-selloff-victim-ftse-100-survival-hope",
+      "related_count": 1,
+      "related_urls": [
+        "https://www.bloomberg.com/news/articles/2026-02-27/rightmove-rally-gives-ai-selloff-victim-ftse-100-survival-hope"
+      ],
+      "signals": {
+        "source_weight": 0.85,
+        "keyword_hits": 2,
+        "cross_source_count": 1,
+        "recency_score": 0.97,
+        "total_score": 3.593
+      }
+    },
+    {
+      "event_id": "claude code remote access - 随时随地监控与控制您的代理",
+      "title": "Claude Code Remote Access - 随时随地监控与控制您的代理。",
+      "title_zh": "Claude Code Remote Access - 随时随地监控与控制您的代理。",
+      "title_bilingual": "Claude Code Remote Access - 随时随地监控与控制您的代理。",
+      "published_at": "2026-02-27T12:15:37.040Z",
+      "age_hours": 0.73,
+      "site_id": "buzzing",
+      "site_name": "Buzzing",
+      "source": "www.producthunt.com",
+      "url": "https://www.producthunt.com/r/GJV7DFV6CCHK6F",
+      "related_count": 1,
+      "related_urls": [
+        "https://www.producthunt.com/r/GJV7DFV6CCHK6F"
+      ],
+      "signals": {
+        "source_weight": 0.85,
+        "keyword_hits": 2,
+        "cross_source_count": 1,
+        "recency_score": 0.97,
+        "total_score": 3.593
+      }
+    },
+    {
+      "event_id": "ubicloud (yc w24): software engineer – $95-$250k in turkey, netherlands, ca",
+      "title": "Ubicloud (YC W24): Software Engineer – $95-$250K in Turkey, Netherlands, CA",
+      "title_zh": "Ubicloud (YC W24)：软件工程师 – 95-25 万美元，土耳其、荷兰、加利福尼亚",
+      "title_bilingual": "Ubicloud (YC W24)：软件工程师 – 95-25 万美元，土耳其、荷兰、加利福尼亚 / Ubicloud (YC W24): Software Engineer – $95-$250K in Turkey, Netherlands, CA",
+      "published_at": "2026-02-27T10:37:43.505Z",
+      "age_hours": 2.36,
+      "site_id": "techurls",
+      "site_name": "TechURLs",
+      "source": "Hacker News",
+      "url": "https://www.ycombinator.com/companies/ubicloud/jobs/j4bntEJ-software-engineer",
+      "related_count": 2,
+      "related_urls": [
+        "https://www.ycombinator.com/companies/ubicloud/jobs/j4bntEJ-software-engineer",
+        "https://news.ycombinator.com/item?id=47178176"
+      ],
+      "signals": {
+        "source_weight": 0.95,
+        "keyword_hits": 0,
+        "cross_source_count": 2,
+        "recency_score": 0.902,
+        "total_score": 3.592
+      }
+    },
+    {
+      "event_id": "谷歌发布gemini 3.1 flash图像模型",
+      "title": "谷歌发布Gemini 3.1 Flash图像模型。",
+      "title_zh": "谷歌发布Gemini 3.1 Flash图像模型。",
+      "title_bilingual": "谷歌发布Gemini 3.1 Flash图像模型。",
+      "published_at": "2026-02-27T00:00:00Z",
+      "age_hours": 12.99,
+      "site_id": "aihubtoday",
+      "site_name": "AI HubToday",
+      "source": "Daily Digest",
+      "url": "https://x.com/googleaidevs/status/2027052330110042352",
+      "related_count": 1,
+      "related_urls": [
+        "https://x.com/googleaidevs/status/2027052330110042352"
+      ],
+      "signals": {
+        "source_weight": 1.05,
+        "keyword_hits": 3,
+        "cross_source_count": 1,
+        "recency_score": 0.459,
+        "total_score": 3.59
+      }
+    },
+    {
+      "event_id": "anthropic收购vercept让claude学会操作电脑",
+      "title": "Anthropic收购Vercept让Claude学会操作电脑。",
+      "title_zh": "Anthropic收购Vercept让Claude学会操作电脑。",
+      "title_bilingual": "Anthropic收购Vercept让Claude学会操作电脑。",
+      "published_at": "2026-02-27T00:00:00Z",
+      "age_hours": 12.99,
+      "site_id": "aihubtoday",
+      "site_name": "AI HubToday",
+      "source": "Daily Digest",
+      "url": "https://www.xiaohu.ai/c/xiaohu-ai/anthropic-ai-vercept-claude",
+      "related_count": 1,
+      "related_urls": [
+        "https://www.xiaohu.ai/c/xiaohu-ai/anthropic-ai-vercept-claude"
+      ],
+      "signals": {
+        "source_weight": 1.05,
+        "keyword_hits": 3,
+        "cross_source_count": 1,
+        "recency_score": 0.459,
+        "total_score": 3.59
+      }
+    },
+    {
+      "event_id": "agent swarm 开源多智能体自学习团队",
+      "title": "Agent Swarm 开源多智能体自学习团队。",
+      "title_zh": "Agent Swarm 开源多智能体自学习团队。",
+      "title_bilingual": "Agent Swarm 开源多智能体自学习团队。",
+      "published_at": "2026-02-27T00:00:00Z",
+      "age_hours": 12.99,
+      "site_id": "aihubtoday",
+      "site_name": "AI HubToday",
+      "source": "Daily Digest",
+      "url": "https://newshacker.me/story?id=47165046",
+      "related_count": 1,
+      "related_urls": [
+        "https://newshacker.me/story?id=47165046"
+      ],
+      "signals": {
+        "source_weight": 1.05,
+        "keyword_hits": 3,
+        "cross_source_count": 1,
+        "recency_score": 0.459,
+        "total_score": 3.59
+      }
+    },
+    {
+      "event_id": "claude-flow 智能体编排平台",
+      "title": "Claude-Flow 智能体编排平台。",
+      "title_zh": "Claude-Flow 智能体编排平台。",
+      "title_bilingual": "Claude-Flow 智能体编排平台。",
+      "published_at": "2026-02-27T00:00:00Z",
+      "age_hours": 12.99,
+      "site_id": "aihubtoday",
+      "site_name": "AI HubToday",
+      "source": "Daily Digest",
+      "url": "https://github.com/ruvnet/claude-flow",
+      "related_count": 1,
+      "related_urls": [
+        "https://github.com/ruvnet/claude-flow"
+      ],
+      "signals": {
+        "source_weight": 1.05,
+        "keyword_hits": 3,
+        "cross_source_count": 1,
+        "recency_score": 0.459,
+        "total_score": 3.59
+      }
+    },
+    {
+      "event_id": "moltbook, the ai social network freaking out silicon valley, explained",
+      "title": "Moltbook, the AI social network freaking out Silicon Valley, explained",
+      "title_zh": "Moltbook，一个让硅谷震惊的人工智能社交网络，解释道",
+      "title_bilingual": "Moltbook，一个让硅谷震惊的人工智能社交网络，解释道 / Moltbook, the AI social network freaking out Silicon Valley, explained",
+      "published_at": "2026-02-27T08:32:44.703Z",
+      "age_hours": 4.45,
+      "site_id": "techurls",
+      "site_name": "TechURLs",
+      "source": "Recode",
+      "url": "https://www.vox.com/future-perfect/477661/moltbook-artificial-intelligence-chatbot-ai-agent-reddit",
+      "related_count": 1,
+      "related_urls": [
+        "https://www.vox.com/future-perfect/477661/moltbook-artificial-intelligence-chatbot-ai-agent-reddit"
+      ],
+      "signals": {
+        "source_weight": 0.95,
+        "keyword_hits": 2,
+        "cross_source_count": 1,
+        "recency_score": 0.815,
+        "total_score": 3.588
+      }
+    },
+    {
+      "event_id": "the robots we deserve",
+      "title": "The robots we deserve",
+      "title_zh": "我们值得拥有的机器人",
+      "title_bilingual": "我们值得拥有的机器人 / The robots we deserve",
+      "published_at": "2026-02-27T08:32:44.703Z",
+      "age_hours": 4.45,
+      "site_id": "techurls",
+      "site_name": "TechURLs",
+      "source": "Recode",
+      "url": "https://www.vox.com/technology/476657/chatgpt-mit-csail-tesla-humanoid-robot",
+      "related_count": 1,
+      "related_urls": [
+        "https://www.vox.com/technology/476657/chatgpt-mit-csail-tesla-humanoid-robot"
+      ],
+      "signals": {
+        "source_weight": 0.95,
+        "keyword_hits": 2,
+        "cross_source_count": 1,
+        "recency_score": 0.815,
+        "total_score": 3.588
+      }
+    },
+    {
+      "event_id": "googles nano banana 2 is here, and it looks wild: how to try it now",
+      "title": "Googles Nano Banana 2 is here, and it looks wild: How to try it now",
+      "title_zh": "谷歌的 Nano Banana 2 来了，它看起来很狂野：如何立即尝试",
+      "title_bilingual": "谷歌的 Nano Banana 2 来了，它看起来很狂野：如何立即尝试 / Googles Nano Banana 2 is here, and it looks wild: How to try it now",
+      "published_at": "2026-02-27T08:32:44.703Z",
+      "age_hours": 4.45,
+      "site_id": "techurls",
+      "site_name": "TechURLs",
+      "source": "Mashable",
+      "url": "https://mashable.com/article/google-nano-banana-2-how-to-try-gemini",
+      "related_count": 1,
+      "related_urls": [
+        "https://mashable.com/article/google-nano-banana-2-how-to-try-gemini"
+      ],
+      "signals": {
+        "source_weight": 0.95,
+        "keyword_hits": 2,
+        "cross_source_count": 1,
+        "recency_score": 0.815,
+        "total_score": 3.588
+      }
+    },
+    {
+      "event_id": "openai forms “frontier alliances” with top consultancies to push enterprise ai into production",
+      "title": "OpenAI forms “Frontier Alliances” with top consultancies to push enterprise AI into production",
+      "title_zh": "OpenAI与顶级咨询公司结成“前沿联盟”，推动企业AI落地生产",
+      "title_bilingual": "OpenAI与顶级咨询公司结成“前沿联盟”，推动企业AI落地生产 / OpenAI forms “Frontier Alliances” with top consultancies to push enterprise AI into production",
+      "published_at": "2026-02-27T08:32:44.703Z",
+      "age_hours": 4.45,
+      "site_id": "techurls",
+      "site_name": "TechURLs",
+      "source": "The Next Web",
+      "url": "https://thenextweb.com/news/openai-forms-frontier-alliances-with-top-consultancies-to-push-enterprise-ai-into-production",
+      "related_count": 1,
+      "related_urls": [
+        "https://thenextweb.com/news/openai-forms-frontier-alliances-with-top-consultancies-to-push-enterprise-ai-into-production"
+      ],
+      "signals": {
+        "source_weight": 0.95,
+        "keyword_hits": 2,
+        "cross_source_count": 1,
+        "recency_score": 0.815,
+        "total_score": 3.588
+      }
+    },
+    {
+      "event_id": "openclaw's creator has joined openai — here's why that's a big deal",
+      "title": "OpenClaw's creator has joined OpenAI — here's why that's a big deal",
+      "title_zh": "OpenClaw 的创建者已加入 OpenAI——这就是为什么这很重要",
+      "title_bilingual": "OpenClaw 的创建者已加入 OpenAI——这就是为什么这很重要 / OpenClaw's creator has joined OpenAI — here's why that's a big deal",
+      "published_at": "2026-02-27T08:32:44.703Z",
+      "age_hours": 4.45,
+      "site_id": "techurls",
+      "site_name": "TechURLs",
+      "source": "MakeUseOf",
+      "url": "https://www.makeuseof.com/openai-and-openclaw",
+      "related_count": 1,
+      "related_urls": [
+        "https://www.makeuseof.com/openai-and-openclaw"
+      ],
+      "signals": {
+        "source_weight": 0.95,
+        "keyword_hits": 2,
+        "cross_source_count": 1,
+        "recency_score": 0.815,
+        "total_score": 3.588
+      }
+    },
+    {
+      "event_id": "musk has no proof openai stole xai trade secrets, judge rules, tossing lawsuit",
+      "title": "Musk has no proof OpenAI stole xAI trade secrets, judge rules, tossing lawsuit",
+      "title_zh": "法官：仅凭雇佣前员工，xAI无权指控OpenAI窃取商业机密",
+      "title_bilingual": "法官：仅凭雇佣前员工，xAI无权指控OpenAI窃取商业机密 / Musk has no proof OpenAI stole xAI trade secrets, judge rules, tossing lawsuit",
+      "published_at": "2026-02-27T08:32:44.703Z",
+      "age_hours": 4.45,
+      "site_id": "techurls",
+      "site_name": "TechURLs",
+      "source": "Ars Technica",
+      "url": "https://arstechnica.com/tech-policy/2026/02/judge-xai-cant-claim-openai-stole-trade-secrets-just-by-hiring-ex-staffers",
+      "related_count": 1,
+      "related_urls": [
+        "https://arstechnica.com/tech-policy/2026/02/judge-xai-cant-claim-openai-stole-trade-secrets-just-by-hiring-ex-staffers"
+      ],
+      "signals": {
+        "source_weight": 0.95,
+        "keyword_hits": 2,
+        "cross_source_count": 1,
+        "recency_score": 0.815,
+        "total_score": 3.588
+      }
+    },
+    {
+      "event_id": "letter: 100+ google deepmind and other ai employees urge jeff dean to block us military deals that use gemini for mass surveillance or autonomous weapons (tripp mickle/new york times)",
+      "title": "Letter: 100+ Google DeepMind and other AI employees urge Jeff Dean to block US military deals that use Gemini for mass surveillance or autonomous weapons (Tripp Mickle/New York Times)",
+      "title_zh": "信函：100 多名 Google DeepMind 和其他人工智能员工敦促 Jeff Dean 阻止美国使用 Gemini 进行大规模监视或自主武器的军事交易（Tripp Mickle/纽约时报）",
+      "title_bilingual": "信函：100 多名 Google DeepMind 和其他人工智能员工敦促 Jeff Dean 阻止美国使用 Gemini 进行大规模监视或自主武器的军事交易（Tripp Mickle/纽约时报） / Letter: 100+ Google DeepMind and other AI employees urge Jeff Dean to block US military deals that use Gemini for mass surveillance or autonomous weapons (Tripp Mickle/New York Times)",
+      "published_at": "2026-02-27T08:32:44.703Z",
+      "age_hours": 4.45,
+      "site_id": "techurls",
+      "site_name": "TechURLs",
+      "source": "Techmeme",
+      "url": "http://www.techmeme.com/260226/p66",
+      "related_count": 1,
+      "related_urls": [
+        "http://www.techmeme.com/260226/p66"
+      ],
+      "signals": {
+        "source_weight": 0.95,
+        "keyword_hits": 2,
+        "cross_source_count": 1,
+        "recency_score": 0.815,
+        "total_score": 3.588
+      }
+    },
+    {
+      "event_id": "statement from dario amodei on our discussions with the department of war",
+      "title": "Statement from Dario Amodei on Our Discussions with the Department of War",
+      "title_zh": "达里奥·阿莫代就我方与战争部磋商事宜的声明",
+      "title_bilingual": "达里奥·阿莫代就我方与战争部磋商事宜的声明 / Statement from Dario Amodei on Our Discussions with the Department of War",
+      "published_at": "2026-02-27T08:32:44.703Z",
+      "age_hours": 4.45,
+      "site_id": "techurls",
+      "site_name": "TechURLs",
+      "source": "Hacker News",
+      "url": "https://www.anthropic.com/news/statement-department-of-war",
+      "related_count": 1,
+      "related_urls": [
+        "https://www.anthropic.com/news/statement-department-of-war"
+      ],
+      "signals": {
+        "source_weight": 0.95,
+        "keyword_hits": 2,
+        "cross_source_count": 1,
+        "recency_score": 0.815,
+        "total_score": 3.588
       }
     }
   ]
