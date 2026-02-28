@@ -52,7 +52,7 @@ jobs:
       - name: Build analysis input (24h)
         run: pnpm run build:analysis-input
 
-      - name: Generate AI analysis markdown (24h)
+      - name: Generate AI analysis HTML (24h)
         env:
           DASHSCOPE_API_KEY: ${{ secrets.DASHSCOPE_API_KEY }}
         run: pnpm run generate:analysis
@@ -64,7 +64,7 @@ jobs:
           else
             git config user.name "github-actions-bot"
             git config user.email "41898282+github-actions-bot@users.noreply.github.com"
-            git add data/latest-24h.json data/latest-7d.json data/analysis-input-24h.json data/ai-analysis-24h.md data/archive.json data/source-status.json data/waytoagi-7d.json data/title-zh-cache.json
+            git add data/latest-24h.json data/latest-7d.json data/analysis-input-24h.json data/ai-analysis-24h.html data/archive.json data/source-status.json data/waytoagi-7d.json data/title-zh-cache.json
             git commit -m "chore: update ai news snapshot"
             git push
           fi
@@ -83,7 +83,7 @@ jobs:
           cp ../data/latest-24h.json dist/data/
           cp ../data/latest-7d.json dist/data/
           cp ../data/analysis-input-24h.json dist/data/
-          cp ../data/ai-analysis-24h.md dist/data/ 2>/dev/null || true
+          cp ../data/ai-analysis-24h.html dist/data/ 2>/dev/null || true
           cp ../data/source-status.json dist/data/
           cp ../data/opml-feeds.json dist/data/ 2>/dev/null || true
 

@@ -13,5 +13,5 @@
   },
   "input_path": "data/analysis-input-24h.json",
   "prompt_path": "prompts/analysis-24h.prompt.md",
-  "output_path": "data/ai-analysis-24h.md"
+  "output_path": "data/ai-analysis-24h.html"
 }

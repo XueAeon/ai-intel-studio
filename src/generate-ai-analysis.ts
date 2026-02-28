@@ -90,7 +90,7 @@ async function main(): Promise<number> {
   let isAnswering = false;
 
   if (config.openai.stream) {
-    const stream = await openai.chat.completions.create({
+    const streamRequest = {
       model: config.openai.model,
       temperature: config.openai.temperature,
       messages: [{ role: 'user', content: prompt }],
@@ -100,7 +100,11 @@ async function main(): Promise<number> {
         include_usage: config.openai.stream_include_usage,
       },
       timeout: config.openai.request_timeout_ms,
-    });
+    } as unknown as Parameters<typeof openai.chat.completions.create>[0];
+
+    const stream = (await openai.chat.completions.create(streamRequest)) as AsyncIterable<{
+      choices?: Array<{ delta?: { reasoning_content?: string; content?: string } }>;
+    }>;
 
     for await (const chunk of stream) {
       if (!chunk.choices?.length) {
@@ -119,13 +123,17 @@ async function main(): Promise<number> {
       }
     }
   } else {
-    const completion = await openai.chat.completions.create({
+    const request = {
       model: config.openai.model,
       temperature: config.openai.temperature,
       messages: [{ role: 'user', content: prompt }],
       enable_thinking: config.openai.enable_thinking,
       timeout: config.openai.request_timeout_ms,
-    });
+    } as unknown as Parameters<typeof openai.chat.completions.create>[0];
+
+    const completion = (await openai.chat.completions.create(request)) as {
+      choices?: Array<{ message?: { content?: string } }>;
+    };
     answerContent = completion.choices?.[0]?.message?.content?.trim() || '';
   }
 
@@ -133,7 +141,7 @@ async function main(): Promise<number> {
     throw new Error('empty AI response content');
   }
 
-  const markdown =
+  const htmlDocument =
     `<!-- source_generated_at: ${compactInput.generated_at} -->\n` +
     `<!-- source_generated_at_local: ${compactInput.generated_at_local} -->\n` +
     `<!-- model: ${config.openai.model} -->\n` +
@@ -142,7 +150,7 @@ async function main(): Promise<number> {
     '\n';
 
   await mkdir(dirname(outputPath), { recursive: true });
-  await writeFile(outputPath, markdown, 'utf-8');
+  await writeFile(outputPath, htmlDocument, 'utf-8');
   console.log(`✅ ${outputPath}`);
   return 0;
 }
