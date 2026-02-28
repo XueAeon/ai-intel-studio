@@ -1228,5 +1228,11 @@
   "Return of the Obra Dinn: spherical mapped dithering for a 1bpp 1st-person game (2017)": "Return of the Obra Dinn：1bpp 第一人称游戏的球形映射抖动 (2017)",
   "How my side project got banned from the internet": "我的副业项目是如何被互联网禁止的",
   "Sliced by Go’s Slices": "通过 Go 的 Slices 进行切片",
-  "Making WebAssembly a first-class language on the Web": "使 WebAssembly 成为 Web 上的一流语言"
+  "Making WebAssembly a first-class language on the Web": "使 WebAssembly 成为 Web 上的一流语言",
+  "Gemini 3.1 Pro": "双子座3.1专业版",
+  "PromptURLs": "提示 URL",
+  "Google AI Edge Gallery": "谷歌人工智能边缘画廊",
+  "Producer AI by Google Labs": "Google 实验室的生产者 AI",
+  "Claude in Excel": "克劳德在 Excel 中",
+  "Packaging AI/ML models as conda packages": "将 AI/ML 模型打包为 conda 包"
 }
