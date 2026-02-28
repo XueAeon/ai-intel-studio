@@ -96,7 +96,7 @@ async function main(): Promise<number> {
   program
     .name('ai-news-aggregator')
     .description('Aggregate AI news updates from multiple sources')
-    .option('--output-dir <dir>', 'Directory for output JSON files', 'data')
+    .option('--output-dir <dir>', 'Directory for output JSON files', 'data/collected')
     .option('--window-hours <hours>', '24h window size', '24')
     .option('--archive-days <days>', 'Keep archive for N days', '45')
     .option('--translate-max-new <count>', 'Max new EN->ZH title translations per run', '80')

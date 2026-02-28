@@ -122,8 +122,8 @@ async function main(): Promise<number> {
   const program = new Command();
 
   program
-    .option('--input <path>', 'Input latest-24h file path', 'data/latest-24h.json')
-    .option('--output <path>', 'Output analysis input file path', 'data/analysis-input-24h.json')
+    .option('--input <path>', 'Input latest-24h file path', 'data/collected/latest-24h.json')
+    .option('--output <path>', 'Output analysis input file path', 'data/ai-input/analysis-input-24h.json')
     .option('--max-events <count>', 'Maximum events for AI analysis', '80')
     .parse();
 

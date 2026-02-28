@@ -52,14 +52,14 @@ jobs:
       - name: Build analysis input (24h)
         run: pnpm run build:analysis-input
 
-      - name: Generate AI analysis HTML (24h)
+      - name: Generate AI analysis markdown (24h)
         env:
           DASHSCOPE_API_KEY: ${{ secrets.DASHSCOPE_API_KEY }}
         run: pnpm run generate:analysis
 
       - name: Commit and push changes
         run: |
-          git add data/latest-24h.json data/latest-7d.json data/analysis-input-24h.json data/ai-analysis-24h.html data/archive.json data/source-status.json data/waytoagi-7d.json data/title-zh-cache.json
+          git add data/collected/latest-24h.json data/collected/latest-7d.json data/ai-input/analysis-input-24h.json data/ai-output-md/ai-analysis-24h.md data/collected/archive.json data/collected/source-status.json data/collected/waytoagi-7d.json data/collected/title-zh-cache.json data/collected/opml-feeds.json
           if git diff --cached --quiet; then
             echo "No changes to commit"
           else
@@ -80,12 +80,11 @@ jobs:
           pnpm install
           pnpm run build
           mkdir -p dist/data
-          cp ../data/latest-24h.json dist/data/
-          cp ../data/latest-7d.json dist/data/
-          cp ../data/analysis-input-24h.json dist/data/
-          cp ../data/ai-analysis-24h.html dist/data/ 2>/dev/null || true
-          cp ../data/source-status.json dist/data/
-          cp ../data/opml-feeds.json dist/data/ 2>/dev/null || true
+          cp ../data/collected/latest-24h.json dist/data/latest-24h.json
+          cp ../data/collected/latest-7d.json dist/data/latest-7d.json
+          cp ../data/ai-input/analysis-input-24h.json dist/data/analysis-input-24h.json
+          cp ../data/collected/source-status.json dist/data/source-status.json
+          cp ../data/collected/opml-feeds.json dist/data/opml-feeds.json 2>/dev/null || true
 
       - name: Setup Pages
         uses: actions/configure-pages@v4

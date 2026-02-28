@@ -32,19 +32,19 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
-      - name: Generate AI analysis HTML (24h)
+      - name: Generate AI analysis markdown (24h)
         env:
           DASHSCOPE_API_KEY: ${{ secrets.DASHSCOPE_API_KEY }}
         run: pnpm run generate:analysis
 
       - name: Commit and push analysis
         run: |
-          git add data/ai-analysis-24h.html
+          git add data/ai-output-md/ai-analysis-24h.md
           if git diff --cached --quiet; then
             echo "No analysis changes to commit"
           else
             git config user.name "github-actions-bot"
             git config user.email "41898282+github-actions-bot@users.noreply.github.com"
-            git commit -m "chore: update ai analysis html"
+            git commit -m "chore: update ai analysis md"
             git push
           fi

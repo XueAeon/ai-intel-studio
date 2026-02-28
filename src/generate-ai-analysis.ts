@@ -21,7 +21,8 @@ interface AnalysisConfig {
   openai: OpenAIAnalysisConfig;
   input_path: string;
   prompt_path: string;
-  output_path: string;
+  output_markdown_path?: string;
+  output_path?: string;
 }
 
 interface AnalysisInputPayload {
@@ -39,6 +40,45 @@ function renderTemplate(template: string, vars: Record<string, string>): string 
   return out;
 }
 
+function removeSourceLines(markdown: string): string {
+  return markdown
+    .split('\n')
+    .filter((line) => {
+      const t = line.trim();
+      if (!t) {
+        return true;
+      }
+      // Remove any explicit source/reference markers in list or plain lines.
+      return !/^(?:[-*]\s*)?(?:\*{0,2})?(?:来源|参考链接|数据来源)(?:\*{0,2})?\s*[：:]/.test(t);
+    })
+    .join('\n')
+    .replace(/\n{3,}/g, '\n\n')
+    .trim();
+}
+
+function normalizeChineseSpacing(markdown: string): string {
+  return markdown
+    .split('\n')
+    .map((line) => {
+      const trimmed = line.trim();
+      if (
+        trimmed.startsWith('http://') ||
+        trimmed.startsWith('https://') ||
+        trimmed.startsWith('```') ||
+        trimmed.startsWith('`')
+      ) {
+        return line;
+      }
+
+      return line
+        .replace(/([\u4e00-\u9fff])\s+([A-Za-z0-9])/g, '$1$2')
+        .replace(/([A-Za-z0-9])\s+([\u4e00-\u9fff])/g, '$1$2')
+        .replace(/\s+([，。！？；：、）】》])/g, '$1')
+        .replace(/([（【《])\s+/g, '$1');
+    })
+    .join('\n');
+}
+
 async function main(): Promise<number> {
   const configPath = resolve('config/ai-analysis.config.json');
   if (!existsSync(configPath)) {
@@ -54,7 +94,9 @@ async function main(): Promise<number> {
 
   const inputPath = resolve(config.input_path);
   const promptPath = resolve(config.prompt_path);
-  const outputPath = resolve(config.output_path);
+  const outputPath = resolve(
+    config.output_markdown_path || config.output_path || 'data/ai-output-md/ai-analysis-24h.md',
+  );
   if (!existsSync(inputPath)) {
     throw new Error(`analysis input not found: ${inputPath}`);
   }
@@ -141,16 +183,18 @@ async function main(): Promise<number> {
     throw new Error('empty AI response content');
   }
 
-  const htmlDocument =
+  const cleanedContent = normalizeChineseSpacing(removeSourceLines(answerContent.trim()));
+
+  const markdownDocument =
     `<!-- source_generated_at: ${compactInput.generated_at} -->\n` +
     `<!-- source_generated_at_local: ${compactInput.generated_at_local} -->\n` +
     `<!-- model: ${config.openai.model} -->\n` +
     `<!-- reasoning_chars: ${reasoningContent.length} -->\n\n` +
-    answerContent.trim() +
+    cleanedContent +
     '\n';
 
   await mkdir(dirname(outputPath), { recursive: true });
-  await writeFile(outputPath, htmlDocument, 'utf-8');
+  await writeFile(outputPath, markdownDocument, 'utf-8');
   console.log(`✅ ${outputPath}`);
   return 0;
 }

@@ -1,5 +1,5 @@
-import { readFileSync, writeFileSync, existsSync } from 'fs'
-import { resolve } from 'path'
+import { readFileSync, writeFileSync, existsSync, mkdirSync } from 'fs'
+import { resolve, dirname } from 'path'
 import { parseStringPromise } from 'xml2js'
 
 interface OpmlOutline {
@@ -56,7 +56,8 @@ async function generateOpmlJson() {
     }
   }
 
-  const outputPath = resolve('./data/opml-feeds.json')
+  const outputPath = resolve('./data/collected/opml-feeds.json')
+  mkdirSync(dirname(outputPath), { recursive: true })
   writeFileSync(outputPath, JSON.stringify(groups, null, 2))
   console.log(`Generated ${outputPath} with ${groups.length} groups`)
 }

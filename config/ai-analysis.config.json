@@ -11,7 +11,7 @@
     "max_events": 80,
     "request_timeout_ms": 120000
   },
-  "input_path": "data/analysis-input-24h.json",
+  "input_path": "data/ai-input/analysis-input-24h.json",
   "prompt_path": "prompts/analysis-24h.prompt.md",
-  "output_path": "data/ai-analysis-24h.html"
+  "output_markdown_path": "data/ai-output-md/ai-analysis-24h.md"
 }
