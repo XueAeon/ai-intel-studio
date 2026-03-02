@@ -72,10 +72,12 @@ jobs:
           pnpm install
           pnpm run build
           mkdir -p dist/data
+          mkdir -p dist/data/ai-output-md
           cp ../data/collected/latest-24h.json dist/data/latest-24h.json
           cp ../data/collected/latest-7d.json dist/data/latest-7d.json
           cp ../data/collected/source-status.json dist/data/source-status.json
           cp ../data/collected/opml-feeds.json dist/data/opml-feeds.json 2>/dev/null || true
+          cp ../data/ai-output-md/ai-analysis-24h.md dist/data/ai-output-md/ai-analysis-24h.md 2>/dev/null || true
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
