@@ -36,10 +36,41 @@ export function useNewsData(): UseNewsDataReturn {
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
   const [searchQuery, setSearchQuery] = useState('')
-  const [selectedSite, setSelectedSite] = useState('opmlrss')
+  const [selectedSite, setSelectedSite] = useState('all')
   const [selectedSource, setSelectedSource] = useState('all')
   const [displayCount, setDisplayCount] = useState(PAGE_SIZE)
   const [timeRange, setTimeRange] = useState<TimeRange>('24h')
+
+  async function fetchJsonFromCandidates(paths: string[]): Promise<NewsData> {
+    let lastError = '数据加载失败'
+
+    for (const path of paths) {
+      try {
+        const response = await fetch(path)
+        if (!response.ok) {
+          lastError = `请求失败: ${response.status} ${response.statusText} (${path})`
+          continue
+        }
+
+        const raw = await response.text()
+        const trimmed = raw.trim()
+        if (!trimmed) {
+          lastError = `响应为空: ${path}`
+          continue
+        }
+        if (trimmed.startsWith('<')) {
+          lastError = `返回了 HTML 而不是 JSON: ${path}`
+          continue
+        }
+
+        return JSON.parse(trimmed) as NewsData
+      } catch (err) {
+        lastError = err instanceof Error ? err.message : String(err)
+      }
+    }
+
+    throw new Error(lastError)
+  }
 
   const fetchData = useCallback(async (range: TimeRange) => {
     setLoading(true)
@@ -47,11 +78,10 @@ export function useNewsData(): UseNewsDataReturn {
     try {
       const basePath = import.meta.env.BASE_URL || '/'
       const fileName = range === '24h' ? 'latest-24h.json' : 'latest-7d.json'
-      const response = await fetch(`${basePath}data/${fileName}`)
-      if (!response.ok) {
-        throw new Error('数据加载失败')
-      }
-      const json = await response.json()
+      const json = await fetchJsonFromCandidates([
+        `${basePath}data/${fileName}`,
+        `${basePath}data/collected/${fileName}`,
+      ])
       setData(json)
     } catch (err) {
       setError(err instanceof Error ? err.message : '未知错误')
@@ -67,7 +97,7 @@ export function useNewsData(): UseNewsDataReturn {
   const handleTimeRangeChange = useCallback((range: TimeRange) => {
     setTimeRange(range)
     setDisplayCount(PAGE_SIZE)
-    setSelectedSite('opmlrss')
+    setSelectedSite('all')
     setSelectedSource('all')
     setSearchQuery('')
   }, [])
@@ -155,6 +185,20 @@ export function useNewsData(): UseNewsDataReturn {
   useEffect(() => {
     setSelectedSource('all')
   }, [selectedSite])
+
+  useEffect(() => {
+    if (!data?.site_stats?.length) {
+      return
+    }
+    if (selectedSite === 'all') {
+      return
+    }
+    const exists = data.site_stats.some((s) => s.site_id === selectedSite)
+    if (!exists) {
+      setSelectedSite('all')
+      setSelectedSource('all')
+    }
+  }, [data, selectedSite])
 
   return {
     data,
