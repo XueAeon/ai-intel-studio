@@ -749,7 +749,10 @@ async function getStylesToAdd(): Promise<string> {
   return [themeStyles, hljsStyles].filter(Boolean).join('')
 }
 
-export async function processClipboardContent(primaryColor: string): Promise<void> {
+export async function processClipboardContent(
+  primaryColor: string,
+  options?: { fontSize?: string; fontFamily?: string },
+): Promise<void> {
   const clipboardDiv = document.getElementById('output')
   if (!clipboardDiv) {
     throw new Error('output not found')
@@ -767,6 +770,12 @@ export async function processClipboardContent(primaryColor: string): Promise<voi
     .replace(/hsl\(var\(--foreground\)\)/g, '#3f3f3f')
     .replace(/var\(--blockquote-background\)/g, '#f8fafc')
     .replace(/var\(--md-primary-color\)/g, primaryColor)
+    .replace(/var\(--md-font-size\)/g, options?.fontSize || '14px')
+    .replace(
+      /var\(--md-font-family\)/g,
+      options?.fontFamily
+        || '-apple-system-font,BlinkMacSystemFont, Helvetica Neue, PingFang SC, Hiragino Sans GB, Microsoft YaHei UI, Microsoft YaHei, Arial, sans-serif',
+    )
     .replace(/--md-primary-color:.+?;/g, '')
     .replace(/--md-font-family:.+?;/g, '')
     .replace(/--md-font-size:.+?;/g, '')

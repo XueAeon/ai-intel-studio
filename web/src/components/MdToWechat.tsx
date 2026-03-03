@@ -264,7 +264,10 @@ export function MdToWechat() {
     window.setTimeout(() => {
       void (async () => {
         try {
-          await processClipboardContent(primaryColor)
+          await processClipboardContent(primaryColor, {
+            fontSize: FIXED_FONT_SIZE,
+            fontFamily: FIXED_FONT_FAMILY,
+          })
         } catch (error) {
           setStatus(`处理 HTML 失败，请联系开发者。${normalizeErrorMessage(error)}`)
           clipboardDiv.innerHTML = outputHtml
