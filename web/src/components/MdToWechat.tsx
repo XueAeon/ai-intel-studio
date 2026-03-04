@@ -81,20 +81,18 @@ function normalizeErrorMessage(error: unknown): string {
 }
 
 function normalizePlainTextForWechat(value: string): string {
-  return value
-    // keep paragraph breaks
-    .replace(/\r\n/g, '\n')
-    .replace(/\n{3,}/g, '\n\n')
-    // collapse single line breaks inside a paragraph
-    .replace(/(?<!\n)\n(?!\n)/g, ' ')
+  const normalized = value.replace(/\r\n/g, '\n').replace(/\r/g, '\n')
+  const paragraphs = normalized.split(/\n{2,}/)
+  const merged = paragraphs.map((part) => part.replace(/\n+/g, ' ').replace(/\s{2,}/g, ' ').trim())
+  return merged
+    .filter(Boolean)
+    .join('\n\n')
+    // prevent dangling colon on a new line in some editors
+    .replace(/\n+\s*([：:])/g, '$1')
 }
 
 function getClipboardPlainText(container: HTMLElement): string {
-  // Prefer rendered text layout to avoid artificial line breaks introduced by DOM serialization.
-  const renderedText = container.innerText
-  if (renderedText && renderedText.trim()) {
-    return normalizePlainTextForWechat(renderedText)
-  }
+  // Do not use innerText here: it introduces visual-wrap line breaks from layout width.
   return normalizePlainTextForWechat(container.textContent || '')
 }
 

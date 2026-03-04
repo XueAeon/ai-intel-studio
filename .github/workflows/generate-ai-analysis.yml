@@ -41,7 +41,7 @@ jobs:
 
       - name: Commit and push analysis
         run: |
-          git add data/ai-output-md/ai-analysis-24h.md
+          git add data/ai-input/analysis-input-24h.json data/ai-output-md/ai-analysis-24h.md data/backups/ai-input data/backups/ai-output-md
           if git diff --cached --quiet; then
             echo "No analysis changes to commit"
           else

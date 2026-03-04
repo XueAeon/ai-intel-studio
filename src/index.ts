@@ -90,6 +90,15 @@ async function loadTitleCache(path: string): Promise<Map<string, string>> {
   }
 }
 
+function extractDateFromLocalIso(iso: string | null | undefined, fallback: Date): string {
+  const maybe = (iso || '').trim();
+  if (/^\d{4}-\d{2}-\d{2}/.test(maybe)) {
+    return maybe.slice(0, 10);
+  }
+  const local = toZonedISOString(fallback, CONFIG.timezone) || '';
+  return local.slice(0, 10);
+}
+
 async function main(): Promise<number> {
   const program = new Command();
 
@@ -419,12 +428,21 @@ async function main(): Promise<number> {
   await writeJson(waytoagiPath, waytoagiPayload);
   await writeJson(titleCachePath, cacheToPojo(titleCache));
 
+  const backupDate = extractDateFromLocalIso(latest24hPayload.generated_at_local, now);
+  const backupCollectedDir = resolve('data/backups/collected', backupDate);
+  await writeJson(join(backupCollectedDir, 'latest-24h.json'), latest24hPayload);
+  await writeJson(join(backupCollectedDir, 'latest-7d.json'), latest7dPayload);
+  await writeJson(join(backupCollectedDir, 'source-status.json'), statusPayload);
+
   console.log(`  ✅ ${latest24hPath} (${latest24hPayload.total_items} items)`);
   console.log(`  ✅ ${latest7dPath} (${latest7dPayload.total_items} items)`);
   console.log(`  ✅ ${archivePath} (${archive.size} items)`);
   console.log(`  ✅ ${statusPath}`);
   console.log(`  ✅ ${waytoagiPath}`);
   console.log(`  ✅ ${titleCachePath} (${titleCache.size} entries)`);
+  console.log(`  ✅ ${join(backupCollectedDir, 'latest-24h.json')}`);
+  console.log(`  ✅ ${join(backupCollectedDir, 'latest-7d.json')}`);
+  console.log(`  ✅ ${join(backupCollectedDir, 'source-status.json')}`);
   console.log('');
   console.log('🎉 Done!');
 

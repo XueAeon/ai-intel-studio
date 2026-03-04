@@ -1,7 +1,7 @@
 import OpenAI from 'openai';
 import { existsSync } from 'fs';
 import { mkdir, readFile, writeFile } from 'fs/promises';
-import { dirname, resolve } from 'path';
+import { dirname, join, resolve } from 'path';
 import process from 'process';
 
 interface OpenAIAnalysisConfig {
@@ -196,6 +196,12 @@ async function main(): Promise<number> {
   await mkdir(dirname(outputPath), { recursive: true });
   await writeFile(outputPath, markdownDocument, 'utf-8');
   console.log(`✅ ${outputPath}`);
+
+  const backupDate = (compactInput.generated_at_local || '').slice(0, 10) || 'unknown-date';
+  const backupPath = resolve(join('data/backups/ai-output-md', backupDate, 'ai-analysis-24h.md'));
+  await mkdir(dirname(backupPath), { recursive: true });
+  await writeFile(backupPath, markdownDocument, 'utf-8');
+  console.log(`✅ ${backupPath}`);
   return 0;
 }
 

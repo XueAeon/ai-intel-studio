@@ -211,6 +211,11 @@ async function main(): Promise<number> {
   await writeJson(outputPath, out);
   console.log(`✅ ${outputPath} (${selected.length} events / ${items.length} items)`);
 
+  const backupDate = (out.generated_at_local || '').slice(0, 10) || 'unknown-date';
+  const backupPath = resolve(join('data/backups/ai-input', backupDate, 'analysis-input-24h.json'));
+  await writeJson(backupPath, out);
+  console.log(`✅ ${backupPath}`);
+
   return 0;
 }
 

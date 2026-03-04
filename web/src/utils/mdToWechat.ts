@@ -636,7 +636,14 @@ export function buildThemeCss(opts: ThemeCssOptions): string {
   return [common, themeCss, headingOverrides, macCodeBlock, customCss.trim()].filter(Boolean).join('\n\n')
 }
 
+function normalizeMarkdownForWechat(raw: string): string {
+  return raw
+    .replace(/\*\*([^\n*]+)\*\*\s*\n+\s*([：:])/g, '**$1**$2')
+    .replace(/__([^\n_]+)__\s*\n+\s*([：:])/g, '__$1__$2')
+}
+
 export function renderMarkdown(markdown: string, options: RenderOptions): string {
+  const normalizedMarkdown = normalizeMarkdownForWechat(markdown || '')
   const renderer = {
     code(token: { text?: string; lang?: string }) {
       const text = token.text || ''
@@ -669,12 +676,13 @@ export function renderMarkdown(markdown: string, options: RenderOptions): string
     breaks: true,
   })
   markedInstance.use({ renderer })
-  return markedInstance.parse(markdown || '') as string
+  return markedInstance.parse(normalizedMarkdown) as string
 }
 
 export function generatePureHTML(raw: string): string {
+  const normalizedMarkdown = normalizeMarkdownForWechat(raw || '')
   const plain = new Marked({ gfm: true, breaks: true })
-  return plain.parse(raw || '') as string
+  return plain.parse(normalizedMarkdown) as string
 }
 
 export function solveWeChatImage(root: HTMLElement): void {
@@ -743,26 +751,32 @@ function createEmptyNode(): HTMLElement {
   return node
 }
 
-function keepLeadStrongWithColon(root: HTMLElement): void {
+function flattenInlineBreaksForWechat(root: HTMLElement): void {
+  root.querySelectorAll('p, li, blockquote, td, th, figcaption').forEach((node) => {
+    const el = node as HTMLElement
+    const breaks = Array.from(el.querySelectorAll('br'))
+    breaks.forEach((br) => br.replaceWith(document.createTextNode(' ')))
+    el.innerHTML = el.innerHTML.replace(/\s{2,}/g, ' ').trim()
+  })
+}
+
+function wrapTextAfterStrongForWechat(root: HTMLElement): void {
   root.querySelectorAll('p, li').forEach((node) => {
-    const first = node.firstElementChild
+    const container = node as HTMLElement
+    const first = container.firstElementChild
     if (!first || first.tagName.toLowerCase() !== 'strong') return
 
     const next = first.nextSibling
     if (!next || next.nodeType !== Node.TEXT_NODE) return
 
     const text = next.textContent || ''
-    const match = text.match(/^(\s*[：:])(.*)$/)
-    if (!match) return
+    if (!text.trim()) return
 
-    const [, colonPart, rest] = match
-    const lock = document.createElement('span')
-    lock.style.whiteSpace = 'nowrap'
-    lock.appendChild(first.cloneNode(true))
-    lock.appendChild(document.createTextNode(colonPart))
-
-    node.replaceChild(lock, first)
-    next.textContent = rest
+    const inline = document.createElement('span')
+    inline.style.display = 'inline'
+    inline.style.whiteSpace = 'normal'
+    inline.textContent = text
+    container.replaceChild(inline, next)
   })
 }
 
@@ -811,6 +825,9 @@ export async function processClipboardContent(
       /<span class="edgeLabel"([^>]*)><p[^>]*>(.*?)<\/p><\/span>/g,
       '<span class="edgeLabel"$1>$2</span>',
     )
+    // avoid ":" being pushed to a new line after bold lead text
+    .replace(/<\/strong>(?:\s|&nbsp;|<br\s*\/?>)+([：:])/gi, '</strong>$1')
+    .replace(/\n+\s*([：:])/g, '$1')
 
   // WeChat editor may drop inherited root font-size and fallback to platform default (often 17px).
   // Force body-text nodes to carry explicit inline font-size/font-family for stable paste result.
@@ -824,7 +841,8 @@ export async function processClipboardContent(
       node.style.fontFamily = bodyFontFamily
     })
 
-  keepLeadStrongWithColon(clipboardDiv)
+  flattenInlineBreaksForWechat(clipboardDiv)
+  wrapTextAfterStrongForWechat(clipboardDiv)
   solveWeChatImage(clipboardDiv)
 
   const beforeNode = createEmptyNode()
