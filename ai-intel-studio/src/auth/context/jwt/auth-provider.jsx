@@ -2,11 +2,10 @@ import { useSetState } from 'minimal-shared/hooks';
 import { useMemo, useEffect, useCallback } from 'react';
 
 import { CONFIG } from 'src/global-config';
-import axios, { endpoints } from 'src/lib/axios';
 
-import { JWT_STORAGE_KEY } from './constant';
 import { AuthContext } from '../auth-context';
-import { setSession, isValidToken } from './utils';
+import { jwtDecode, setSession, isValidToken } from './utils';
+import { JWT_STORAGE_KEY, JWT_USER_STORAGE_KEY } from './constant';
 
 // ----------------------------------------------------------------------
 
@@ -26,23 +25,41 @@ export function AuthProvider({ children }) {
       const accessToken = sessionStorage.getItem(JWT_STORAGE_KEY);
 
       if (accessToken && isValidToken(accessToken)) {
-        setSession(accessToken);
+        await setSession(accessToken);
 
-        const res = await axios.get(endpoints.auth.me);
+        const localUserRaw = sessionStorage.getItem(JWT_USER_STORAGE_KEY);
+        let localUser = null;
+        if (localUserRaw) {
+          try {
+            localUser = JSON.parse(localUserRaw);
+          } catch {
+            localUser = null;
+          }
+        }
 
-        const { user } = res.data;
+        const decoded = jwtDecode(accessToken) || {};
+        const fallbackDisplayName = decoded.name || decoded.email || 'User';
+        const fallbackAvatar =
+          decoded.photoURL || decoded.avatarUrl || '/assets/images/mock/avatar/avatar-25.webp';
+
         const normalizedUser = {
-          ...user,
-          avatarUrl: resolveAvatarUrl(user?.avatarUrl),
-          photoURL: resolveAvatarUrl(user?.photoURL || user?.avatarUrl),
+          id: localUser?.id || decoded.sub || decoded.email || fallbackDisplayName,
+          email: localUser?.email || decoded.email || '',
+          name: localUser?.name || localUser?.displayName || fallbackDisplayName,
+          displayName: localUser?.displayName || localUser?.name || fallbackDisplayName,
+          avatarUrl: resolveAvatarUrl(localUser?.avatarUrl || localUser?.photoURL || fallbackAvatar),
+          photoURL: resolveAvatarUrl(localUser?.photoURL || localUser?.avatarUrl || fallbackAvatar),
+          role: localUser?.role || decoded.role || 'admin',
         };
 
         setState({ user: { ...normalizedUser, accessToken }, loading: false });
       } else {
+        sessionStorage.removeItem(JWT_USER_STORAGE_KEY);
         setState({ user: null, loading: false });
       }
     } catch (error) {
       console.error(error);
+      sessionStorage.removeItem(JWT_USER_STORAGE_KEY);
       setState({ user: null, loading: false });
     }
   }, [setState]);

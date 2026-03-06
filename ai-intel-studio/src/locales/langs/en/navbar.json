@@ -7,6 +7,9 @@
   "md2wechat": {
     "title": "WeChat Layout"
   },
+  "newsFeed": {
+    "title": "News Feed"
+  },
   "collectorSummary": {
     "title": "Collection Summary"
   }

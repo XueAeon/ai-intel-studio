@@ -64,7 +64,6 @@ export function CollectorSummaryView() {
   const sourceStatus = summary?.source_status || {};
 
   const topSites24h = Array.isArray(charts.top_sites_24h) ? charts.top_sites_24h : [];
-  const topSites7d = Array.isArray(charts.top_sites_7d) ? charts.top_sites_7d : [];
   const timeline = Array.isArray(charts.timeline_24h_total) ? charts.timeline_24h_total : [];
   const sourceHealth = Array.isArray(charts.source_health) ? charts.source_health : [];
   const topKeywords = Array.isArray(charts.top_keywords) ? charts.top_keywords : [];
@@ -96,22 +95,13 @@ export function CollectorSummaryView() {
     plotOptions: { bar: { horizontal: true, borderRadius: 2 } },
   });
 
-  const topSitesSeries7d = topSites7d.map((site) => {
-    const site24 = topSites24h.find((s24) => s24.site_id === site.site_id);
-    return {
-      site: site.site_name || site.site_id,
-      count7d: site.count || 0,
-      count24h: site24?.count || 0,
-    };
-  });
-
   return (
     <DashboardContent maxWidth="xl">
       <CustomBreadcrumbs
-        heading="采集结果汇总"
+        heading="Dashboard"
         links={[
           { name: '首页', href: paths.dashboard.general.home },
-          { name: '采集汇总' },
+          { name: 'Collector Summary' },
         ]}
         action={
           <Button
@@ -221,20 +211,6 @@ export function CollectorSummaryView() {
                   options={sourceHealthOptions}
                   sx={{ px: 2, pb: 2, height: 280 }}
                 />
-              </Card>
-
-              <Card sx={{ mb: 2.5 }}>
-                <CardHeader title="7天来源强度（Top 10）" />
-                <Stack spacing={1.2} sx={{ p: 2.5, pt: 0.5 }}>
-                  {topSitesSeries7d.map((row) => (
-                    <Stack key={row.site} direction="row" justifyContent="space-between">
-                      <Typography variant="body2">{row.site}</Typography>
-                      <Typography variant="caption" sx={{ color: 'text.secondary' }}>
-                        7d {fNum(row.count7d)} / 24h {fNum(row.count24h)}
-                      </Typography>
-                    </Stack>
-                  ))}
-                </Stack>
               </Card>
 
               <Card>

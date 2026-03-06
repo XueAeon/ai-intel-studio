@@ -7,6 +7,9 @@
   "md2wechat": {
     "title": "公众号排版"
   },
+  "newsFeed": {
+    "title": "资讯列表"
+  },
   "collectorSummary": {
     "title": "采集汇总"
   }

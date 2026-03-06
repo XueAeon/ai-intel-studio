@@ -11,6 +11,7 @@ import { AuthGuard } from 'src/auth/guard';
 // ----------------------------------------------------------------------
 
 const DashboardHomePage = lazy(() => import('src/pages/dashboard/home'));
+const DashboardNewsPage = lazy(() => import('src/pages/dashboard/news'));
 const Md2WechatPage = lazy(() => import('src/pages/dashboard/md2wechat'));
 const CollectorSummaryPage = lazy(() => import('src/pages/dashboard/collector-summary'));
 
@@ -35,6 +36,7 @@ export const dashboardRoutes = [
     children: [
       { index: true, element: <Navigate to="home" replace /> },
       { path: 'home', element: <DashboardHomePage /> },
+      { path: 'news', element: <DashboardNewsPage /> },
       { path: 'md2wechat', element: <Md2WechatPage /> },
       { path: 'collector-summary', element: <CollectorSummaryPage /> },
       { path: 'booking', element: <Navigate to="/dashboard/home" replace /> },

@@ -11,6 +11,7 @@ const icon = (name) => <SvgColor src={`${CONFIG.assetsDir}/assets/icons/navbar/$
 
 const ICONS = {
   home: icon('ic-dashboard'),
+  news: icon('ic-blog'),
   md2wechat: icon('ic-file'),
 };
 
@@ -20,7 +21,10 @@ export function useNavData() {
   return [
     {
       subheader: t('subheader.main'),
-      items: [{ title: t('home'), path: paths.dashboard.general.home, icon: ICONS.home }],
+      items: [
+        { title: t('home'), path: paths.dashboard.general.home, icon: ICONS.home },
+        { title: t('newsFeed.title'), path: paths.dashboard.news, icon: ICONS.news },
+      ],
     },
     {
       subheader: t('subheader.management'),

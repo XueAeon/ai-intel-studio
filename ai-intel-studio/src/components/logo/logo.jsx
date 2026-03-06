@@ -205,13 +205,11 @@
 //   verticalAlign: 'middle',
 // }));
 
-// import { useId } from 'react';
-import { useId } from 'react';
-import { mergeClasses } from 'minimal-shared/utils';
+import { varAlpha, mergeClasses } from 'minimal-shared/utils';
 
 import Link from '@mui/material/Link';
 import Typography from '@mui/material/Typography';
-import { styled, useTheme } from '@mui/material/styles';
+import { alpha, styled, useTheme } from '@mui/material/styles';
 
 import { RouterLink } from 'src/routes/components';
 
@@ -223,76 +221,85 @@ import { logoClasses } from './classes';
 
 export function Logo({ sx, disabled, className, href = '/', isSingle = true, ...other }) {
   const theme = useTheme();
-  const gradientId = useId();
+  const vars = theme.vars?.palette;
+  const primary = vars?.primary ?? theme.palette.primary;
+  const text = vars?.text ?? theme.palette.text;
+  const background = vars?.background ?? theme.palette.background;
 
-  const palette = theme.vars?.palette ?? theme.palette;
+  const isDark = theme.palette.mode === 'dark';
+  const strokeColor = vars
+    ? varAlpha(text.primaryChannel, isDark ? 0.9 : 0.88)
+    : isDark
+      ? alpha(text.primary, 0.9)
+      : alpha(text.primary, 0.88);
+  const surfaceFill = vars
+    ? varAlpha(background.paperChannel, isDark ? 0.95 : 1)
+    : isDark
+      ? alpha(background.paper, 0.95)
+      : '#fff';
+  const metalFill = vars
+    ? varAlpha(primary.mainChannel, isDark ? 0.45 : 0.32)
+    : isDark
+      ? alpha(primary.dark, 0.45)
+      : alpha(primary.light, 0.5);
+  const cyanFill = primary.main;
+  const cyanSoftFill = vars
+    ? varAlpha(primary.lightChannel || primary.mainChannel, isDark ? 0.82 : 0.62)
+    : alpha(primary.light, isDark ? 0.82 : 0.62);
+  const pinkFill = primary.dark || primary.main;
 
   const iconSvg = (
     <svg width="100%" height="100%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
       <g fill="none">
         <path
-          fill={`url(#${gradientId}-1)`}
-          d="M10.3 6.584A1.58 1.58 0 0 0 9.35 6h3.654c.585 0 .97.55 1.09.82L18 13.95v3.126c-.085.615-.47.93-.905.93c-.35 0-.875-.575-1-.86L11.049 7.51l-.745-.925z"
+          fill={metalFill}
+          stroke={strokeColor}
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="m16.054 16.989l4.743-4.74a3.48 3.48 0 0 0-.026-4.891l-4.76-4.774a3.496 3.496 0 0 0-4.9-.021l-4.58 4.602z"
+          strokeWidth="1"
         />
         <path
-          fill={`url(#${gradientId}-2)`}
-          d="M12.215 15.5h-5.5c-.166.08-.52.25-.566.285c-.04.035-.335 1.49-.475 2.215h7.49c.186 0 .3-.205.21-.37z"
+          fill={surfaceFill}
+          stroke={strokeColor}
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="m15.955 10.862l-3.459-3.46a4.4 4.4 0 0 0-6.224 0L4.197 9.48a1.467 1.467 0 0 0 2.075 2.075l.23-.23l-5.072 5.07a1.468 1.468 0 0 0 2.075 2.076l3.116-3.112a.978.978 0 1 1 1.383 1.384l-3.115 3.112a1.467 1.467 0 1 0 2.075 2.075l4.84-4.843a1.467 1.467 0 0 0 2.076 2.076l2.075-2.076a4.4 4.4 0 0 0 0-6.224"
+          strokeWidth="1"
         />
         <path
-          fill={`url(#${gradientId}-3)`}
-          d="M6.784 15.58c-.95 1.83.84 2.41.885 2.42H4.314C2.8 18 2.9 16.78 3.14 16.17c1.585-2.996 4.78-9.05 4.89-9.306C8.164 6.544 8.55 6 9.2 6c.52 0 .88.285.99.425l.85 1.075c-1.1 2.085-3.5 6.616-4.255 8.08"
+          fill={surfaceFill}
+          stroke={strokeColor}
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M19.749 9.142a3.912 3.912 0 1 1-5.533-5.533a3.912 3.912 0 0 1 5.533 5.533"
+          strokeWidth="1"
+        />
+        <path fill={cyanFill} d="M18.366 7.759A1.956 1.956 0 1 1 15.6 4.993a1.956 1.956 0 0 1 2.767 2.766" />
+        <path fill={cyanSoftFill} d="M15.6 7.759a1.956 1.956 0 0 1 2.766-2.766z" />
+        <path
+          stroke={strokeColor}
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M18.366 7.759A1.956 1.956 0 1 1 15.6 4.993a1.956 1.956 0 0 1 2.767 2.766"
+          strokeWidth="1"
         />
         <path
-          fill={`url(#${gradientId}-4)`}
-          d="M21 17.261c0 .41-.325.74-.725.74H17.03c.665 0 .91-.6.97-.9V6.571c0-.316.29-.576.6-.576h1.835A.57.57 0 0 1 21 6.57z"
+          fill={pinkFill}
+          stroke={strokeColor}
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="m10.422 10.17l-2.075 2.076a.49.49 0 0 0 0 .691l2.075 2.075c.19.191.5.191.691 0l2.075-2.075a.49.49 0 0 0 0-.691l-2.075-2.075a.49.49 0 0 0-.691 0"
+          strokeWidth="1"
+        />
+        <path
+          stroke={strokeColor}
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M9.34 19.552c3.396 4.752 9.658 2.945 13.66-.587m-11.193-1.882l2.074-2.074M8.348 9.475L6.273 11.55"
+          strokeWidth="1"
         />
       </g>
-      <defs>
-        <linearGradient
-          id={`${gradientId}-1`}
-          x1="5.185"
-          y1="6.649"
-          x2="13.942"
-          y2="20.893"
-          gradientUnits="userSpaceOnUse"
-        >
-          <stop stopColor={palette.primary.light} />
-          <stop offset="1" stopColor={palette.primary.dark} />
-        </linearGradient>
-        <linearGradient
-          id={`${gradientId}-2`}
-          x1="4.176"
-          y1="11.519"
-          x2="20.637"
-          y2="11.519"
-          gradientUnits="userSpaceOnUse"
-        >
-          <stop stopColor={palette.primary.dark} />
-          <stop offset="1" stopColor={palette.primary.main} />
-        </linearGradient>
-        <linearGradient
-          id={`${gradientId}-3`}
-          x1="11.999"
-          y1="5.994"
-          x2="11.999"
-          y2="18.005"
-          gradientUnits="userSpaceOnUse"
-        >
-          <stop stopColor={palette.primary.dark} />
-          <stop offset="1" stopColor={palette.primary.main} />
-        </linearGradient>
-        <linearGradient
-          id={`${gradientId}-4`}
-          x1="19.005"
-          y1="6"
-          x2="19.005"
-          y2="18.001"
-          gradientUnits="userSpaceOnUse"
-        >
-          <stop stopColor={palette.primary.dark} />
-          <stop offset="1" stopColor={palette.primary.main} />
-        </linearGradient>
-      </defs>
     </svg>
   );
 

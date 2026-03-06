@@ -99,6 +99,7 @@ export const paths = {
     fileManager: `${ROOTS.DASHBOARD}/file-manager`,
     permission: `${ROOTS.DASHBOARD}/permission`,
     md2wechat: `${ROOTS.DASHBOARD}/md2wechat`,
+    news: `${ROOTS.DASHBOARD}/news`,
     collectorSummary: `${ROOTS.DASHBOARD}/collector-summary`,
     general: {
       home: `${ROOTS.DASHBOARD}/home`,

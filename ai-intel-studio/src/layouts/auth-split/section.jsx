@@ -10,7 +10,7 @@ import { CONFIG } from 'src/global-config';
 export function AuthSplitSection({
   sx,
   layoutQuery = 'md',
-  title = 'Alice Admin Center',
+  title = 'AI Intel Studio',
   imgUrl = `${CONFIG.assetsDir}/assets/illustrations/illustration-dashboard.webp`,
   subtitle = 'Sign in to continue to AI Intel Studio.',
   ...other

@@ -460,10 +460,10 @@ export function Md2WechatView() {
     <DashboardContent maxWidth={false}>
       <Stack spacing={3}>
         <CustomBreadcrumbs
-          heading="MD 转公众号排版"
+          heading="公众号排版"
           links={[
-            { name: 'Dashboard', href: paths.dashboard.root },
-            { name: 'MD2WeChat' },
+            { name: '首页', href: paths.dashboard.general.home },
+            { name: '公众号排版' },
           ]}
           action={
             <Stack direction="row" spacing={1} sx={{ flexWrap: 'wrap' }}>
