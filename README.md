@@ -4,12 +4,12 @@
 
 **实时追踪 AI 领域最前沿动态，聚合全球顶级 AI 资讯源**
 
-[![GitHub Actions](https://img.shields.io/github/actions/workflow/status/SuYxh/ai-news-aggregator/update-ai-news.yml?label=auto%20update&logo=github)](https://github.com/SuYxh/ai-news-aggregator/actions)
+[![GitHub Actions](https://img.shields.io/github/actions/workflow/status/XueAeon/ai-intel-studio/update-ai-news.yml?label=auto%20update&logo=github)](https://github.com/XueAeon/ai-intel-studio/actions)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Node.js](https://img.shields.io/badge/node-%3E%3D18.0.0-brightgreen?logo=node.js)](https://nodejs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.0+-blue?logo=typescript)](https://www.typescriptlang.org/)
 
-[🌐 在线预览](https://suyxh.github.io/ai-news-aggregator/) · [📊 数据 API](#输出文件) · [🚀 快速开始](#快速开始)
+[🌐 在线预览](https://xueaeon.github.io/ai-intel-studio/) · [📊 数据 API](#输出文件) · [🚀 快速开始](#快速开始)
 
 </div>
 
@@ -50,7 +50,7 @@ GitHub Actions 每 2 小时自动抓取，数据永远保持最新
 
 ## 🌐 在线预览
 
-访问 [https://suyxh.github.io/ai-news-aggregator/](https://suyxh.github.io/ai-news-aggregator/) 查看实时 AI 资讯聚合。
+访问 [https://xueaeon.github.io/ai-intel-studio/](https://xueaeon.github.io/ai-intel-studio/) 查看实时 AI 资讯聚合。
 
 **功能特性：**
 - 📱 响应式设计，支持移动端
@@ -205,8 +205,8 @@ GitHub Actions 每 2 小时自动抓取，数据永远保持最新
 
 ```bash
 # 克隆项目
-git clone https://github.com/SuYxh/ai-news-aggregator.git
-cd ai-news-aggregator
+git clone https://github.com/XueAeon/ai-intel-studio.git
+cd ai-intel-studio
 
 # 安装依赖
 pnpm install
@@ -262,6 +262,14 @@ cd web && pnpm build
 | `opml-feeds.json` | OPML 订阅源列表 |
 | `waytoagi-7d.json` | WaytoAGI 近 7 天更新 |
 | `title-zh-cache.json` | 标题翻译缓存 |
+| `desc-cache.json` | URL 摘要缓存（用于补充 `desc`） |
+
+### AI24H 分析输出
+
+| 文件 | 说明 |
+|:-----|:-----|
+| `data/ai-input/analysis-input-24h.json` | AI 分析输入（精简事件 + `desc`） |
+| `data/ai-output-md/ai-analysis-24h.md` | AI24H Markdown 成稿 |
 
 ### 数据结构
 
@@ -313,6 +321,11 @@ cd web && pnpm build
 2. 构建 Web 应用
 3. 部署到 GitHub Pages
 
+另有 AI24H 分析工作流（`.github/workflows/generate-ai-analysis.yml`）：
+1. 构建 24h 分析输入（含 `desc` 补全与质量统计）
+2. 生成 AI24H Markdown
+3. 可选部署 Pages（`deploy_pages=true` 时触发）
+
 如需修改更新频率，编辑 `.github/workflows/update-ai-news.yml`：
 
 ```yaml
@@ -325,7 +338,7 @@ schedule:
 ## 🏗️ 项目结构
 
 ```
-ai-news-aggregator/
+ai-intel-studio/
 ├── src/                      # 数据抓取源码
 │   ├── index.ts              # 主入口
 │   ├── config.ts             # 配置
@@ -376,7 +389,7 @@ ai-news-aggregator/
 
 ## 📄 License
 
-MIT © [SuYxh](https://github.com/SuYxh)
+MIT © [XueAeon](https://github.com/XueAeon)
 
 ---
 
@@ -384,6 +397,6 @@ MIT © [SuYxh](https://github.com/SuYxh)
 
 **如果这个项目对你有帮助，欢迎 ⭐ Star 支持！**
 
-[🐛 报告问题](https://github.com/SuYxh/ai-news-aggregator/issues) · [💡 功能建议](https://github.com/SuYxh/ai-news-aggregator/issues)
+[🐛 报告问题](https://github.com/XueAeon/ai-intel-studio/issues) · [💡 功能建议](https://github.com/XueAeon/ai-intel-studio/issues)
 
 </div>
