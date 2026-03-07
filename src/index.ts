@@ -51,6 +51,31 @@ function normalizeSourceForDisplay(siteId: string, source: string, url: string):
   return src;
 }
 
+function normalizeDesc(input: string | null | undefined): string | null {
+  const raw = (input || '').trim();
+  if (!raw) return null;
+  const compact = maybeFixMojibake(raw).replace(/\s+/g, ' ').trim();
+  if (!compact) return null;
+  return compact.length > 280 ? `${compact.slice(0, 277)}...` : compact;
+}
+
+function extractDescFromMeta(meta: Record<string, unknown>): string | null {
+  const candidates = [
+    meta.desc,
+    meta.description,
+    meta.summary,
+    meta.snippet,
+    meta.excerpt,
+    meta.contentSnippet,
+  ];
+  for (const candidate of candidates) {
+    if (typeof candidate === 'string' && candidate.trim()) {
+      return normalizeDesc(candidate);
+    }
+  }
+  return null;
+}
+
 async function loadArchive(path: string): Promise<Map<string, ArchiveItem>> {
   const archive = new Map<string, ArchiveItem>();
   if (!existsSync(path)) return archive;
@@ -199,12 +224,14 @@ async function main(): Promise<number> {
     const existing = archive.get(itemId);
 
     if (!existing) {
+      const desc = normalizeDesc(raw.desc || extractDescFromMeta(raw.meta));
       archive.set(itemId, {
         id: itemId,
         site_id: raw.siteId,
         site_name: raw.siteName,
         source: raw.source,
         title,
+        desc,
         url,
         published_at: toISOString(raw.publishedAt),
         first_seen_at: toISOString(now)!,
@@ -215,6 +242,9 @@ async function main(): Promise<number> {
       existing.site_name = raw.siteName;
       existing.source = raw.source;
       existing.title = title;
+      if (!existing.desc) {
+        existing.desc = normalizeDesc(raw.desc || extractDescFromMeta(raw.meta));
+      }
       existing.url = url;
       if (raw.publishedAt && !existing.published_at) {
         existing.published_at = toISOString(raw.publishedAt);
@@ -245,6 +275,7 @@ async function main(): Promise<number> {
 
       const normalized = { ...record };
       normalized.title = maybeFixMojibake(normalized.title || '');
+      normalized.desc = normalizeDesc(normalized.desc);
       normalized.source = maybeFixMojibake(
         normalizeSourceForDisplay(normalized.site_id, normalized.source, normalized.url)
       );

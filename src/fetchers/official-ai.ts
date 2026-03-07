@@ -78,7 +78,13 @@ export class OfficialAiSourcesFetcher extends BaseFetcher {
       },
     });
 
-    const pushItem = (source: string, title: string, url: string, publishedAt: Date | null) => {
+    const pushItem = (
+      source: string,
+      title: string,
+      url: string,
+      publishedAt: Date | null,
+      desc?: string
+    ) => {
       const t = (title || '').trim();
       const u = (url || '').trim();
       if (!t || !u || !u.startsWith('http')) return;
@@ -91,9 +97,12 @@ export class OfficialAiSourcesFetcher extends BaseFetcher {
         this.createItem({
           source,
           title: t,
+          desc: (desc || '').trim() || null,
           url: u,
           publishedAt,
-          meta: {},
+          meta: {
+            contentSnippet: (desc || '').trim() || null,
+          },
         })
       );
     };
@@ -110,7 +119,7 @@ export class OfficialAiSourcesFetcher extends BaseFetcher {
           const title = (entry.title || '').trim();
           const url = (entry.link || '').trim();
           const publishedAt = parseDate(entry.isoDate || entry.pubDate, now);
-          pushItem(source, title, url, publishedAt);
+          pushItem(source, title, url, publishedAt, entry.contentSnippet || '');
         }
       } catch {
         // keep best-effort behavior

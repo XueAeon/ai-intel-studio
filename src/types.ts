@@ -3,6 +3,7 @@ export interface RawItem {
   siteName: string;
   source: string;
   title: string;
+  desc?: string | null;
   url: string;
   publishedAt: Date | null;
   meta: Record<string, unknown>;
@@ -14,6 +15,7 @@ export interface ArchiveItem {
   site_name: string;
   source: string;
   title: string;
+  desc?: string | null;
   url: string;
   published_at: string | null;
   first_seen_at: string;

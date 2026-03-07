@@ -121,11 +121,13 @@ async function fetchSingleFeed(
         siteName: 'OPML RSS',
         source: sourceName,
         title,
+        desc: (entry.contentSnippet || '').trim() || null,
         url,
         publishedAt,
         meta: {
           feed_url: feedUrl,
           feed_home: feed.htmlUrl || '',
+          contentSnippet: (entry.contentSnippet || '').trim() || null,
         },
       });
     }
