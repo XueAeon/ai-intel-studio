@@ -126,7 +126,37 @@ function scoreEvent(
 function normalizeDesc(input: string | null | undefined): string | null {
   const raw = (input || '').replace(/\s+/g, ' ').trim();
   if (!raw) return null;
-  return raw.length > 280 ? `${raw.slice(0, 277)}...` : raw;
+  const cleaned = raw
+    .replace(/^by\s+[A-Za-z][^|]{0,80}\|\s*/i, '')
+    .replace(/^from\s+[^.]{0,80}\.\s*/i, '')
+    .trim();
+  if (!cleaned) return null;
+  return cleaned.length > 280 ? `${cleaned.slice(0, 277)}...` : cleaned;
+}
+
+function isLowQualityDesc(desc: string, title?: string): boolean {
+  const d = desc.trim();
+  if (!d) return true;
+  if (d.length < 24) return true;
+
+  const lowQualityPatterns = [
+    /view the full context on techmeme/i,
+    /在 youtube 上畅享你喜爱的视频和音乐/i,
+    /上传原创内容并与亲朋好友和全世界观众分享/i,
+    /欢迎来到【?ai日报】?栏目/i,
+    /点击了解[:：]?\s*https?:\/\//i,
+    /this report does not contain sensitive information/i,
+    /cookie|privacy policy|accept all|subscribe now/i,
+  ];
+  if (lowQualityPatterns.some((p) => p.test(d))) return true;
+
+  // If it's basically repeating the title, it provides little extra context.
+  const t = (title || '').trim().toLowerCase();
+  if (t) {
+    const dt = d.toLowerCase();
+    if (dt === t || dt.includes(t)) return true;
+  }
+  return false;
 }
 
 function extractDescFromHtml(html: string): string | null {
@@ -139,16 +169,25 @@ function extractDescFromHtml(html: string): string | null {
     "meta[property='twitter:description']",
   ];
 
+  const candidates: string[] = [];
   for (const selector of metaSelectors) {
     const content = normalizeDesc($(selector).first().attr('content') || '');
-    if (content) return content;
+    if (content) candidates.push(content);
   }
 
-  const articleText =
-    normalizeDesc($('article p').first().text()) ||
-    normalizeDesc($('main p').first().text()) ||
-    normalizeDesc($('p').first().text());
-  return articleText;
+  $('article p, main p, p')
+    .slice(0, 8)
+    .each((_, el) => {
+      const text = normalizeDesc($(el).text());
+      if (text) candidates.push(text);
+    });
+
+  for (const candidate of candidates) {
+    if (!isLowQualityDesc(candidate)) {
+      return candidate;
+    }
+  }
+  return null;
 }
 
 async function loadDescCache(path: string): Promise<Map<string, string>> {
@@ -225,8 +264,8 @@ async function enrichTopEventsDesc(
         const key = normalizeUrl(item.url || '');
         if (!key) return;
 
-        const cached = cache.get(key);
-        if (cached) {
+        const cached = normalizeDesc(cache.get(key));
+        if (cached && !isLowQualityDesc(cached, item.title)) {
           item.desc = cached;
           cacheHit++;
           filled++;
@@ -236,7 +275,7 @@ async function enrichTopEventsDesc(
         const desc = await fetchDescFromUrl(key, options.timeoutMs);
         fetched++;
         const normalized = normalizeDesc(desc);
-        if (!normalized) return;
+        if (!normalized || isLowQualityDesc(normalized, item.title)) return;
 
         item.desc = normalized;
         cache.set(key, normalized);
@@ -301,7 +340,11 @@ async function main(): Promise<number> {
         published_at: rep.published_at || rep.first_seen_at || null,
         source: rep.source,
         url: rep.url,
-        desc: rep.desc || null,
+        desc: (() => {
+          const normalized = normalizeDesc(rep.desc || null);
+          if (!normalized || isLowQualityDesc(normalized, rep.title)) return null;
+          return normalized;
+        })(),
       },
     });
   }

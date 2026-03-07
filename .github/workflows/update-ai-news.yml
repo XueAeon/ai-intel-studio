@@ -54,7 +54,7 @@ jobs:
 
       - name: Commit and push changes
         run: |
-          git add data/collected/latest-24h.json data/collected/latest-7d.json data/collected/archive.json data/collected/source-status.json data/collected/waytoagi-7d.json data/collected/title-zh-cache.json data/collected/opml-feeds.json data/backups/collected
+          git add data/collected/latest-24h.json data/collected/latest-7d.json data/collected/archive.json data/collected/source-status.json data/collected/waytoagi-7d.json data/collected/title-zh-cache.json data/collected/desc-cache.json data/collected/opml-feeds.json data/backups/collected
           if git diff --cached --quiet; then
             echo "No changes to commit"
           else
