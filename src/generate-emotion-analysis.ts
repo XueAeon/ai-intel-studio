@@ -59,77 +59,10 @@ function removeSourceLines(markdown: string): string {
     .trim();
 }
 
-function hasRequiredSections(markdown: string): boolean {
+function getMissingSections(markdown: string): string[] {
   const text = markdown || '';
-  const required = ['# 微博情绪日报：', '## 今日情绪主线', '## 推荐情绪话题（5-10个）'];
-  return required.every((s) => text.includes(s));
-}
-
-function normalizeText(s: string): string {
-  return (s || '').replace(/\s+/g, ' ').trim();
-}
-
-function buildFallbackAnalysis(input: EmotionInputPayload): string {
-  const titles = (input.items || [])
-    .map((it) => normalizeText(it.title || ''))
-    .filter(Boolean)
-    .slice(0, 80);
-  const top = titles.slice(0, 10);
-
-  const topics = top.slice(0, 8).map((t, idx) => {
-    const short = t.length > 26 ? `${t.slice(0, 26)}...` : t;
-    return {
-      i: idx + 1,
-      name: `从「${short}」延展的关系议题`,
-      open: `今天这条大家都看到了，我们先不站队，先聊背后的情绪需求。`,
-      point: `这类讨论常见的核心不是对错，而是关系中的期待落差与沟通边界。`,
-      ask: `如果你在类似处境里，最想被理解的一句话是什么？`,
-      crowd: '恋爱关系/婚恋沟通/高敏感人群',
-      resonance: '“我说不清，但我真的委屈”这类被忽视感',
-    };
-  });
-
-  const lines: string[] = [];
-  lines.push('# 今日情感直播选题盘点：关系边界与情绪价值成为主讨论');
-  lines.push('> 今天适合聊“关系里我该如何表达需求”');
-  lines.push('');
-  lines.push('## 今日情绪主线（给主播）');
-  lines.push('- 观众更在意“被看见”而非“谁赢了争论”。');
-  lines.push('- 关系冲突话题背后，普遍是边界不清与期待错位。');
-  lines.push('- 婚恋与亲密关系讨论里，“沟通方式”成为高频痛点。');
-  lines.push('- 样本显示，情绪共鸣点集中在委屈、失望、犹豫与自我怀疑。');
-  lines.push('');
-  lines.push('## 推荐话题（5-10个）');
-  lines.push('');
-  for (const t of topics) {
-    lines.push(`### ${t.name}`);
-    lines.push(`- 开场话术：${t.open}`);
-    lines.push(`- 主观点：${t.point}`);
-    lines.push(`- 互动提问：${t.ask}`);
-    lines.push(`- 适合人群：${t.crowd}`);
-    lines.push(`- 女性共鸣点：${t.resonance}`);
-    lines.push('');
-  }
-  lines.push('## 今晚直播建议');
-  lines.push('### 优先讲哪3个');
-  lines.push('1. 关系里的情绪劳动谁在承担');
-  lines.push('2. 如何表达需求而不是积累委屈');
-  lines.push('3. 冲突后如何修复安全感');
-  lines.push('');
-  lines.push('### 不建议碰的话题');
-  lines.push('- 直接贴标签断定某一性别“天生如何”。');
-  lines.push('- 对个体事件做极端道德审判。');
-  lines.push('');
-  lines.push('### 避雷表达');
-  lines.push('- 避免“你就是太矫情/你活该”这类否定体验的句子。');
-  lines.push('- 避免“所有人都这样”这类绝对化判断。');
-  lines.push('');
-  lines.push('## 风险提醒');
-  lines.push('- 热搜样本具有时效和偏差，不代表全部关系样态。');
-  lines.push('- 直播中先共情再分析，能显著降低对立情绪。');
-  lines.push('- 不对当事人做心理诊断，不鼓励网暴与人身攻击。');
-  lines.push('');
-  return lines.join('\n').trim();
+  const required = ['## 今日情绪主线（给主播）', '## 推荐话题', '## 风险提醒'];
+  return required.filter((s) => !text.includes(s));
 }
 
 async function main(): Promise<number> {
@@ -220,10 +153,17 @@ async function main(): Promise<number> {
     throw new Error('empty AI response content');
   }
 
-  let cleanedContent = removeSourceLines(answerContent.trim());
-  if (!hasRequiredSections(cleanedContent)) {
-    console.warn('⚠️ AI response missing required sections, fallback template used.');
-    cleanedContent = buildFallbackAnalysis(compactInput);
+  const cleanedContent = removeSourceLines(answerContent.trim());
+  const missing = getMissingSections(cleanedContent);
+  if (missing.length > 0) {
+    const debugPath = resolve('data/emotion-output-md/emotion-analysis-raw-debug.md');
+    await mkdir(dirname(debugPath), { recursive: true });
+    await writeFile(debugPath, answerContent.trim() || '(empty)', 'utf-8');
+    const preview = (answerContent || '').replace(/\s+/g, ' ').slice(0, 300);
+    console.error(`AI raw preview: ${preview}`);
+    throw new Error(
+      `AI response missing required sections: ${missing.join(', ')}. Raw output saved to ${debugPath}`,
+    );
   }
 
   const markdownDocument =
