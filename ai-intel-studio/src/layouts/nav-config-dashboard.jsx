@@ -13,6 +13,8 @@ const ICONS = {
   home: icon('ic-dashboard'),
   news: icon('ic-blog'),
   md2wechat: icon('ic-file'),
+  emotionInput: icon('ic-analytics'),
+  emotionAnalysis: icon('ic-chat'),
 };
 
 export function useNavData() {
@@ -33,6 +35,16 @@ export function useNavData() {
           title: t('md2wechat.title'),
           path: paths.dashboard.md2wechat,
           icon: ICONS.md2wechat,
+        },
+        {
+          title: '情绪原始看板',
+          path: paths.dashboard.emotionInput,
+          icon: ICONS.emotionInput,
+        },
+        {
+          title: '情绪AI分析',
+          path: paths.dashboard.emotionAnalysis,
+          icon: ICONS.emotionAnalysis,
         },
       ],
     },

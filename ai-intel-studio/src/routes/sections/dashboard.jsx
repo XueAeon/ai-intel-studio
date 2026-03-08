@@ -14,6 +14,8 @@ const DashboardHomePage = lazy(() => import('src/pages/dashboard/home'));
 const DashboardNewsPage = lazy(() => import('src/pages/dashboard/news'));
 const Md2WechatPage = lazy(() => import('src/pages/dashboard/md2wechat'));
 const CollectorSummaryPage = lazy(() => import('src/pages/dashboard/collector-summary'));
+const EmotionInputPage = lazy(() => import('src/pages/dashboard/emotion-input'));
+const EmotionAnalysisPage = lazy(() => import('src/pages/dashboard/emotion-analysis'));
 
 function SuspenseOutlet() {
   return (
@@ -39,6 +41,8 @@ export const dashboardRoutes = [
       { path: 'news', element: <DashboardNewsPage /> },
       { path: 'md2wechat', element: <Md2WechatPage /> },
       { path: 'collector-summary', element: <CollectorSummaryPage /> },
+      { path: 'emotion-input', element: <EmotionInputPage /> },
+      { path: 'emotion-analysis', element: <EmotionAnalysisPage /> },
       { path: 'booking', element: <Navigate to="/dashboard/home" replace /> },
     ],
   },

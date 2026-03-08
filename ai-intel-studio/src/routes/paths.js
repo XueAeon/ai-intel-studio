@@ -101,6 +101,8 @@ export const paths = {
     md2wechat: `${ROOTS.DASHBOARD}/md2wechat`,
     news: `${ROOTS.DASHBOARD}/news`,
     collectorSummary: `${ROOTS.DASHBOARD}/collector-summary`,
+    emotionInput: `${ROOTS.DASHBOARD}/emotion-input`,
+    emotionAnalysis: `${ROOTS.DASHBOARD}/emotion-analysis`,
     general: {
       home: `${ROOTS.DASHBOARD}/home`,
       app: `${ROOTS.DASHBOARD}/app`,
