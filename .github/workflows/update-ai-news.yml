@@ -73,6 +73,9 @@ jobs:
       - name: Update data
         run: pnpm run fetch
 
+      - name: Update emotion input/output
+        run: pnpm run fetch:emotion
+
       - name: Build analysis input for desc check (manual optional)
         if: github.event_name == 'workflow_dispatch' && github.event.inputs.run_desc_check == 'true'
         run: |
@@ -100,7 +103,12 @@ jobs:
             data/collected/waytoagi-7d.json
             data/collected/title-zh-cache.json
             data/collected/opml-feeds.json
+            data/emotion-input/latest-24h-emotion.json
+            data/emotion-input/source-status-emotion.json
+            data/emotion-output-md/latest-24h-emotion.md
             data/backups/collected
+            data/backups/emotion-input
+            data/backups/emotion-output-md
           )
           if [ -f data/collected/desc-cache.json ]; then
             files+=(data/collected/desc-cache.json)

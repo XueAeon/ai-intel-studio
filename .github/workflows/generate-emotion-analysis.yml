@@ -1,0 +1,74 @@
+name: AI Intel Studio - Generate Emotion Analysis
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "10 */2 * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: "emotion-analysis-main"
+  cancel-in-progress: false
+
+jobs:
+  generate-emotion-analysis:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 7
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Ensure emotion input is fresh
+        run: pnpm run fetch:emotion
+
+      - name: Generate emotion analysis markdown
+        env:
+          DASHSCOPE_API_KEY: ${{ secrets.DASHSCOPE_API_KEY }}
+        run: pnpm run generate:emotion-analysis
+
+      - name: Sync emotion data to ai-intel-studio/public/data
+        run: ./scripts/sync-vite-public-data.sh emotion-only
+
+      - name: Commit and push emotion analysis
+        run: |
+          files=(
+            data/emotion-input/latest-24h-emotion.json
+            data/emotion-input/source-status-emotion.json
+            data/emotion-output-md/latest-24h-emotion.md
+            data/emotion-output-md/emotion-analysis-24h.md
+            data/backups/emotion-input
+            data/backups/emotion-output-md
+            ai-intel-studio/public/data/emotion-input/latest-24h-emotion.json
+            ai-intel-studio/public/data/emotion-input/source-status-emotion.json
+            ai-intel-studio/public/data/emotion-output-md/latest-24h-emotion.md
+            ai-intel-studio/public/data/emotion-output-md/emotion-analysis-24h.md
+          )
+          git add "${files[@]}"
+          if git diff --cached --quiet; then
+            echo "No emotion analysis changes to commit"
+          else
+            git config user.name "github-actions-bot"
+            git config user.email "41898282+github-actions-bot@users.noreply.github.com"
+            git commit -m "chore: update emotion analysis md"
+            git pull --rebase origin main || { git rebase --abort; exit 1; }
+            git push origin HEAD:main || {
+              git pull --rebase origin main
+              git push origin HEAD:main
+            }
+          fi

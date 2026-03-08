@@ -1,0 +1,17 @@
+{
+  "enabled": true,
+  "openai": {
+    "api_key_env": "DASHSCOPE_API_KEY",
+    "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+    "model": "deepseek-v3.2",
+    "enable_thinking": true,
+    "stream": true,
+    "stream_include_usage": true,
+    "temperature": 0.2,
+    "max_events": 120,
+    "request_timeout_ms": 120000
+  },
+  "input_path": "data/emotion-input/latest-24h-emotion.json",
+  "prompt_path": "prompts/emotion-weibo-24h.prompt.md",
+  "output_markdown_path": "data/emotion-output-md/emotion-analysis-24h.md"
+}

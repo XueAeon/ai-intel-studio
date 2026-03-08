@@ -13,13 +13,17 @@ export abstract class BaseFetcher implements Fetcher {
     return cheerio.load(html);
   }
 
-  protected async fetchJsonData<T>(url: string): Promise<T> {
-    return fetchJson<T>(url);
+  protected async fetchJsonData<T>(
+    url: string,
+    options: RequestInit & { retries?: number; timeout?: number } = {}
+  ): Promise<T> {
+    return fetchJson<T>(url, options);
   }
 
   protected createItem(params: {
     source: string;
     title: string;
+    desc?: string | null;
     url: string;
     publishedAt: Date | null;
     meta?: Record<string, unknown>;
@@ -29,6 +33,7 @@ export abstract class BaseFetcher implements Fetcher {
       siteName: this.siteName,
       source: params.source,
       title: params.title,
+      desc: params.desc || null,
       url: params.url,
       publishedAt: params.publishedAt,
       meta: params.meta || {},
