@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-03-08T00:34:55.079Z",
-  "generated_at_local": "2026-03-08T08:34:55.079+08:00",
-  "source_generated_at": "2026-03-08T00:31:52.078Z",
-  "source_generated_at_local": "2026-03-08T08:31:52.078+08:00",
+  "generated_at": "2026-03-08T23:08:03.942Z",
+  "generated_at_local": "2026-03-09T07:08:03.942+08:00",
+  "source_generated_at": "2026-03-08T22:31:24.409Z",
+  "source_generated_at_local": "2026-03-09T06:31:24.409+08:00",
   "window_hours": 24,
   "compression": {
     "algorithm_version": "v1.1",
-    "input_items": 619,
-    "clustered_events": 601,
+    "input_items": 889,
+    "clustered_events": 862,
     "output_events": 80,
     "max_events": 80,
     "per_site_cap": 16
@@ -18,58 +18,265 @@
       "count": 16
     },
     {
-      "site_id": "newsnow",
-      "count": 16
-    },
-    {
       "site_id": "buzzing",
       "count": 16
     },
     {
-      "site_id": "tophub",
-      "count": 12
+      "site_id": "newsnow",
+      "count": 14
     },
     {
-      "site_id": "hackernews",
-      "count": 8
+      "site_id": "iris",
+      "count": 13
+    },
+    {
+      "site_id": "tophub",
+      "count": 10
     },
     {
       "site_id": "zeli",
       "count": 8
     },
     {
-      "site_id": "iris",
-      "count": 4
+      "site_id": "hackernews",
+      "count": 2
+    },
+    {
+      "site_id": "aibase",
+      "count": 1
     }
   ],
   "top_events": [
     {
-      "title": "One platform gives you lifetime access to Gemini, ChatGPT, Anthropic, and more for $70",
-      "published_at": "2026-03-08T00:31:52.078Z",
-      "source": "Mashable",
-      "url": "https://mashable.com/article/march-7-1minai-advanced-business-plan-lifetime-subscription",
-      "desc": "Pay once for a lifetime of AI generation."
+      "title": "Claude Struggles to Cope with ChatGPT Exodus",
+      "published_at": "2026-03-08T18:43:43.060Z",
+      "source": "Hacker News",
+      "url": "https://www.forbes.com/sites/barrycollins/2026/03/06/claude-struggles-to-cope-with-chatgpt-exodus",
+      "desc": null
     },
     {
-      "title": "Prompt Guidance for GPT-5.4",
-      "published_at": "2026-03-07T20:48:12Z",
+      "title": "I'm Not Consulting an LLM",
+      "published_at": "2026-03-08T10:32:17.399Z",
       "source": "Hacker News",
-      "url": "https://developers.openai.com/api/docs/guides/prompt-guidance",
-      "desc": "Learn prompt patterns and migration guidance for GPT-5.4, including completeness checks, verification loops, tool persistence, and structured outputs."
+      "url": "https://lr0.org/blog/p/gpt",
+      "desc": "Here's my problem with using GPT, or an LLM generally for anything1, even if the LLM would do it 'effectively', I will speak specifically of looking for information as an example, and let's assume the following scenario; ever used the \"I'm feeling Lucky\" button in Google? This..."
     },
     {
-      "title": "OpenAI GPT-5.4 Explained",
-      "published_at": "2026-03-07T23:22:00Z",
+      "title": "Will Claude Code ruin our team?",
+      "published_at": "2026-03-08T05:12:31.141Z",
       "source": "Hacker News",
-      "url": "https://veerhost.com/openai-gpt-5-4-features-improvements-pricing",
-      "desc": "OpenAI GPT-5.4 is here with stronger reasoning, coding, computer use, tool search, and long-context workflows. Here’s what changed, pricing, availability, and why it matters for businesses and developers."
+      "url": "https://justinjackson.ca/claude-code-ruin",
+      "desc": "AI coding is blurring the lines between engineers, PMs, and designers. In the short-term, it's going to cause havoc. What happens long-term?"
     },
     {
-      "title": "Agentic open-source local news comedian (Pydantic, Llama 3.1)",
-      "published_at": "2026-03-07T20:02:51Z",
+      "title": "Aiswitch – switch between Claude, OpenAI, Gemini and Copilot accounts in one cmd",
+      "published_at": "2026-03-08T21:44:46Z",
       "source": "Hacker News",
-      "url": "https://github.com/jeffjbowie/Local-News-Comedian-Agent",
-      "desc": "A locally-powered news parser, that generates a joke based on real news stories. - jeffjbowie/Local-News-Comedian-Agent"
+      "url": "https://github.com/anmolnagpal/aiswitch",
+      "desc": "aiswitch is a lightweight CLI inspired by tfswitch that allows developers to quickly switch between different AI accounts or providers, making it easy to manage multiple environments and workflows...."
+    },
+    {
+      "title": "OpenAI年化营收突破250亿美元，Anthropic缩小差距",
+      "published_at": "2026-03-08T01:47:20.857Z",
+      "source": "36kr",
+      "url": "https://www.36kr.com/newsflashes/3713631049757064",
+      "desc": "知情人士透露，截至上个月，OpenAI的年化营收已突破250亿美元。这一数字比该公司去年年底的214亿美元年化营收增长了17%。OpenAI的营收仍然高于其竞争对手Anthropic，但两家巨头之间的差距正在缩小：Anthropic的年化营收最近突破190亿美元，是去年年底的两倍，比两周前增长了36%。（新浪财经）"
+    },
+    {
+      "title": "Agent Safehouse – macOS-native sandboxing for local agents",
+      "published_at": "2026-03-08T22:31:24.409Z",
+      "source": "Hacker News",
+      "url": "https://agent-safehouse.dev/",
+      "desc": "Sandbox your LLM coding agents on macOS. Kernel-level enforcement via sandbox-exec — deny-first, composable, zero dependencies."
+    },
+    {
+      "title": "We should revisit literate programming in the agent era",
+      "published_at": "2026-03-08T22:31:24.409Z",
+      "source": "Hacker News",
+      "url": "https://silly.business/blog/we-should-revisit-literate-programming-in-the-agent-era",
+      "desc": "Literate programming is the idea that code should be intermingled with prose such that an uninformed reader could read a code base as a narrative, and come away with an understanding of how it works and what it does. Although I have long been intrigued by this idea, and have f..."
+    },
+    {
+      "title": "Based on its own charter, OpenAI should surrender the race",
+      "published_at": "2026-03-08T18:43:43.060Z",
+      "source": "Hacker News",
+      "url": "https://mlumiste.com/general/openai-charter",
+      "desc": null
+    },
+    {
+      "title": "A simple L7 proxy for vLLM that manages LoRA adapter storage via NVMes",
+      "published_at": "2026-03-08T22:04:34Z",
+      "source": "Hacker News",
+      "url": "https://github.com/shayonj/loraplex",
+      "desc": "A simple L7 proxy for vLLM that manages LoRA adapter storage via NVMe, routes requests, and pins workloads to nodes - shayonj/loraplex"
+    },
+    {
+      "title": "Blacksky AppView",
+      "published_at": "2026-03-08T21:40:35Z",
+      "source": "Hacker News · 24h最热",
+      "url": "https://github.com/blacksky-algorithms/atproto",
+      "desc": "Blacksky fork of bluesky-social/atproto with AppView performance optimizations, caching, and community features - blacksky-algorithms/atproto"
+    },
+    {
+      "title": "Artificial-life: A simple (300 lines of code) reproduction of Computational Life",
+      "published_at": "2026-03-08T20:42:41Z",
+      "source": "Hacker News · 24h最热",
+      "url": "https://github.com/Rabrg/artificial-life",
+      "desc": "A simple (300 lines of code) reproduction of Computational Life: How Well-formed, Self-replicating Programs Emerge from Simple Interaction - Rabrg/artificial-life"
+    },
+    {
+      "title": "Can Coding Agents Relicense Open Source Through a ‘Clean Room’ Implementation of Code?",
+      "published_at": "2026-03-08T18:43:43.060Z",
+      "source": "Daring Fireball",
+      "url": "https://daringfireball.net/linked/2026/03/08/willison-chardet-licensing-dispute",
+      "desc": "Link to: https://simonwillison.net/2026/Mar/5/chardet/"
+    },
+    {
+      "title": "WSL Manager",
+      "published_at": "2026-03-08T18:08:36Z",
+      "source": "Hacker News · 24h最热",
+      "url": "https://github.com/bostrot/wsl2-distro-manager",
+      "desc": "A GUI to quickly manage your WSL2 instances. Contribute to bostrot/wsl2-distro-manager development by creating an account on GitHub."
+    },
+    {
+      "title": "Luma AI debuts Uni-1, an image model that combines image understanding and generation in a single architecture, topping Nano Banana 2 on logic-based benchmarks (Matthias Bastian/The Decoder)",
+      "published_at": "2026-03-08T22:31:24.409Z",
+      "source": "Techmeme",
+      "url": "http://www.techmeme.com/260308/p11",
+      "desc": "Top news and commentary for technology's leaders, from all around the web."
+    },
+    {
+      "title": "OpenAI's Former Research Chief Raises $70M to Automate Manufacturing With AI",
+      "published_at": "2026-03-08T20:34:46.246Z",
+      "source": "Slashdot",
+      "url": "https://it.slashdot.org/story/26/03/08/0253259/openais-former-research-chief-raises-70m-to-automate-manufacturing-with-ai",
+      "desc": "\"OpenAI's former chief research officer is raising $70 million for a new startup building an AI and software platform to automate manufacturing,\" reports the Wall Street Journal, citing \"people familiar with the matter. \"Arda, the new startup co-founded by Bob McGrew, is raisi..."
+    },
+    {
+      "title": "A study finds LLMs from Anthropic, Google, OpenAI, and xAI can help with academic fraud, specifically helping non-researchers submit fabricated papers to arXiv (Elizabeth Gibney/Nature)",
+      "published_at": "2026-03-08T13:02:06.574Z",
+      "source": "Techmeme",
+      "url": "http://www.techmeme.com/260308/p5",
+      "desc": "Top news and commentary for technology's leaders, from all around the web."
+    },
+    {
+      "title": "根据甲骨文、人工智能和物理学研究，中国内陆地区在三千年前曾因台风导致人口减少。",
+      "published_at": "2026-03-08T19:01:23.734Z",
+      "source": "phys.org",
+      "url": "https://phys.org/news/2026-03-inland-china-experienced-typhoon-population.html",
+      "desc": "We're checking your connection to prevent automated abuse"
+    },
+    {
+      "title": "Cloud VM benchmarks 2026",
+      "published_at": "2026-03-08T04:49:14.461Z",
+      "source": "hackernews",
+      "url": "https://news.ycombinator.com/item?id=47293119",
+      "desc": "The most insane part here is that the AMD EPYC 4565p can beat the turin's used on the cloud providers, by as much as 2x in the single core."
+    },
+    {
+      "title": "Cloud VM benchmarks 2026: performance/price for 44 VM types over 7 providers",
+      "published_at": "2026-03-08T02:34:58.865Z",
+      "source": "hackernews",
+      "url": "https://news.ycombinator.com/item?id=47293119",
+      "desc": "The most insane part here is that the AMD EPYC 4565p can beat the turin's used on the cloud providers, by as much as 2x in the single core."
+    },
+    {
+      "title": "Autoresearch: Agents researching on single-GPU nanochat training automatically",
+      "published_at": "2026-03-08T00:31:55.110Z",
+      "source": "hackernews",
+      "url": "https://news.ycombinator.com/item?id=47291123",
+      "desc": "[1] https://karpathy.github.io/2015/05/21/rnn-effectiveness/"
+    },
+    {
+      "title": "OpenAI's robotics hardware lead resigns following deal with the Department of Defense",
+      "published_at": "2026-03-08T16:37:35.905Z",
+      "source": "Engadget",
+      "url": "https://www.engadget.com/ai/openais-robotics-hardware-lead-resigns-following-deal-with-the-department-of-defense-195918599.html?src=rss",
+      "desc": "Caitlin Kalinowski explained on X that certain guardrails \"deserved more deliberation than they got\" when announcing her departure."
+    },
+    {
+      "title": "OpenAI机器人硬件负责人辞职，此前该公司与美国国防部达成合作协议 - Engadget",
+      "published_at": "2026-03-08T16:39:18.593Z",
+      "source": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOUUpFUlZJcWNBeWV0al95S3Yydm9BLUNNQ0FkeTJtcWltZm5tVEFNMWRwQjVMNzQ1T0VuN3lfNmZWVnlXbnRxclJHQ09zMUFBbnJwZVh0cnc2NE54V0tzemlyMTQwQXlQbWF2emc4eEtCYVBMdDZXUThSdmpTVE9OZ0dYUXRtZWZuT21IeGduVHgzZHp6NFM5TEpvajl1bzFoQm5yZm9CQzRmYUZzc00tamlkeVpaU0N2QjNvdnNXaG1uWWxvS1E?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
+      "desc": "Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News."
+    },
+    {
+      "title": "金融市场低估了伊朗冲突的持续时间：蜻蜓",
+      "published_at": "2026-03-08T19:01:23.633Z",
+      "source": "www.barrons.com",
+      "url": "https://www.barrons.com/livecoverage/sunday0308/card/financial-markets-have-underestimated-duration-of-iran-conflict-dragonfly-UKpIW9m2RRj6o41E8GNM?siteid=yhoof2&yptr=yahoo",
+      "desc": null
+    },
+    {
+      "title": "Claude Marketplace - 助力企业轻松获取所需的人工智能工具",
+      "published_at": "2026-03-08T09:13:13.605Z",
+      "source": "www.producthunt.com",
+      "url": "https://www.producthunt.com/r/7DWRGBKT5I3Y5B",
+      "desc": null
+    },
+    {
+      "title": "亿万富翁投资者吉姆·梅隆表示，美国股市\"严重高估\"，食品行业需要重新思考，Z世代必须努力奋斗。",
+      "published_at": "2026-03-08T12:55:13.558Z",
+      "source": "www.businessinsider.com",
+      "url": "https://www.businessinsider.com/billionaire-jim-mellon-stocks-gold-energy-ai-tech-food-jobs-2026-3",
+      "desc": "Billionaire Jim Mellon said the AI buildout is a \"warning signal\" for investors, and young people need to \"just get out there and do something.\""
+    },
+    {
+      "title": "代理安全屋——本地代理的原生macOS沙箱环境",
+      "published_at": "2026-03-08T22:13:21.276Z",
+      "source": "agent-safehouse.dev",
+      "url": "https://agent-safehouse.dev/",
+      "desc": "Sandbox your LLM coding agents on macOS. Kernel-level enforcement via sandbox-exec — deny-first, composable, zero dependencies."
+    },
+    {
+      "title": "[程序员] openclaw 还能入手吗？好像越来越多的大模型官方都开始推广类似 openclaw 的功能了，是选择 openclaw 还是官方的？",
+      "published_at": "2026-03-08T14:48:12Z",
+      "source": "V2EX (创意工作者社区)",
+      "url": "https://www.v2ex.com/t/1196685",
+      "desc": null
+    },
+    {
+      "title": "天空新闻报道称，X公司对xAI旗下Grok聊天机器人的冒犯性言论展开调查",
+      "published_at": "2026-03-08T14:47:39.491Z",
+      "source": "reut.rs",
+      "url": "https://reut.rs/4aWFLhv",
+      "desc": null
+    },
+    {
+      "title": "How to run Qwen 3.5 locally",
+      "published_at": "2026-03-08T06:53:26.379Z",
+      "source": "hackernews",
+      "url": "https://news.ycombinator.com/item?id=47292522",
+      "desc": "I assume you mean outperforms in speed on the same model, not in usability compared to other more capable models."
+    },
+    {
+      "title": "全国政协委员王坚：AI“龙虾”价格很快打下来",
+      "published_at": "2026-03-08T09:18:08.581Z",
+      "source": "36kr",
+      "url": "https://www.36kr.com/newsflashes/3714026024759688",
+      "desc": "针对近日火爆AI圈的“养龙虾”现象，全国政协委员、中国工程院院士王坚8日在接受采访时表示，AI“龙虾”会很快便宜下来并普及，任何行业内的人都不会没看到Open Claw的存在。（中新经纬）"
+    },
+    {
+      "title": "为什么“从1数到10”这件事，所有视频模型都不会？",
+      "published_at": "2026-03-08T13:02:06.574Z",
+      "source": "36氪 · 24小时热榜",
+      "url": "https://www.36kr.com/p/3713798535049600",
+      "desc": "AI 已经学会了电影的视觉语法，但还没学会世界的物理语法。"
+    },
+    {
+      "title": "00后小孩哥10天AI编程，陈天桥24小时砸3000万！靠大四作业当上CEO",
+      "published_at": "2026-03-08T13:02:06.574Z",
+      "source": "36氪 · 24小时热榜",
+      "url": "https://www.36kr.com/p/3713983582662788",
+      "desc": "一个人做出全球爆款的「超级个体」时代，真的来了。"
+    },
+    {
+      "title": "千问AI眼镜正式开售：内置64GB存储，售价1997元起",
+      "published_at": "2026-03-08T03:46:06.769Z",
+      "source": "36kr",
+      "url": "https://www.36kr.com/newsflashes/3713744771166337",
+      "desc": "3月8日10点，千问首款同名AI硬件“千问AI眼镜”G1系列正式现货开售。这款AI眼镜配备双旗舰芯片双系统、内置64GB存储空间，叠加国补后到手价1997元起。此次发售覆盖线上线下全渠道，用户也可在千问APP上一句话下单，最快数小时即可收货。今年内，千问AI眼镜还将登陆国际市场。"
     },
     {
       "title": "LLM Writing Tropes.md",
@@ -86,151 +293,25 @@
       "desc": "Absolutely nothing wrong with something written with AI. Just pointing it out."
     },
     {
-      "title": "LLM Doesn't Write Correct Code. It Writes Plausible Code",
-      "published_at": "2026-03-07T14:38:29Z",
-      "source": "Hacker News",
-      "url": "https://twitter.com/KatanaLarp/status/2029928471632224486",
-      "desc": null
-    },
-    {
-      "title": "Files are the interface humans and agents interact with",
-      "published_at": "2026-03-08T00:31:55.110Z",
-      "source": "hackernews",
-      "url": "https://news.ycombinator.com/item?id=47286408",
-      "desc": "The problem today is that we build specific, short-lived apps that lock data into formats only they can read. If you don't use universal formats, your system is fragile. We can still open JPEGs from 1995 because the files don't depend on the software used to make them. Using o..."
-    },
-    {
-      "title": "AI Powered Exploit Kit",
-      "published_at": "2026-03-08T00:13:53Z",
-      "source": "Hacker News",
-      "url": "https://github.com/Ed1s0nZ/CyberStrikeAI",
-      "desc": "CyberStrikeAI is an AI-native security testing platform built in Go. It integrates 100+ security tools, an intelligent orchestration engine, role-based testing with predefined security roles, a ski..."
-    },
-    {
-      "title": "How do teams prevent duplicate LLM API calls and token waste?",
-      "published_at": "2026-03-07T20:05:59Z",
-      "source": "Hacker News",
-      "url": "https://news.ycombinator.com/item?id=47291012",
-      "desc": "While experimenting with LLM APIs, I noticed that the same prompt can sometimes be sent repeatedly across different parts of an application, which leads to unnecessary token usage and higher API costs."
-    },
-    {
-      "title": "Agile legged locomotion in reconfigurable modular robots",
-      "published_at": "2026-03-07T23:35:55Z",
-      "source": "Hacker News",
-      "url": "https://modularlegs.github.io/",
-      "desc": null
-    },
-    {
-      "title": "Gumlet CLI and Skills: Upload and manage videos with agents",
-      "published_at": "2026-03-07T19:40:46Z",
-      "source": "Hacker News",
-      "url": "https://github.com/gumlet/cli",
-      "desc": "Gumlet Command Line Interface. Contribute to gumlet/cli development by creating an account on GitHub."
-    },
-    {
-      "title": "CasNum",
-      "published_at": "2026-03-07T20:43:51Z",
-      "source": "Hacker News · 24h最热",
-      "url": "https://github.com/0x0mer/CasNum",
-      "desc": null
-    },
-    {
-      "title": "人力资源社会保障部部长：正研究措施发挥人工智能创造新岗位和赋能传统岗位作用",
-      "published_at": "2026-03-07T03:16:43.586Z",
-      "source": "36kr",
-      "url": "https://www.36kr.com/newsflashes/3712308738716032",
-      "desc": "人力资源社会保障部部长王晓萍3月7日在十四届全国人大四次会议民生主题记者会上表示，人力资源社会保障部正在研究相关措施，积极发挥人工智能在创造新岗位和赋能传统岗位方面的作用，推动实现技术进步与民生改善相协调的包容性发展。（新华社）"
-    },
-    {
-      "title": "俄研究机构训练人工智能识别早期乳腺癌",
-      "published_at": "2026-03-07T05:40:17.551Z",
-      "source": "36kr",
-      "url": "https://www.36kr.com/newsflashes/3712317747949705",
-      "desc": "俄罗斯研究机构近日训练出一种能够快速识别计算机断层扫描（CT）影像的人工智能，可以协助医生诊断早期乳腺癌。据塔斯社报道，俄罗斯圣彼得堡国立电子技术大学与阿尔马佐夫国家医学研究中心共同开发了一款医疗诊断辅助软件系统，其核心是神经网络这种人工智能技术。经过训练的神经网络能够自动处理上传至服务器的患者CT影像，标记出具有肿瘤特征的区域。标记后的影像会被发送给医生，由医生作出最终诊断。研究人员表示，过去解读一张CT影像通常需要一天，而这项技术的影像分析过程仅需几分钟，还可将临床误诊的概率降低约20%。（新华社）"
-    },
-    {
-      "title": "你用的 Claude 可能是虚假 Claude ，论文数据告诉你，Shadow API 中的欺骗性模型声明",
-      "published_at": "2026-03-08T00:31:55.110Z",
-      "source": "juejin",
-      "url": "https://juejin.cn/post/7613960231039090729",
-      "desc": null
-    },
-    {
-      "title": "A Decade of Docker Containers",
-      "published_at": "2026-03-07T19:31:44Z",
-      "source": "Lobsters (技术社区)",
-      "url": "https://cacm.acm.org/research/a-decade-of-docker-containers",
-      "desc": "This website is using a security service to protect itself from online attacks. The action you just performed triggered the security solution. There are several actions that could trigger this block including submitting a certain word or phrase, a SQL command or malformed data."
-    },
-    {
-      "title": "Autoresearch: Agents researching on single-GPU nanochat training automatically",
-      "published_at": "2026-03-08T00:31:55.110Z",
-      "source": "hackernews",
-      "url": "https://news.ycombinator.com/item?id=47291123",
-      "desc": null
-    },
-    {
-      "title": "甲骨文和OpenAI或已终止扩建得州旗舰数据中心的计划",
-      "published_at": "2026-03-07T01:05:58.385Z",
-      "source": "36kr",
-      "url": "https://www.36kr.com/newsflashes/3712180761866371",
-      "desc": "据报道，甲骨文和OpenAI已取消在美国得州扩建一座旗舰人工智能数据中心的计划，此前磋商因融资问题和OpenAI不断变化的需求而久拖不决。 知情人士称，谈判破裂为Meta介入创造了机会，Meta考虑从开发商Crusoe手中租赁位于得州阿比林的拟扩建场地。知情人士称，英伟达协助促成Meta与这家开发商之间的洽谈。（界面新闻）"
-    },
-    {
-      "title": "Caitlin Kalinowski, OpenAI's head of hardware and robotics, resigns over concerns about domestic surveillance and autonomous weapons after OpenAI's DOD contract (Sharon Goldman/Fortune)",
-      "published_at": "2026-03-08T00:31:52.078Z",
+      "title": "How Circle, Stripe, Coinbase, and others are building stablecoin-based agentic payments infrastructure that makes microtransactions between AI agents economical (Emily Mason/Bloomberg)",
+      "published_at": "2026-03-08T20:34:46.246Z",
       "source": "Techmeme",
-      "url": "http://www.techmeme.com/260307/p11",
+      "url": "http://www.techmeme.com/260308/p10",
       "desc": "Top news and commentary for technology's leaders, from all around the web."
     },
     {
-      "title": "OpenAI's Head of Robotics Resigns, Says Pentagon Deal Was 'Rushed Without the Guardrails Defined'",
-      "published_at": "2026-03-08T00:31:52.078Z",
-      "source": "Slashdot",
-      "url": "https://hardware.slashdot.org/story/26/03/07/2213221/openais-head-of-robotics-resigns-says-pentagon-deal-was-rushed-without-the-guardrails-defined",
-      "desc": "In a tweet that's been viewed 1.3 million times in the last six hours, OpenAI's head of robotics announced their resignation. They said they \"care deeply about the Robotics team and the work we built together,\" so this \"wasn't an easy call,\" but offered this reason for resigni..."
+      "title": "Will the Pentagon’s Anthropic controversy scare startups away from defense work?",
+      "published_at": "2026-03-08T22:31:24.409Z",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/03/08/will-the-pentagons-anthropic-controversy-scare-startups-away-from-defense-work",
+      "desc": "On the latest episode of TechCrunch’s Equity podcast, we discussed what the controversy means for other startups seeking to work with the federal government."
     },
     {
-      "title": "A profile of Simile, which offers \"agentic twins\" modeled on real people to provide answers for polling and market research for companies like CVS and Gallup (Belle Lin/Wall Street Journal)",
-      "published_at": "2026-03-08T00:31:52.078Z",
-      "source": "Techmeme",
-      "url": "http://www.techmeme.com/260307/p7",
-      "desc": "Top news and commentary for technology's leaders, from all around the web."
-    },
-    {
-      "title": "OpenAI机器人部门负责人凯特琳·卡利诺夫斯基因五角大楼合作协议辞职 - TechCrunch",
-      "published_at": "2026-03-07T23:53:28.769Z",
-      "source": "news.google.com",
-      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQc3kyZG9pVjl1em1mZU5jV003SE8zQmcwdWVpSnNMRi1ieUV2ZmdGbzdqeWdJOHJ5eVlJOTk5WnFvRGgwVWVDNXllMDNzQzYtcGtsa25jUzVSR19NVEtpVXh6RXJ4ZW1lZ0h4d3hpdlpyRnZkeHI1U3RvTG5yTGlDOEhtT1Y0VWpIOTNKb2ctcXdrRG5KazY5UUo1UnJmS0RiRE1nUnlRaTlaTHNoZlE?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
-      "desc": "Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News."
-    },
-    {
-      "title": "OpenAI机器人部门负责人因公司与五角大楼合作协议辞职",
-      "published_at": "2026-03-07T22:33:45.186Z",
-      "source": "www.bloomberg.com",
-      "url": "https://www.bloomberg.com/news/articles/2026-03-07/openai-s-head-of-robotics-resigns-over-company-s-pentagon-deal",
-      "desc": "To continue, please click the box below to let us know you're not a robot."
-    },
-    {
-      "title": "顶尖研究员因五角大楼合作协议离开OpenAI",
-      "published_at": "2026-03-07T22:33:45.130Z",
-      "source": "www.politico.com",
-      "url": "https://www.politico.com/news/2026/03/07/top-researcher-openai-pentagon-surveillance-00818124",
-      "desc": null
-    },
-    {
-      "title": "How Anthropic's Claude Helped Mozilla to Improve Firefox's Security",
-      "published_at": "2026-03-08T00:31:52.078Z",
-      "source": "Slashdot",
-      "url": "https://news.slashdot.org/story/26/03/07/204222/how-anthropics-claude-helped-mozilla-to-improve-firefoxs-security",
-      "desc": "\"It took Anthropic's most advanced artificial-intelligence model about 20 minutes to find its first Firefox browser bug during an internal test of its hacking prowess,\" reports the Wall Street Journal. The Anthropic team submitted it, and Firefox's developers quickly wrote bac..."
-    },
-    {
-      "title": "Leading the Future, a pro-AI PAC backed by Palantir-cofounder Joe Lonsdale, hit pro-regulation Democrat Alex Bores with attack ads over Bores' work for Palantir (Nancy Scola/Politico)",
-      "published_at": "2026-03-08T00:31:52.078Z",
-      "source": "Techmeme",
-      "url": "http://www.techmeme.com/260307/p12",
-      "desc": "Top news and commentary for technology's leaders, from all around the web."
+      "title": "千问AI眼镜全渠道暂时售罄，明日10点再次开售",
+      "published_at": "2026-03-08T16:37:35.905Z",
+      "source": "AIbase",
+      "url": "https://news.aibase.com/zh/news/26008",
+      "desc": "千问AI眼镜G1系列3月8日开售，配备双旗舰芯片、64GB存储，官方价2899元，优惠后最低1997元。产品受市场热捧，3小时登顶智能眼镜热销榜，全渠道暂时售罄，将于3月9日上午10点再次开售。"
     },
     {
       "title": "Why developers using AI are working longer hours",
@@ -240,368 +321,291 @@
       "desc": "Hard to stay in flow and engaged."
     },
     {
-      "title": "《金融时报》报道：美国在与Anthropic的冲突中制定严格的人工智能准则",
-      "published_at": "2026-03-07T05:47:56.413Z",
-      "source": "reut.rs",
-      "url": "https://reut.rs/40kfcwz",
-      "desc": null
+      "title": "林俊旸离职后，再看阿里字节的AI路线之争",
+      "published_at": "2026-03-08T05:12:31.141Z",
+      "source": "Readhub · AI",
+      "url": "https://tech.ifeng.com/c/8rK8YppTAIN",
+      "desc": "近期，Qwen技术负责人林俊旸的离职，让外界再次把目光投向阿里的AI版图。"
     },
     {
-      "title": "Armed robots take to the battlefield in Ukraine war",
-      "published_at": "2026-03-07T04:41:39Z",
+      "title": "Israel-based ZyG, which is building an agentic OS to help scale DTC e-commerce brands, raised a $58M seed co-led by Bessemer, Viola Ventures, and Lightspeed (Mike Wheatley/SiliconANGLE)",
+      "published_at": "2026-03-08T16:37:35.905Z",
+      "source": "Techmeme",
+      "url": "http://www.techmeme.com/260308/p7",
+      "desc": "Top news and commentary for technology's leaders, from all around the web."
+    },
+    {
+      "title": "Explainable AI is making black box models worthless in the agentic era",
+      "published_at": "2026-03-08T16:37:35.905Z",
+      "source": "TechRadar",
+      "url": "https://www.techradar.com/pro/explainable-ai-is-making-black-box-models-worthless-in-the-agentic-era",
+      "desc": "Black box AI has become useless in agentic AI era"
+    },
+    {
+      "title": "Mayor Sadiq Khan invites embattled AI firm Anthropic to expand in London",
+      "published_at": "2026-03-08T18:43:43.060Z",
+      "source": "BBC News",
+      "url": "https://www.bbc.com/news/articles/czx7915nn8qo?at_medium=RSS&at_campaign=rss",
+      "desc": "The letter from London's mayor came as the US moved to designate the company a supply chain risk."
+    },
+    {
+      "title": "AI doesn't replace white collar work",
+      "published_at": "2026-03-08T18:57:21Z",
       "source": "Hacker News · 24h最热",
-      "url": "https://www.bbc.com/news/articles/c62662gzlp8o",
-      "desc": "Ukraine has embarked on a programme to deploy armed robots on the battlefield against Russian forces."
+      "url": "https://www.marble.onl/posts/ai_doesnt_replace_work.html",
+      "desc": "Andrew Marblemarble.onlandrew@willows.aiMarch 8, 2026"
     },
     {
-      "title": "AI Error May Have Contributed to Girl's School Bombing in Iran",
-      "published_at": "2026-03-07T07:18:19.746Z",
-      "source": "hackernews",
-      "url": "https://news.ycombinator.com/item?id=47284834",
-      "desc": "> Target schools, blame vendor instead of operators."
-    },
-    {
-      "title": "OpenAI is delaying its adult mode for ChatGPT",
-      "published_at": "2026-03-08T00:31:52.078Z",
-      "source": "Mashable",
-      "url": "https://mashable.com/article/openai-delays-adult-mode",
-      "desc": "ChatGPT pushes back the launch of its long-awaited \"adult mode,\" and reactions are mixed."
-    },
-    {
-      "title": "Anthropic’s and OpenAI’s Dance With the Pentagon: What to Know",
-      "published_at": "2026-03-08T00:31:52.078Z",
-      "source": "New York Times",
-      "url": "https://www.nytimes.com/2026/03/07/technology/anthropic-openai-pentagon-dario-amodei-sam-altman.html",
-      "desc": null
-    },
-    {
-      "title": "OpenAI delays ChatGPT’s ‘adult mode’ again",
-      "published_at": "2026-03-08T00:31:52.078Z",
-      "source": "TechCrunch",
-      "url": "https://techcrunch.com/2026/03/07/openai-delays-chatgpts-adult-mode-again",
-      "desc": "The feature, which will give verified adult users access to erotica and other adult content, had already been delayed from December."
-    },
-    {
-      "title": "For OpenAI and Anthropic, the Competition Is Deeply Personal",
-      "published_at": "2026-03-08T00:31:52.078Z",
-      "source": "New York Times",
-      "url": "https://www.nytimes.com/2026/03/07/technology/openai-anthropic-pentagon-rivalry.html",
-      "desc": null
-    },
-    {
-      "title": "中国表示未来五年可保持就业稳定，尽管面临人工智能和劳动力挑战",
-      "published_at": "2026-03-07T06:51:38.855Z",
-      "source": "reut.rs",
-      "url": "https://reut.rs/4rapn1z",
-      "desc": null
-    },
-    {
-      "title": "上交所总经理蔡建春：科创板要落实好关键核心技术领域企业常态化上市机制",
-      "published_at": "2026-03-07T09:14:48.235Z",
+      "title": "商务部回应安世荷兰批量禁用安世中国员工办公软件",
+      "published_at": "2026-03-08T01:15:20.857Z",
       "source": "36kr",
-      "url": "https://www.36kr.com/newsflashes/3712406430724488",
-      "desc": "政府工作报告中提到“提升直接融资、股权融资比例”，全国政协委员、上交所总经理蔡建春3月7日在政协经济界别小组会议上表示，在市场稳定前提下，要进一步提升资本市场的功能发挥，重点支持科技创新类与转型升级类企业的融资并购，特别是在科创板，落实好关键核心技术领域的科技型企业的常态化上市机制，进一步强化常态化融资功能。（证券时报）"
+      "url": "https://www.36kr.com/newsflashes/3713574508212354",
+      "desc": "36氪获悉，商务部新闻发言人就安世荷兰批量禁用安世中国员工办公软件答记者问。商务部表示，我注意到有关报道。在中荷双方推动下，闻泰科技与安世荷兰正就企业内部纠纷进行协商，但安世荷兰此时批量禁用安世中国员工办公账号，挑起新的矛盾，给企业协商工作制造新的困难和障碍。中方始终秉持对全球半导体产供链的负责任态度。安世荷兰此次所作所为，严重破坏企业正常生产经营，如再次引发全球半导体产供链危机，荷方必须对此承担全部责任。、"
     },
     {
-      "title": "微软、谷歌和亚马逊确认继续提供Anthropic技术",
-      "published_at": "2026-03-07T01:52:21.925Z",
-      "source": "36kr",
-      "url": "https://www.36kr.com/newsflashes/3712198940324229",
-      "desc": "在美国国防部近期将人工智能新贵 Anthropic 技术正式认定为供应链风险之后，谷歌周五宣布将继续向客户提供Anthropic的人工智能技术，但国防相关用途除外。随后亚马逊跟进，宣布将继续向其云服务客户提供Anthropic相关技术。此前一天，微软已向客户发布了类似声明。 上周，Anthropic拒绝接受国防部提出的使用条款后，美国总统特朗普下令联邦机构停止使用该公司技术；国防部长皮特・赫格塞斯表示，与Anthropic的合作将在六个月内逐步终止。（第一财经）"
-    },
-    {
-      "title": "OpenAI is reportedly pushing back the launch of its 'adult mode' even further",
-      "published_at": "2026-03-08T00:31:52.078Z",
-      "source": "Engadget",
-      "url": "https://www.engadget.com/ai/openai-is-reportedly-pushing-back-the-launch-of-its-adult-mode-even-further-213013801.html?src=rss",
-      "desc": "A company spokesperson said that ChatGPT's adult mode is getting delayed again."
-    },
-    {
-      "title": "OpenAI's head of robotics resigns following deal with the Department of Defense",
-      "published_at": "2026-03-08T00:31:52.078Z",
-      "source": "Engadget",
-      "url": "https://www.engadget.com/ai/openais-head-of-robotics-resigns-following-deal-with-the-department-of-defense-195918777.html?src=rss",
-      "desc": "Caitlin Kalinowski explained on X that certain guardrails \"deserved more deliberation than they got\" when announcing her departure."
-    },
-    {
-      "title": "OpenAI’s robotics chief quits over the Pentagon deal",
-      "published_at": "2026-03-08T00:31:52.078Z",
-      "source": "The Next Web",
-      "url": "https://thenextweb.com/news/openais-robotics-chief-quits-over-the-pentagon-deal",
-      "desc": "Caitlin Kalinowski, OpenAI's head of robotics, resigned over the Pentagon AI deal, saying it lacked guardrails on surveillance and autonomous weapons."
-    },
-    {
-      "title": "OpenAI's robotics head quits after company's Pentagon deal: 'This was about principle'",
-      "published_at": "2026-03-08T00:31:52.078Z",
-      "source": "Business Insider",
-      "url": "https://www.businessinsider.com/caitlin-kalinowski-quits-openai-robotics-head-pentagon-deal-sam-altman-2026-3",
-      "desc": "Caitlin Kalinowski says she is quitting OpenAI over concerns that the technology could be used for mass surveillance and autonomous weapons."
-    },
-    {
-      "title": "OpenAI robotics lead Caitlin Kalinowski quits in response to Pentagon deal",
-      "published_at": "2026-03-08T00:31:52.078Z",
-      "source": "TechCrunch",
-      "url": "https://techcrunch.com/2026/03/07/openai-robotics-lead-caitlin-kalinowski-quits-in-response-to-pentagon-deal",
-      "desc": "Hardware executive Caitlin Kalinowski announced today that in response to OpenAI's controversial agreement with the Department of Defense, she’s resigned from her role leading the company's robotics team."
-    },
-    {
-      "title": "Google made Gmail and Drive easier for AI agents to use",
-      "published_at": "2026-03-08T00:31:52.078Z",
-      "source": "The Next Web",
-      "url": "https://thenextweb.com/news/google-made-gmail-and-drive-easier-for-ai-agents-to-use",
-      "desc": "Google’s new Workspace CLI unifies Gmail, Drive, and Calendar for AI agents, with OpenClaw support and MCP integration built in from day one."
-    },
-    {
-      "title": "OpenAI robotics leader resigns over concerns on surveillance and auto-weapons",
-      "published_at": "2026-03-07T18:17:45Z",
-      "source": "Hacker News · 24h最热",
-      "url": "https://fortune.com/2026/03/07/openai-robotics-leader-caitlin-kalinowski-resignation-pentagon-surveillance-autonomous-weapons-anthropic",
-      "desc": "A senior OpenAI robotics leader says she left over concerns about surveillance and autonomous weapons as the company expands its work with the Pentagon."
-    },
-    {
-      "title": "青岛：发布首批OPC AI工具包清单",
-      "published_at": "2026-03-07T03:05:35.606Z",
-      "source": "36kr",
-      "url": "https://www.36kr.com/newsflashes/3712253995692162",
-      "desc": "3月6日，青岛人工智能产业协会发布青岛市OPC（一人公司）AI工具包（第一批）清单。首批清单涵盖13款工具，工具包聚焦单人创业高频刚需，集成内容生成、数据处理、效率办公、智能客服等核心能力，能够为创业者提供从想法到落地的全链条AI赋能。"
-    },
-    {
-      "title": "LLMs work best when the user defines their acceptance criteria first",
-      "published_at": "2026-03-07T02:43:54.270Z",
-      "source": "hackernews",
-      "url": "https://news.ycombinator.com/item?id=47283337",
-      "desc": "If they implement something with a not-so-great approach, they'll keep adding workarounds or redundant code every time they run into limitations later."
-    },
-    {
-      "title": "When DOGE Unleashed ChatGPT on the National Endowment for the Humanities",
-      "published_at": "2026-03-07T22:30:31Z",
-      "source": "Hacker News · 24h最热",
-      "url": "https://www.nytimes.com/2026/03/07/arts/humanities-endowment-doge-trump.html",
+      "title": "克劳德艰难应对ChatGPT用户出走潮",
+      "published_at": "2026-03-08T20:37:26.961Z",
+      "source": "www.forbes.com",
+      "url": "https://www.forbes.com/sites/barrycollins/2026/03/06/claude-struggles-to-cope-with-chatgpt-exodus",
       "desc": null
     },
     {
-      "title": "大型人工智能模型可通过预测性能来加速催化剂发现，从而在合成前实现优化。",
-      "published_at": "2026-03-07T23:05:35.235Z",
-      "source": "phys.org",
-      "url": "https://phys.org/news/2026-03-large-ai-catalyst-discovery-synthesis.html",
-      "desc": "We're checking your connection to prevent automated abuse"
-    },
-    {
-      "title": "Put the zip code first",
-      "published_at": "2026-03-07T23:26:26Z",
+      "title": "She called 911 for an ambulance. She got a nightmare instead",
+      "published_at": "2026-03-08T20:45:49Z",
       "source": "Hacker News · 24h最热",
-      "url": "https://zipcodefirst.com/",
-      "desc": "It's 2026. A ZIP code is 5 characters. From those 5 characters you get city, state, and country. 3 fields. Autofilled. Put it first, you animals."
+      "url": "https://www.seattletimes.com/seattle-news/times-watchdog/seattle-womans-911-calls-reveal-gaps-in-ambulance-service",
+      "desc": "Seattle no longer is capping ambulance wait times for certain 911 patients, tracking those waits or penalizing its contractor when they run long."
     },
     {
-      "title": "对OpenAI和Anthropic而言，这场竞争具有深刻的个人色彩 - The New York Times",
-      "published_at": "2026-03-07T22:17:23.793Z",
+      "title": "Lil Finder Guy",
+      "published_at": "2026-03-08T20:43:19Z",
+      "source": "Hacker News · 24h最热",
+      "url": "https://basicappleguy.com/basicappleblog/lil-finder-guy",
+      "desc": "Who is it? What is it? Is it friend or foe? Has it arrived in peace, or is it plotting to corrupt our SSDs and fray our USB-C cables?"
+    },
+    {
+      "title": "Neural Boids",
+      "published_at": "2026-03-08T20:14:54Z",
+      "source": "Hacker News · 24h最热",
+      "url": "https://campedersen.com/noid",
+      "desc": null
+    },
+    {
+      "title": "The Misconception That Air Supremacy Has Been Achieved over Iran",
+      "published_at": "2026-03-08T20:09:10Z",
+      "source": "Hacker News · 24h最热",
+      "url": "https://www.twz.com/news-features/the-misconception-that-air-supremacy-has-been-achieved-over-iran",
+      "desc": "While there are areas where air superiority exists over Iran, total air supremacy has not been achieved, which should be no surprise."
+    },
+    {
+      "title": "OpenAI硬件负责人因与五角大楼达成协议而辞职 - CNBC",
+      "published_at": "2026-03-08T17:58:18.707Z",
       "source": "news.google.com",
-      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOWl84MVlHMnVVbWRzU01PNEdtZFRMSzU0Mmh5Z3FfTXB4SEUzSmV6UUdoRDBUQlZQLWplUWpIYVZTOThxM3dJSnM3YVVDWmhrMjJVYW1mV2dETjN0bmJlRFNPVGQ2cDNaYjZZQmNIZVRMUG8wcVVfcm8zd1RHTTQxMjFBMjFJalREWmRoQQ?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOeGlKZ1B5M2xqMWliOS1rV2ZtN01RYVdVbUh1ZnBPR096dzBZWEZJQ0NjVjZEN2tYdG44NFJDN0IxZjdaQ1Z6MGRQTllMWmM1WGt2X3FMbnhJV2ZYTHBoSHh2ZEFvcEJwcmFIVG0wOFduTVRxRkRNUWV4RHhqdjJmUm1jdGRBdEl4WUg0OURoYThuWi1USTFXcWZUMFfSAaIBQVVfeXFMTUVHT3Y4aVVCSnQ1UjdBTzYyQ0tTdEdSNTl4T0pMVTdOWTVfbS16aDY1bWVtUFdTUDdoZVVjMVBfeFdRT3ZSLS1BalVaSmxTSlpGREZtMUxNUDJVX05sZ3BJTl9KLXNwdVF3NkttTHJiNDdselNKVlVSbmdqRkQyWktHSzhpanRyd1ZRYkdzb056RnAyaHZSOFNsc3pad0VOSXRB?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
       "desc": "Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News."
     },
     {
-      "title": "我将Notion转化为控制平面，用于管理18个OpenClaw人工智能代理",
-      "published_at": "2026-03-07T22:17:23.778Z",
-      "source": "dev.to",
-      "url": "https://dev.to/aws-heroes/i-turned-notion-into-a-control-plane-for-my-18-openclaw-ai-agents-5624",
-      "desc": "This is a submission for the Notion MCP Challenge What I Built OpenClaw just got an..."
+      "title": "为何人工智能热潮将推高手机、汽车和电子产品的价格",
+      "published_at": "2026-03-08T20:05:20.414Z",
+      "source": "www.bloomberg.com",
+      "url": "https://www.bloomberg.com/graphics/2026-ai-boom-memory-chip-shortage",
+      "desc": "To continue, please click the box below to let us know you're not a robot."
     },
     {
-      "title": "Palantir和Anthropic人工智能公司协助美国在24小时内打击了1000个伊朗目标。",
-      "published_at": "2026-03-07T21:45:19.526Z",
-      "source": "www.moneycontrol.com",
-      "url": "https://www.moneycontrol.com/europe/?url=https%3A%2F%2Fwww.moneycontrol.com%2Fworld%2Fhow-palantir-and-anthropic-ai-helped-the-us-hit-1-000-iran-targets-in-24-hours-article-13853331.html",
-      "desc": "Reference #18.6ea7cb17.1772930099.5b884a62"
+      "title": "在智能马桶座圈之外，人工智能的管道系统正被忽视",
+      "published_at": "2026-03-08T20:05:20.411Z",
+      "source": "www.bloomberg.com",
+      "url": "https://www.bloomberg.com/opinion/articles/2026-03-08/beyond-bidets-lies-the-overlooked-plumbing-of-japanese-ai",
+      "desc": "To continue, please click the box below to let us know you're not a robot."
     },
     {
-      "title": "Does Apple‘s M5 Max Really “Destroy” a 96-Core Threadripper?",
-      "published_at": "2026-03-07T22:08:27Z",
-      "source": "Hacker News · 24h最热",
-      "url": "https://slashdot.org/submission/17345398/does-apples-m5-max-really-destroy-a-96-core-threadripper",
-      "desc": "Tom's Hardware currently has a front-page article making some wild claims about the 18-core Apple M5 Max versus a 96-core Ryzen Threadripper.Reading the article, the comparison is based largely on Geekbench 6 multi-core scores. The author briefly mentions that Geekbench doesn'..."
+      "title": "OpenAI最终可能会站在历史的正确一边",
+      "published_at": "2026-03-08T19:17:36.307Z",
+      "source": "news.ycombinator.com",
+      "url": "https://news.ycombinator.com/item?id=47300047",
+      "desc": "when i first read the statement by Dario, i was shocked by the fact the military was so dismissive about Ai safety (not to mention privacy). Seeing anthropic resist the military, I felt so proud of being a claude user to the point I deleted gpt right away. it's nice to see you..."
     },
     {
-      "title": "300 万智能体悄悄建国？Nature 长文：第一代 AI 社会正在成形",
-      "published_at": "2026-03-08T00:17:27Z",
-      "source": "IT之家 (ITHome)",
-      "url": "https://www.ithome.com/0/926/892.htm",
-      "desc": "Nature 最新研究指出，Moltbook 平台上的近 300 万 AI 智能体已展现出与人类社会相似的群体行为规律，如话题热度衰减遵循“1/t 法则”、活跃度呈“重尾分布”。但 AI 的点赞与评论呈“亚线性关系”，更倾向于长篇讨论而非简单认同，暴露出其缺乏人类“动机驱动推理”的本质。更令人担忧的是，这些能与现实系统联动的智能体已集齐数据泄露、外部内容暴露、对外通信三大安全风险。#AI 社会# #硅基生命#"
-    },
-    {
-      "title": "$3T flows through U.S. nonprofits every year",
-      "published_at": "2026-03-07T21:56:16Z",
-      "source": "Hacker News · 24h最热",
-      "url": "https://charitysense.com/insights/the-3-trillion-blind-spot",
-      "desc": "U.S. nonprofits handle more revenue than the GDP of the United Kingdom. They are subject to less financial disclosure than a single publicly traded company."
-    },
-    {
-      "title": "[Claude Code] 为了方便我每次配置 claudecodeapi 中转我开发了一个两条指令搞定的工具",
-      "published_at": "2026-03-08T00:03:26Z",
-      "source": "V2EX (创意工作者社区)",
-      "url": "https://www.v2ex.com/t/1196573",
-      "desc": "Claude Code - @yutong1983 - https://github.com/holysheep123/holysheep-cli全程一条指令就可以搞定目前市面上支持的所有 clinpx @simonyea/holysheep-cl"
-    },
-    {
-      "title": "The Day NY Publishing Lost Its Soul",
-      "published_at": "2026-03-07T21:10:08Z",
-      "source": "Hacker News · 24h最热",
-      "url": "https://www.honest-broker.com/p/the-day-ny-publishing-lost-its-soul",
-      "desc": "How did we get here? And how do we get back?"
-    },
-    {
-      "title": "再见 Openclaw，桌面端 Agent 起飞了！",
-      "published_at": "2026-03-08T00:31:52.078Z",
-      "source": "掘金 · 人工智能本周最热",
-      "url": "https://juejin.cn/post/7613680097548795919",
-      "desc": null
-    },
-    {
-      "title": "OpenAI年化营收突破250亿美元，Anthropic缩小差距",
-      "published_at": "2026-03-08T00:31:52.078Z",
-      "source": "Readhub · AI",
-      "url": "https://finance.sina.com.cn/7x24/2026-03-08/doc-inhqfnns1102076.shtml",
-      "desc": null
-    },
-    {
-      "title": "OpenAI 再次推迟 ChatGPT“成人模式”：优先提升智能与个性化",
-      "published_at": "2026-03-08T00:31:52.078Z",
-      "source": "Readhub · AI",
-      "url": "https://www.ithome.com/0/926/882.htm",
-      "desc": "OpenAI 表示将再次推迟“成人模式”上线，优先提升智能水平、对话个性与个性化体验。该功能原计划去年 12 月推出，已第二次推迟。公司已开始推广年龄预测工具，并确认相关功能仍在开发中，仅面向 18 岁以上用户，且需手动开启。#ChatGPT# #OpenAI#"
-    },
-    {
-      "title": "[推广] 2 毛/刀｜主打兼容的 API 中转：首批支持 GPT-5.4 双协议，完美适配 Cursor， Claude。QWen 几乎白嫖",
-      "published_at": "2026-03-07T15:56:23Z",
-      "source": "V2EX (创意工作者社区)",
-      "url": "https://www.v2ex.com/t/1196564",
-      "desc": "推广 - @dockerhub - 各位佬，好久没来露脸。再次来 V 站自荐一波，欢迎大家体验。年后逆向线路波动较大，这段时间埋头投入了一些精力打磨自己的中转站，重新调整了定位。目前主打的就两个词：**兼容** 和 **"
-    },
-    {
-      "title": "Spring AI 和 LangChain4j ，哪个更好？",
-      "published_at": "2026-03-08T00:31:55.110Z",
+      "title": "从安装到上手：Codex CLI 实战指南（Windows + Node + AI Agent）",
+      "published_at": "2026-03-08T18:16:39.554Z",
       "source": "juejin",
-      "url": "https://juejin.cn/post/7613361194158686254",
-      "desc": null
+      "url": "https://juejin.cn/post/7613658235174387727",
+      "desc": "大家好，我是G探险者！ 随着 AI 编程工具的兴起，越来越多开发者开始使用 OpenAI Codex CLI。 它是一种可以在终端运行的 AI 编程助手，可以读取项目代码、修改文件、执行命令，甚至帮你"
     },
     {
-      "title": "从采集到回顾，我用 AI 搭建了一套个人信息处理系统",
-      "published_at": "2026-03-08T00:31:55.110Z",
-      "source": "sspai",
-      "url": "https://sspai.com/post/106477",
-      "desc": "面对信息过载，我为用 AI 为自己搭了一套信息工作流，希望也能给你带来一丝启发。"
+      "title": "根据其自身章程，OpenAI应当退出这场竞赛。",
+      "published_at": "2026-03-08T17:58:18.386Z",
+      "source": "mlumiste.com",
+      "url": "https://mlumiste.com/general/openai-charter",
+      "desc": "Based on its own charter, OpenAI should surrender the race"
     },
     {
-      "title": "OpenAI机器人部门负责人因担忧监控与自主武器问题辞职，此前该公司刚与五角大楼签订合同 - Fortune",
-      "published_at": "2026-03-07T21:29:31.176Z",
-      "source": "news.google.com",
-      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPZGMyWVVub0hoQnNzT3NSNlh6dDdLdTJNUFdTbXY4ZXZkTUF6aHZtYzBQUEZ5Rlh0eU1ZZXAtWDVEbTlFcE9hd2pKa2dKZGZmMHhXSlJtVzJiUVB6azBWQ2cyMjl1SWhYOEZBRy1nd1FEdUd3TnNyV0ptQ3ZxNThZWnRJUkR2UHVnWUo5d0p6bmY4NjY5QUVKMFZfZTJVbDQwNi1XR09oSHA2bVVpUnppUlVnMzlxRUdSeXJpZjBwblh4UWtwSUMyZlZ5VWVaM1VIcUE?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
-      "desc": "Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News."
-    },
-    {
-      "title": "世界棒球经典赛综述：阿尔比斯助荷兰队绝杀尼加拉瓜",
-      "published_at": "2026-03-08T00:09:35.611Z",
-      "source": "www.reuters.com",
-      "url": "https://www.reuters.com/sports/wbc-roundup-ozzie-albies-netherlands-walk-off-nicaragua--flm-2026-03-07",
-      "desc": null
-    },
-    {
-      "title": "OpenAI机器人部门负责人辞职，此前该公司与五角大楼达成合作协议",
-      "published_at": "2026-03-07T20:57:35.652Z",
-      "source": "reut.rs",
-      "url": "https://reut.rs/4bhu6c9",
-      "desc": null
-    },
-    {
-      "title": "新一轮罢工席卷德黑兰，内塔尼亚胡誓言伊朗战争下一阶段将有\"诸多意外\" - PBS",
-      "published_at": "2026-03-07T23:53:28.792Z",
-      "source": "news.google.com",
-      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQUUxQZE5ocW1YYkpxUC1OTGpHcktuaTh6UVdaUnA2dFZ0MUtYWHV3NHBZNWRrT2V3a3p5dnJRVlA4cmo5Skc0aGpQd1RzRVZTdGV2blpfRDh6ZWZkd1gwdnpXajh1S285SERQX2tkYTR3M0NNNmtmMm9BUXl4emJHakJBNkp6QkZIQnZsWG1CZDJrc0poMGhIMjdHVV9DTUhxWDRZT1lvNEtQXzloSURqX0t0THRpcDFiZ0stbVItUWZvN1nSAcgBQVVfeXFMTVNzanBYMFdUb2xyTmZVOHIyT1hBNXNrUXRvZTJETnR2UnFLWTQ4UnRDTGNxbjE4dVNnZDhsYlFHc2xkRG9Qc0dkanpKYjI2NFNvc1pCbjZfaDRHUDlpRjJkb1FGR216WWlmNFZJMUpPZ0VScWNoOTRsUlJsYXE5R1F3eVVLM2tVN2tEZEk3cDU3VzFnMUhOeWY0ZE9tajYwWGZLZks5d3NFYUM0V21vQS1UaXd4OS1PRl9iUHl6UHJuVWJMTHNVNkE?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
-      "desc": "Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News."
-    },
-    {
-      "title": "21st Agents SDK - SDK，用于在您的应用中添加克劳德代码AI助手",
-      "published_at": "2026-03-07T19:22:24.805Z",
-      "source": "www.producthunt.com",
-      "url": "https://www.producthunt.com/r/F7EYLEJXM3YKD6",
-      "desc": null
-    },
-    {
-      "title": "二战博物馆舰船在美军潜艇击沉伊朗军舰后，突然显得不再那么具有历史感 - Business Insider",
-      "published_at": "2026-03-07T22:17:23.767Z",
-      "source": "news.google.com",
-      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQbWs3QlZ2XzFTekZFRTVlamhCbnVIMF9rUUEwa0lXTkt1MkVIRkFaLUdvektMMjBJQW02V0pseHZKdzE4QTdEdmlPa0hKZy1BZEp4aVdDb1J3SEdoZGtxeEZ6azBOTXB0bXVRc3hxZmlXTWkyMkF1YmNiRjJfYkJLeA?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
-      "desc": "Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News."
-    },
-    {
-      "title": "OpenAI 发布 Windows 版 Codex",
-      "published_at": "2026-03-08T00:31:52.078Z",
-      "source": "开源中国 · 热门资讯",
-      "url": "https://www.oschina.net/news/407765",
-      "desc": null
-    },
-    {
-      "title": "央视点赞千问APP，“AI办事”让人工智能走进日常生活",
-      "published_at": "2026-03-08T00:31:52.078Z",
-      "source": "量子位 · 每日最新",
-      "url": "https://www.qbitai.com/2026/03/384637.html",
-      "desc": null
-    },
-    {
-      "title": "担忧监控与自主武器问题，OpenAI机器人部门负责人辞职",
-      "published_at": "2026-03-08T00:31:52.078Z",
+      "title": "格隆汇3月9日｜市场消息：美国和以色列伊朗的战争已危及海湾国家3000亿美元的人工智能支出。",
+      "published_at": "2026-03-09T00:00:00Z",
       "source": "Readhub · AI",
-      "url": "https://finance.sina.com.cn/7x24/2026-03-08/doc-inhqezwx8063816.shtml",
+      "url": "https://www.gelonghui.com/live/2336236",
       "desc": null
     },
     {
-      "title": "OpenAI机器人团队主管辞职，因公司与五角大楼的AI交易",
-      "published_at": "2026-03-08T00:31:52.078Z",
+      "title": "在智能体时代，我们应当重新审视文盲编程",
+      "published_at": "2026-03-08T14:31:20.870Z",
+      "source": "silly.business",
+      "url": "https://silly.business/blog/we-should-revisit-literate-programming-in-the-agent-era",
+      "desc": "Literate programming is the idea that code should be intermingled with prose such that an uninformed reader could read a code base as a narrative, and come away with an understanding of how it works and what it does. Although I have long been intrigued by this idea, and have f..."
+    },
+    {
+      "title": "弯曲Emacs - 第13集：agent-shell图表绘制",
+      "published_at": "2026-03-08T17:27:33.395Z",
+      "source": "xenodium.com",
+      "url": "https://xenodium.com/bending-emacs-episode-13-agent-shell-charting",
+      "desc": "Time for a new Bending Emacs episode. This one is a follow-up to Episode 12, where we explored Claude Skills as emacs-skills. Bending Emacs Episode 13..."
+    },
+    {
+      "title": "甲骨文或裁员3万人以筹资建设人工智能数据中心，因美国银行纷纷撤资",
+      "published_at": "2026-03-08T17:27:33.065Z",
+      "source": "www.cio.com",
+      "url": "https://www.cio.com/article/4125103/oracle-may-slash-up-to-30000-jobs-to-fund-ai-data-center-expansion-as-us-banks-retreat.html",
+      "desc": "Oracle is considering workforce cuts and selling Cerner to alleviate financial pressure, warns investment bank TD Cowen."
+    },
+    {
+      "title": "Bending Emacs - Episode 13: agent-shell charting",
+      "published_at": "2026-03-08T17:21:36Z",
+      "source": "Lobsters (技术社区)",
+      "url": "https://xenodium.com/bending-emacs-episode-13-agent-shell-charting",
+      "desc": "Time for a new Bending Emacs episode. This one is a follow-up to Episode 12, where we explored Claude Skills as emacs-skills. Bending Emacs Episode 13..."
+    },
+    {
+      "title": "Phi-4-reasoning-vision and the lessons of training a multimodal reasoning model",
+      "published_at": "2026-03-08T14:15:45.365Z",
+      "source": "hackernews",
+      "url": "https://news.ycombinator.com/item?id=47258737",
+      "desc": "It seems like a lot of the most exciting research is happening here - making unbelievable progress with such small parameter sizes."
+    },
+    {
+      "title": "为 AI Agent 编写高质量 Skill：Claude 官方指南",
+      "published_at": "2026-03-08T16:37:35.905Z",
+      "source": "掘金 · 人工智能本周最热",
+      "url": "https://juejin.cn/post/7612486041334136842",
+      "desc": "翻译整理了 Claude 官方《Skill 构建指南》，总结了核心设计模式、写法技巧、常见坑点排查，附自动检查工具"
+    },
+    {
+      "title": "发展人工智能 推动工业“制造”变“智造”",
+      "published_at": "2026-03-08T22:31:24.409Z",
       "source": "Readhub · AI",
-      "url": "https://wallstreetcn.com/livenews/3065778",
+      "url": "https://finance.sina.com.cn/jjxw/2026-03-09/doc-inhqirmt7051830.shtml",
+      "desc": "新甘肃·甘肃日报记者 范海瑞 政府工作报告提出，深化拓展“人工智能＋”，促进新一代智能终端和智能体加快推广，推动重点行业领域人工智能商业化规模化应用，培育智能原生新业态新模式。 “甘肃深厚的工业底蕴与丰富的应用场景，为人工智能发展集聚了一..."
+    },
+    {
+      "title": "人工智能对劳动力市场的影响：一种新的测度方法与早期证据",
+      "published_at": "2026-03-08T22:31:24.409Z",
+      "source": "Readhub · AI",
+      "url": "https://www.199it.com/archives/1814959.html",
+      "desc": "数据显示，人工智能的实际应用仍远低于其理论能力。研究发现，在计算机与数学类岗位中，理论上约94%的任务可由大模型显著加速，但现实使用覆盖率仅约33%。"
+    },
+    {
+      "title": "[程序员] 使用 Milvus 搭配 Ollama 搭建 RAG 知识库",
+      "published_at": "2026-03-08T12:27:59Z",
+      "source": "V2EX (创意工作者社区)",
+      "url": "https://www.v2ex.com/t/1196665",
+      "desc": "程序员 - @xuxueli - ### 1 、RAG 介绍RAG （ Retrieval-Augmented Generation ，检索增强生成）是一种结合信息检索与文本生成的先进 AI 架构，其核心在于让大语言模型在回答问题"
+    },
+    {
+      "title": "Getting started with ClickHouse? 13 mistakes and how to avoid them",
+      "published_at": "2026-03-08T21:08:18Z",
+      "source": "Lobsters (技术社区)",
+      "url": "https://clickhouse.com/blog/common-getting-started-issues-with-clickhouse",
+      "desc": "In this post, we highlight the most common 13 mistakes we see our new users encounter, why they occur and the correct approach."
+    },
+    {
+      "title": "Cakelisp",
+      "published_at": "2026-03-08T21:00:44Z",
+      "source": "Lobsters (技术社区)",
+      "url": "https://macoy.me/code/macoy/cakelisp/src/branch/master/doc/Cakelisp.org",
+      "desc": "If you are trying to access the code, the following are the credentials:"
+    },
+    {
+      "title": "Why octal notation should be used for UTF-8 (and Unicode) (2016)",
+      "published_at": "2026-03-08T20:53:04Z",
+      "source": "Lobsters (技术社区)",
+      "url": "https://movq.de/blog/postings/2016-10-05/0/POSTING-en.html",
+      "desc": "blog - git - desktop - images - contact"
+    },
+    {
+      "title": "[问与答] 还有多少人以为 claude code， codex 是大模型的？",
+      "published_at": "2026-03-08T08:41:43Z",
+      "source": "V2EX (创意工作者社区)",
+      "url": "https://www.v2ex.com/t/1196643",
+      "desc": "问与答 - @junwind - 我不知道为什么很多人都发这种文章：claude code ，codex 免翻墙国内怎么用？明明直接用的啊。科普：1. claude code 是 Anthropic 公司出的一个命"
+    },
+    {
+      "title": "[程序员] 还有多少人以为 claude code， codex 是大模型的？",
+      "published_at": "2026-03-08T08:41:43Z",
+      "source": "V2EX (创意工作者社区)",
+      "url": "https://www.v2ex.com/t/1196642",
+      "desc": "程序员 - @junwind - 我不知道为什么很多人都发这种文章：claude code ，codex 免翻墙国内怎么用？明明直接用的啊。科普：1. claude code 是 Anthropic 公司出的一个命"
+    },
+    {
+      "title": "Solving Regex Crosswords Without Z3",
+      "published_at": "2026-03-08T20:25:25Z",
+      "source": "Lobsters (技术社区)",
+      "url": "https://danielalp.com/blog/regex_crossword",
+      "desc": "A couple of months ago, I learned about regex crosswords from the blog post Solving Regex Crosswords With Z3, and writing my own solver joined the (already very long) list of “things I want to do, but probably never will.” Well, about a week ago I felt like wasting the weekend..."
+    },
+    {
+      "title": "z80-sans: OpenType font that disassembles Z80 instructions",
+      "published_at": "2026-03-08T20:15:46Z",
+      "source": "Lobsters (技术社区)",
+      "url": "https://github.com/nevesnunes/z80-sans",
+      "desc": "OpenType font that disassembles Z80 instructions. Contribute to nevesnunes/z80-sans development by creating an account on GitHub."
+    },
+    {
+      "title": "大模型团队为什么更容易出现人才动荡",
+      "published_at": "2026-03-08T16:37:35.905Z",
+      "source": "Readhub · AI",
+      "url": "https://www.huxiu.com/article/4840222.html?f=rss",
+      "desc": "2026年3月阿里千问大模型技术负责人林俊旸离职事件，揭示了AI行业技术强人与企业组织形态的冲突，同期OpenAI、Meta等企业也出现类似人才流动。"
+    },
+    {
+      "title": "“大模型”读报告·两会热词丨智能经济新形态",
+      "published_at": "2026-03-08T16:37:35.905Z",
+      "source": "Readhub · AI",
+      "url": "https://finance.sina.com.cn/jjxw/2026-03-08/doc-inhqhypy0471542.shtml",
+      "desc": "（来源：河北新闻网）转自：河北新闻网“大模型”读报告，热词一搜全知道。今年的政府工作报告提出，打造智能经济新形态。当前，人工智能已经走出实验室，正加速融入生产车间，走进千家万户。智能经济新形态到底新在哪儿？河北发展智能经济有哪些优势？点击长..."
+    },
+    {
+      "title": "龙虾之父参与的首个OpenAI项目：@开源贡献者，ChatGPT token免费送",
+      "published_at": "2026-03-08T16:37:35.905Z",
+      "source": "Readhub · AI",
+      "url": "https://hub.baai.ac.cn/view/52958",
+      "desc": "OpenAI推出“Codex for Open Source”项目，由新加盟的“龙虾之父”Peter Steinberger主导，面向开源项目维护者免费提供ChatGPT API积分（token）。该项目旨在支持开源贡献者更高效地利用AI工具进行代码开发、文档编写与问题调试，降低技术使用门槛。参与者可申请API额度，用于集成OpenAI模型至开源工作流中。此举被视作OpenAI加强开发者生态建设、吸引开源社区的重要举措，兼具技术赋能与战略拉新意图。（150字）"
+    },
+    {
+      "title": "[程序员] 境内阿里云服务器访问 claude、codex 会有危险吗？",
+      "published_at": "2026-03-08T13:49:28Z",
+      "source": "V2EX (创意工作者社区)",
+      "url": "https://www.v2ex.com/t/1196672",
+      "desc": "程序员 - @wayneyang3 - 如题，买了阿里云 68 一年的境内服务器，装了 openclaw 。现在用的百炼给的免费额度做测试，最终还是想用 claude 、codex ，我闲鱼买了订阅的。自己平时日常开发连梯子所以能用"
+    },
+    {
+      "title": "GNU and the AI reimplementations",
+      "published_at": "2026-03-08T16:39:30Z",
+      "source": "Lobsters (技术社区)",
+      "url": "https://antirez.com/news/162",
       "desc": null
     },
     {
-      "title": "打造全球首个通用智能人，他让人工智能更“有心”",
-      "published_at": "2026-03-08T00:31:52.078Z",
-      "source": "Readhub · AI",
-      "url": "https://news.sciencenet.cn/htmlnews/2026/3/561032.shtm",
-      "desc": "王宁：又来到“通通”的小镇了，“通通”都六岁了。"
+      "title": "React 正在演变为一场不可逆的赛博瘟疫：AI 投毒、编译器迷信与装死的官方",
+      "published_at": "2026-03-08T16:16:07.741Z",
+      "source": "juejin",
+      "url": "https://juejin.cn/post/7614057963394711567",
+      "desc": "React 一到前端圈，所有敲代码的人便都看着他笑，有的叫道：“React，你又悄摸摸搞出几个极其拧巴的缝合怪 API！” 他不回答，对柜里说：“加两套重型编译器，要一碟 `useEffectE"
     },
     {
-      "title": "谷歌 Gemini 攻克「宇宙弦」终极难题，AI 科学家最优雅解法震撼物理学",
-      "published_at": "2026-03-08T00:31:52.078Z",
-      "source": "Readhub · AI",
-      "url": "https://www.ithome.com/0/926/888.htm",
-      "desc": "谷歌研究团队用 Gemini Deep Think 和树搜索框架，成功推导出宇宙弦引力辐射功率谱的精确解析解。AI 探索 600 条路径，最终找到 6 种解法，其中最优雅的格根鲍尔方法自然消去了数学奇点，展示了 AI 在理论物理领域的强大潜力。#AI 科学家 #理论物理 #谷歌 Gemini"
-    },
-    {
-      "title": "不满与美军方合作 OpenAI机器人业务负责人辞职",
-      "published_at": "2026-03-08T00:31:52.078Z",
-      "source": "Readhub · AI",
-      "url": "https://tech.ifeng.com/c/8rJpgcXfsLb",
-      "desc": null
-    },
-    {
-      "title": "IT早报 0308：QQ 开放“小龙虾”官方接入；OpenClaw 创始人警告旧模型提示词注入风险；雷军谈 AI 时代每周或仅需工作 3 天；红果调整机制但加码真人短剧投入...",
-      "published_at": "2026-03-08T00:31:52.078Z",
-      "source": "Readhub · AI",
-      "url": "https://www.ithome.com/0/926/887.htm",
-      "desc": "“IT早报”时间，大家好，现在是 2026 年 3 月 8 日星期日，今天的重要科技资讯有："
-    },
-    {
-      "title": "alibaba / page-agent",
-      "published_at": "2026-03-08T00:31:52.078Z",
-      "source": "GitHub · Trending Today",
-      "url": "https://github.com/alibaba/page-agent",
-      "desc": "JavaScript in-page GUI agent. Control web interfaces with natural language. - alibaba/page-agent"
-    },
-    {
-      "title": "我建造了一个像素艺术村庄，其中的人工智能角色拥有真实情感",
-      "published_at": "2026-03-07T18:50:22.119Z",
-      "source": "dev.to",
-      "url": "https://dev.to/miss_terry/i-built-a-pixel-art-village-where-ai-characters-have-real-emotions-ccg",
-      "desc": "Last weekend I fell into a rabbit hole: what if game characters didn't just have scripted reactions,..."
+      "title": "Cambridge Battlecode: Code bots that compete in a turn-based strategy game",
+      "published_at": "2026-03-08T19:13:04Z",
+      "source": "Lobsters (技术社区)",
+      "url": "https://battlecode.cam/",
+      "desc": "Programming competition · Cambridge UK · Easter 2026"
     }
   ]
 }
