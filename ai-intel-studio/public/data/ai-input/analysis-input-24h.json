@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-03-16T23:06:06.478Z",
-  "generated_at_local": "2026-03-17T07:06:06.478+08:00",
+  "generated_at": "2026-03-16T23:38:30.105Z",
+  "generated_at_local": "2026-03-17T07:38:30.105+08:00",
   "source_generated_at": "2026-03-16T22:42:34.885Z",
   "source_generated_at_local": "2026-03-17T06:42:34.885+08:00",
   "window_hours": 24,
@@ -30,12 +30,12 @@
       "count": 8
     },
     {
-      "site_id": "zeli",
+      "site_id": "tophub",
       "count": 8
     },
     {
-      "site_id": "tophub",
-      "count": 7
+      "site_id": "zeli",
+      "count": 8
     },
     {
       "site_id": "hackernews",
@@ -43,7 +43,7 @@
     },
     {
       "site_id": "iris",
-      "count": 5
+      "count": 4
     },
     {
       "site_id": "officialai",
@@ -535,6 +535,20 @@
       "desc": "Lawuit details how sexualised AI-generated images were produced and distributed without girls’ knowledge"
     },
     {
+      "title": "财联社3月17日电，英伟达启动Nemotron联盟，联合全球领先的人工智能实验室推进开放前沿模型的发展。",
+      "published_at": "2026-03-17T00:00:00Z",
+      "source": "Readhub · AI",
+      "url": "https://api3.cls.cn/share/article/2314839?os=web&sv=8.4.6&app=CailianpressWeb",
+      "desc": null
+    },
+    {
+      "title": "格隆汇3月17日｜OpenAI总裁兼联合创始人格雷格・布罗克曼：GPT-5.4年化新增净收入达到10亿美元。",
+      "published_at": "2026-03-17T00:00:00Z",
+      "source": "Readhub · AI",
+      "url": "https://www.gelonghui.com/live/2350224",
+      "desc": null
+    },
+    {
       "title": "Palestinian boy, 12, describes how Israeli forces killed his family in car",
       "published_at": "2026-03-16T18:38:14Z",
       "source": "Hacker News · 24h最热",
@@ -563,20 +577,6 @@
       "desc": "今天（3 月 17 日）在美国加州圣何塞举行的 2026 年 GTC 大会上，英伟达为推动智能体（Agentic）、物理与医疗 AI 的下一波浪潮，宣布全面扩展其开源模型家族。"
     },
     {
-      "title": "财联社3月17日电，英伟达启动Nemotron联盟，联合全球领先的人工智能实验室推进开放前沿模型的发展。",
-      "published_at": "2026-03-17T00:00:00Z",
-      "source": "Readhub · AI",
-      "url": "https://api3.cls.cn/share/article/2314839?os=web&sv=8.4.6&app=CailianpressWeb",
-      "desc": null
-    },
-    {
-      "title": "格隆汇3月17日｜OpenAI总裁兼联合创始人格雷格・布罗克曼：GPT-5.4年化新增净收入达到10亿美元。",
-      "published_at": "2026-03-17T00:00:00Z",
-      "source": "Readhub · AI",
-      "url": "https://www.gelonghui.com/live/2350224",
-      "desc": null
-    },
-    {
       "title": "Police Investigate German Historian for Hitler-Putin Meme",
       "published_at": "2026-03-16T18:17:05Z",
       "source": "Hacker News · 24h最热",
@@ -598,17 +598,17 @@
       "desc": null
     },
     {
-      "title": "88 核 +1.2TB/s 带宽：英伟达首发智能体 AI 处理器 Vera",
-      "published_at": "2026-03-16T20:11:19Z",
-      "source": "IT之家 (ITHome)",
-      "url": "https://www.ithome.com/0/929/685.htm",
-      "desc": "今天（3 月 17 日）在美国加州圣何塞举行的 2026 年 GTC 大会上，英伟达公布了全新 88 核 Vera 数据中心 CPU 的详细参数，声称是全球首款专为智能体 AI 和强化学习定制的处理器。"
-    },
-    {
       "title": "英伟达创始人兼CEO黄仁勋表示：AI已经进入了生产时代。智能现在是实时生成的，企业需要为此规模而构建的系统。 随着AI智能体开始具备推理、规划和行动能力，下一...",
       "published_at": "2026-03-16T22:42:34.885Z",
       "source": "Readhub · AI",
       "url": "https://wallstreetcn.com/livenews/3071180",
+      "desc": null
+    },
+    {
+      "title": "Salesforce与英伟达就AI智能体（AI Agents）合作。",
+      "published_at": "2026-03-16T22:42:34.885Z",
+      "source": "Readhub · AI",
+      "url": "https://wallstreetcn.com/livenews/3071170",
       "desc": null
     }
   ]
