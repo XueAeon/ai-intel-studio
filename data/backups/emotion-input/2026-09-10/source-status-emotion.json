@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-09-09T20:19:06.667Z",
-  "generated_at_local": "2026-09-10T04:19:06.667+08:00",
+  "generated_at": "2026-09-10T00:38:40.483Z",
+  "generated_at_local": "2026-09-10T08:38:40.483+08:00",
   "sites": [
     {
       "site_id": "emotion-weibo",
       "site_name": "微博",
       "ok": true,
       "item_count": 150,
-      "duration_ms": 2428,
+      "duration_ms": 1960,
       "error": null
     }
   ],
